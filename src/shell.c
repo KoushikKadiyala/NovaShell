@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 #include "../include/shell.h"
 #include "../include/parser.h"
@@ -11,7 +12,13 @@ void start_shell() {
     char *argv[64];
 
     while (1) {
-        printf("mysh> ");
+        char cwd[1024];
+        if (getcwd(cwd, sizeof(cwd)) != NULL) {
+            printf("%s> ", cwd);
+        } else {
+            perror("getcwd");
+            printf("$ ");
+        }
 
         if (fgets(input, sizeof(input), stdin) == NULL) {
             break;
