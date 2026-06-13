@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <string.h>
 
 #include "../include/process.h"
 #include "../include/launcher.h"
@@ -23,44 +24,75 @@ void execute_simple_command(char *argv[])
     waitpid(pid, NULL, 0);
 }
 
-void execute_pipe_command(char *left_cmd[],
-                          char *right_cmd[])
+void execute_pipe_command(char *argv[])
 {
-    int pipefd[2];
+    char **commands[100];
+    int commands_count = 1;
+    commands[0] = argv;
 
-    if (pipe(pipefd) < 0)
+    for (int i = 0; argv[i] != NULL; i++)
     {
-        perror("pipe");
-        return;
+        if (strcmp(argv[i], "|") == 0)
+        {
+            argv[i] = NULL;
+            commands[commands_count++] = &argv[i + 1];
+        }
     }
+    commands[commands_count] = NULL;
 
-    pid_t pid1 = fork();
-
-    if (pid1 == 0)
+    int prev_read = -1;
+    pid_t pids[100];
+    for (int i = 0; i < commands_count; i++)
     {
-        dup2(pipefd[1], STDOUT_FILENO);
+        int pipefd[2];
+        if (i < commands_count - 1)
+        {
+            if (pipe(pipefd) < 0)
+            {
+                perror("pipe");
+                return;
+            }
+        }
 
-        close(pipefd[0]);
-        close(pipefd[1]);
+        pid_t pid = fork();
+        if (pid < 0)
+        {
+            perror("fork");
+            return;
+        }
 
-        launch_process(left_cmd);
+        if (pid == 0)
+        {
+            if (prev_read != -1)
+            {
+                dup2(prev_read, STDIN_FILENO);
+                close(prev_read);
+            }
+
+            if (i < commands_count - 1)
+            {
+                close(pipefd[0]);
+                dup2(pipefd[1], STDOUT_FILENO);
+                close(pipefd[1]);
+            }
+
+            launch_process(commands[i]);
+        }
+
+        pids[i] = pid;
+
+        if (prev_read != -1)
+        {
+            close(prev_read);
+        }
+        if (i < commands_count - 1)
+        {
+            close(pipefd[1]);
+            prev_read = pipefd[0];
+        }
     }
-
-    pid_t pid2 = fork();
-
-    if (pid2 == 0)
+    for (int i = 0; i < commands_count; i++)
     {
-        dup2(pipefd[0], STDIN_FILENO);
-
-        close(pipefd[0]);
-        close(pipefd[1]);
-
-        launch_process(right_cmd);
+        waitpid(pids[i], NULL, 0);
     }
-
-    close(pipefd[0]);
-    close(pipefd[1]);
-
-    waitpid(pid1, NULL, 0);
-    waitpid(pid2, NULL, 0);
-}
+   }

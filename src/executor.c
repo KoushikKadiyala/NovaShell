@@ -12,39 +12,36 @@
 
 void execute_command(char *argv[])
 {
-    int pipe_index = -1;
+    int has_pipe = 0;
+    int i;
 
-    for (int i = 0; argv[i] != NULL; i++)
+    for (i = 0; argv[i] != NULL; i++)
     {
         if (strcmp(argv[i], "|") == 0)
         {
-            pipe_index = i;
-            break;
-        }
-    }
-
-    if (pipe_index == -1)
-    {
-        execute_simple_command(argv);
-        return;
-    }
-
-    if (pipe_index == 0)
+            has_pipe = 1;
+            
+        
+         if (i == 0)
     {
         printf("Syntax error before pipe\n");
         return;
     }
 
-    if (argv[pipe_index + 1] == NULL)
+    if (argv[i + 1] == NULL)
     {
         printf("Syntax error after pipe\n");
         return;
     }
+    }
+    }
 
-    argv[pipe_index] = NULL;
-
-    char **left = argv;
-    char **right = &argv[pipe_index + 1];
-
-    execute_pipe_command(left, right);
+    if (has_pipe)
+    {
+        execute_pipe_command(argv);
+    }
+    else
+    {
+        execute_simple_command(argv);
+    }
 }
