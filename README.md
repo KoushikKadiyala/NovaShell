@@ -87,7 +87,7 @@ A modular Unix-like shell implemented in C to explore Linux process management, 
 ## Project Structure
 
 ```
-my_shell/
+NovaShell/
 ├── Makefile                 # Build configuration
 ├── README.md                # Project documentation
 ├── include/                 # Header files (public interfaces)
