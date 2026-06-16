@@ -8,19 +8,15 @@ A modular Unix-like shell implemented in C to explore Linux process management, 
 
 - Interactive shell
 - Colored prompt with current working directory
-- Built-in commands ('cd', 'exit')
+- Built-in commands (`cd`, `exit`)
 - GNU Readline integration (history & line editing)
-- External command execution
-- Input and output redirection ('<', '>', '>>')
+- External command execution for standard utilities
+- Input and output redirection (`<`, `>`, `>>`)
 - Arbitrary-length pipelines
 - Environment variable expansion (`$HOME`, `$PATH`, ...)
 - Signal handling (Ctrl+C)
 
-
-
-
-
-##  ARCHITECTURE
+## ARCHITECTURE
 
 ```
                             NovaShell Architecture
@@ -46,7 +42,7 @@ A modular Unix-like shell implemented in C to explore Linux process management, 
        ┌─────────────────┐ ┌─────────────────┐ ┌──────────────────┐
        │    parser.c     │ │  builtins.c     │ │ environment.c    │
        │                 │ │                 │ │                  │
-       │ • Tokenization  │ │ • cd, pwd, exit │ │ • $VAR expansion │
+       │ • Tokenization  │ │ • cd, exit      │ │ • $VAR expansion │
        │ • Arg parsing   │ │ • env variables │ │ • Path handling  │
        └────────┬────────┘ └────────┬────────┘ └────────┬─────────┘
                 │                   │                   │
@@ -75,13 +71,6 @@ A modular Unix-like shell implemented in C to explore Linux process management, 
                     Linux Kernel System Calls
         (fork, execvp, waitpid, dup2, pipe, signal, wait)
 ```
-
-
-
-
-
-
-
 
 
 ## Project Structure
@@ -141,13 +130,30 @@ This will compile the shell and generate the `NovaShell` executable in the proje
 Once started, you'll see an interactive prompt where you can enter shell commands.
 
 
-##  Examples
+## Examples
 
-### Basic Commands
+### Builtin Commands
 
 ```bash
 $ pwd
 /home/user/my_shell
+
+$ cd /tmp
+$ pwd
+/tmp
+
+$ cd -
+/home/user/my_shell
+
+$ exit
+Goodbye!
+```
+
+### External Commands
+
+```bash
+$ echo hello
+hello
 
 $ ls -l
 total 48
@@ -155,9 +161,6 @@ drwxr-xr-x  3 user user  4096 Jun 14 10:30 include/
 drwxr-xr-x  3 user user  4096 Jun 14 10:30 src/
 -rw-r--r--  1 user user  1024 Jun 14 10:30 Makefile
 -rwxr-xr-x  1 user user 24576 Jun 14 10:30 NovaShell
-
-$ echo hello
-hello
 ```
 
 ### I/O Redirection
@@ -167,21 +170,36 @@ $ echo hello > file.txt
 $ cat < file.txt
 hello
 
+$ echo world >> file.txt
 $ cat file.txt
+hello
+world
+```
+
+No-space redirection is supported too:
+
+```bash
+$ echo hello>out.txt
+$ cat out.txt
 hello
 ```
 
 ### Piping
 
 ```bash
-$ cat file.txt | grep hello
-hello
-
-$ ls | grep cpp | sort | wc
-      3       3      42
+$ printf 'apple\\nbanana\\ncarrot\\n' | grep a | sort
+apple
+banana
 
 $ ls | grep ".c" | wc -l
 8
+```
+
+Invalid pipeline segments are rejected. Example:
+
+```bash
+$ echo hello|>out.txt
+Syntax error: invalid command start '>'
 ```
 
 ### Environment Variables
@@ -220,13 +238,32 @@ This Project helped me understand:
 - Implementing signal handling while keeping the shell process alive.
 - Parsing shell syntax
 
+## Known limitations
+
+- Quoting and escaping are basic: backslash-escaped characters and some embedded quoting cases are not fully supported.
+- Variable expansion is performed for whole-token `$VAR` forms; embedded-expansions like `file_$VAR.txt` are partially supported or limited.
+- Multi-line inputs inside quotes (e.g., certain `printf` constructs when provided through a single input stream) may not behave as a full interactive shell would.
+- Background jobs (`&`) are not implemented.
+
+If you need full POSIX-compatible quoting/escaping and job control, the parser will need to be extended.
+
 ## Future Work
 
-- Quote handling
+- Quote handling (improve escaping and embedded expansions)
 - Background jobs
 - Command history persistence
 - Tab completion
 - Native desktop GUI built on top of the shell engine
+
+## Debugging / Valgrind
+
+To check for memory leaks while running the shell under a test script, run:
+
+```bash
+valgrind --leak-check=full --show-leak-kinds=all ./NovaShell
+```
+
+This project was checked with Valgrind during development; you can re-run the command above after making changes.
 
 ## Author
 

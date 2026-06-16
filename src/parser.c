@@ -1,16 +1,116 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
-// Tokenize the input string into argv[] using spaces as separators.
-// This simple parser does not currently support quoted arguments.
-void parse_input(char *input, char *argv[]){
-    int i = 0;
-    char *token = strtok(input, " ");
+#include "../include/parser.h"
 
-    while (token != NULL) {
-        argv[i] = token;
-        i++;
-        token = strtok(NULL, " ");
+void parse_input(char *input, char *argv[])
+{
+    char *p = input;
+    int argc = 0;
+
+    while (*p)
+    {
+        // Skip whitespace between tokens.
+        while (*p == ' ' || *p == '\t')
+        {
+            p++;
+        }
+
+        if (*p == '\0')
+            break;
+
+        if (*p == '|')
+        {
+            argv[argc++] = "|";
+            p++;
+            continue;
+        }
+
+        if (*p == '<')
+        {
+            argv[argc++] = "<";
+            p++;
+            continue;
+        }
+
+        if (*p == '>')
+        {
+            if (*(p + 1) == '>')
+            {
+                argv[argc++] = ">>";
+                p += 2;
+            }
+            else
+            {
+                argv[argc++] = ">";
+                p++;
+            }
+            continue;
+        }
+
+        // Start a regular token.
+        argv[argc++] = p;
+
+        if (*p == '"' || *p == '\'')
+        {
+            char quote = *p;
+            p++;
+            argv[argc - 1] = p;
+
+            while (*p != quote && *p != '\0')
+            {
+                p++;
+            }
+
+            if (*p == quote)
+            {
+                *p = '\0';
+                p++;
+            }
+        }
+        else
+        {
+            while (*p != '\0' && *p != ' ' && *p != '\t' && *p != '|' && *p != '<' && *p != '>')
+            {
+                p++;
+            }
+
+            if (*p == '\0')
+                break;
+
+            if (*p == ' ' || *p == '\t')
+            {
+                *p = '\0';
+                p++;
+            }
+            else if (*p == '|')
+            {
+                *p = '\0';
+                argv[argc++] = "|";
+                p++;
+            }
+            else if (*p == '<')
+            {
+                *p = '\0';
+                argv[argc++] = "<";
+                p++;
+            }
+            else if (*p == '>')
+            {
+                *p = '\0';
+                if (*(p + 1) == '>')
+                {
+                    argv[argc++] = ">>";
+                    p += 2;
+                }
+                else
+                {
+                    argv[argc++] = ">";
+                    p++;
+                }
+            }
+        }
     }
-    argv[i] = NULL;
+
+    argv[argc] = NULL;
 }

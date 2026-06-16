@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -std=gnu11 -g
+CFLAGS = -Wall -Wextra -Werror -pedantic -g
 INCLUDES = -Iinclude
 SRC = src/main.c src/shell.c src/parser.c src/executor.c src/builtins.c src/environment.c src/launcher.c src/process.c
 OBJ = $(SRC:.c=.o)

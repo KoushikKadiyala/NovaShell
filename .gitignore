@@ -1,6 +1,17 @@
+# Build artifacts
+*.o
+NovaShell
+
 # Editor directories
 .vscode/
 
+# Temporary files
+*~
+*.swp
+*.tmp
 
-# assets/
+# OS generated files
+.DS_Store
+
+# Images and assets
 images/
