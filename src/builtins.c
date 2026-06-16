@@ -5,8 +5,10 @@
 
 #define PATH_MAX 4096
 
+// Remember the previous working directory for `cd -` behavior.
 static char previous_dir[PATH_MAX] = "";
 
+// Handle builtin commands. Currently supports `cd`.
 int handle_builtin(char *argv[]) {
 
     if (strcmp(argv[0], "cd") == 0) {

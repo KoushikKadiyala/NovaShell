@@ -6,7 +6,8 @@
 
 #include "../include/launcher.h"
 
-
+// Set up redirection and exec the requested command.
+// Supported operators are <, >, and >>.
 void launch_process(char *argv[])
 {
     char *input_file = NULL;
@@ -95,4 +96,3 @@ void launch_process(char *argv[])
     perror("Command failed");
     _exit(1);
 }
-

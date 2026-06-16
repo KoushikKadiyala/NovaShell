@@ -8,8 +8,7 @@
 #include "../include/launcher.h"
 #include "../include/process.h"
 
-
-
+// Decide whether the command includes a pipeline or is a single command.
 void execute_command(char *argv[])
 {
     int has_pipe = 0;
@@ -21,19 +20,18 @@ void execute_command(char *argv[])
         {
             has_pipe = 1;
             
-        
-         if (i == 0)
-    {
-        printf("Syntax error before pipe\n");
-        return;
-    }
+            if (i == 0)
+            {
+                printf("Syntax error before pipe\n");
+                return;
+            }
 
-    if (argv[i + 1] == NULL)
-    {
-        printf("Syntax error after pipe\n");
-        return;
-    }
-    }
+            if (argv[i + 1] == NULL)
+            {
+                printf("Syntax error after pipe\n");
+                return;
+            }
+        }
     }
 
     if (has_pipe)

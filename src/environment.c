@@ -1,9 +1,11 @@
-#include<stdlib.h>
+#include <stdlib.h>
 
 #include "../include/environment.h"
 
 extern char **environ;
 
+// Replace argv tokens starting with '$' by their environment values.
+// This only supports whole-token variable expansion, such as `$HOME`.
 void expand_variables(char *argv[]) {
     for (int i = 0; argv[i] != NULL; i++) {
         if (argv[i][0] == '$') {
@@ -11,9 +13,9 @@ void expand_variables(char *argv[]) {
             char *value = getenv(var_name);
 
             if (value != NULL)
-             {
+            {
                 argv[i] = value;
-            } 
+            }
             else {
                 argv[i] = "";
             }

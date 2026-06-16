@@ -9,6 +9,7 @@
 
 #define MAX_COMMANDS 100
 
+// Execute a single non-pipelined command using fork/exec.
 void execute_simple_command(char *argv[])
 {
     pid_t pid = fork();
@@ -28,6 +29,7 @@ void execute_simple_command(char *argv[])
     waitpid(pid, NULL, 0);
 }
 
+// Split argv into separate commands for pipeline execution.
 int parse_pipeline(char *argv[], char **commands[]) {
     int count = 0;
     commands[count++] = argv;
@@ -42,6 +44,7 @@ int parse_pipeline(char *argv[], char **commands[]) {
     return count;
 }
 
+// Launch a pipeline of child processes, connecting STDOUT/STDIN with pipes.
 int launch_pipeline(char **commands[], int count) {
     int prev_read = -1;
     pid_t pids[MAX_COMMANDS];
@@ -91,6 +94,7 @@ int launch_pipeline(char **commands[], int count) {
     return 0;
 }
 
+// Execute a parsed pipeline using the pipeline helper functions.
 void execute_pipe_command(char *argv[]){
     char **commands[MAX_COMMANDS];
 

@@ -96,7 +96,7 @@ NovaShell/
 │   ├── launcher.h          # External program launching
 │   ├── process.h           # Process management (fork, wait)
 │   ├── shell.h             # Main shell loop interface
-│   ├── builtins.h          # Built-in commands (cd, pwd, exit)
+│   ├── builtins.h          # Built-in commands (cd, exit)
 │   ├── colours.h           # Terminal color codes
 │   └── environment.h       # Environment variable handling
 ├── src/                     # Implementation files
