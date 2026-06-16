@@ -125,8 +125,8 @@ NovaShell/
 ### Build from Source
 
 ```bash
-git clone https://github.com/KoushikKadiyala/my_shell
-cd my_shell
+git clone https://github.com/KoushikKadiyala/NovaShell.git
+cd NovaShell
 make
 ```
 
