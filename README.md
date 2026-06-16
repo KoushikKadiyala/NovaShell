@@ -2,7 +2,7 @@
 
 A modular Unix-like shell implemented in C to explore Linux process management, inter-process communication, signal handling, and shell architecture.
 
-***====SCREENSHOTS TO BE ADDED====***
+![NovaShell Demo](images/Screenshot%20From%202026-06-16%2015-54-01.png)
 
 ## Features
 
