@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -pedantic -g
 INCLUDES = -Iinclude
-SRC = src/main.c src/shell.c src/parser.c src/executor.c src/builtins.c src/environment.c src/launcher.c src/process.c
+SRC = CLI/main.c CLI/shell.c engine/parser.c engine/executor.c engine/builtins.c engine/environment.c engine/launcher.c engine/process.c
 OBJ = $(SRC:.c=.o)
 TARGET = NovaShell
 LIBS = -lreadline
