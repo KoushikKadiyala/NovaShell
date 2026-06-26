@@ -1,12 +1,21 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror -pedantic -g
-INCLUDES = -Iinclude
-SRC = CLI/main.c CLI/shell.c engine/parser.c engine/executor.c engine/builtins.c engine/environment.c engine/launcher.c engine/process.c
-OBJ = $(SRC:.c=.o)
-TARGET = NovaShell
-LIBS = -lreadline
+# compiler
+CC := gcc
 
-.PHONY: all clean distclean
+# compiler flags
+CFLAGS := -Wall -Wextra -Werror -pedantic -g
+
+# include directories
+INCLUDES := -Iinclude
+
+# source files and target
+SRC := CLI/main.c CLI/shell.c engine/core.c engine/parser.c engine/executor.c engine/builtins.c engine/environment.c engine/launcher.c engine/process.c engine/io.c
+OBJ := $(SRC:.c=.o)
+TARGET := NovaShell
+
+# libraries
+LIBS := -lreadline
+
+.PHONY: all clean fclean rebuild run
 
 all: $(TARGET)
 
@@ -19,5 +28,8 @@ $(TARGET): $(OBJ)
 clean:
 	rm -f $(OBJ)
 
-distclean: clean
+fclean: clean
 	rm -f $(TARGET)
+run: $(TARGET)
+	./$(TARGET)
+rebuild: fclean all	

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -7,6 +6,7 @@
 #include "../include/executor.h"
 #include "../include/launcher.h"
 #include "../include/process.h"
+#include "../include/io.h"
 
 // Decide whether the command includes a pipeline or is a single command.
 static int is_operator(const char *token)
@@ -18,13 +18,13 @@ static int validate_command_segment(char *argv[])
 {
     if (argv[0] == NULL)
     {
-        printf("Syntax error: empty command\n");
+        shell_printf("Syntax error: empty command\n");
         return 0;
     }
 
     if (is_operator(argv[0]))
     {
-        printf("Syntax error: invalid command start '%s'\n", argv[0]);
+        shell_printf("Syntax error: invalid command start '%s'\n", argv[0]);
         return 0;
     }
 
@@ -44,19 +44,19 @@ void execute_command(char *argv[])
             
             if (i == 0)
             {
-                printf("Syntax error before pipe\n");
+                shell_printf("Syntax error before pipe\n");
                 return;
             }
 
             if (argv[i + 1] == NULL)
             {
-                printf("Syntax error after pipe\n");
+                shell_printf("Syntax error after pipe\n");
                 return;
             }
 
             if (is_operator(argv[i + 1]))
             {
-                printf("Syntax error: invalid command start '%s'\n", argv[i + 1]);
+                shell_printf("Syntax error: invalid command start '%s'\n", argv[i + 1]);
                 return;
             }
         }

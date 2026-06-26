@@ -1,7 +1,48 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "../include/parser.h"
+
+static const char *parse_operator(char **p)
+{
+    if (**p == '|')
+    {
+        (*p)++;
+        return "|";
+    }
+
+    if (**p == '<')
+    {
+        (*p)++;
+        return "<";
+    }
+
+    if (**p == '>')
+    {
+        if (*((*p) + 1) == '>')
+        {
+            *p += 2;
+            return ">>";
+        }
+
+        (*p)++;
+        return ">";
+    }
+
+    return NULL;
+}
+
+static void append_escaped_char(char **dst, char **src)
+{
+    (*src)++;
+    if (**src != '\0')
+    {
+        **dst = **src;
+        (*dst)++;
+        (*src)++;
+    }
+}
 
 void parse_input(char *input, char *argv[])
 {
@@ -10,104 +51,86 @@ void parse_input(char *input, char *argv[])
 
     while (*p)
     {
-        // Skip whitespace between tokens.
-        while (*p == ' ' || *p == '\t')
+        while (isspace((unsigned char)*p))
         {
+            *p = '\0';
             p++;
         }
 
         if (*p == '\0')
             break;
 
-        if (*p == '|')
+        const char *op = parse_operator(&p);
+        if (op != NULL)
         {
-            argv[argc++] = "|";
-            p++;
+            argv[argc++] = (char *)op;
             continue;
         }
 
-        if (*p == '<')
-        {
-            argv[argc++] = "<";
-            p++;
-            continue;
-        }
-
-        if (*p == '>')
-        {
-            if (*(p + 1) == '>')
-            {
-                argv[argc++] = ">>";
-                p += 2;
-            }
-            else
-            {
-                argv[argc++] = ">";
-                p++;
-            }
-            continue;
-        }
-
-        // Start a regular token.
         argv[argc++] = p;
 
         if (*p == '"' || *p == '\'')
         {
             char quote = *p;
-            p++;
-            argv[argc - 1] = p;
+            char *src = p + 1;
+            char *dst = p;
+            argv[argc - 1] = dst;
 
-            while (*p != quote && *p != '\0')
+            while (*src && *src != quote)
             {
-                p++;
-            }
-
-            if (*p == quote)
-            {
-                *p = '\0';
-                p++;
-            }
-        }
-        else
-        {
-            while (*p != '\0' && *p != ' ' && *p != '\t' && *p != '|' && *p != '<' && *p != '>')
-            {
-                p++;
-            }
-
-            if (*p == '\0')
-                break;
-
-            if (*p == ' ' || *p == '\t')
-            {
-                *p = '\0';
-                p++;
-            }
-            else if (*p == '|')
-            {
-                *p = '\0';
-                argv[argc++] = "|";
-                p++;
-            }
-            else if (*p == '<')
-            {
-                *p = '\0';
-                argv[argc++] = "<";
-                p++;
-            }
-            else if (*p == '>')
-            {
-                *p = '\0';
-                if (*(p + 1) == '>')
+                if (quote == '"' && *src == '\\' && *(src + 1))
                 {
-                    argv[argc++] = ">>";
-                    p += 2;
+                    append_escaped_char(&dst, &src);
+                }
+                else if (quote == '\'' && *src == '\\' && *(src + 1) == '\'')
+                {
+                    append_escaped_char(&dst, &src);
                 }
                 else
                 {
-                    argv[argc++] = ">";
-                    p++;
+                    *dst++ = *src++;
                 }
+            }
+
+            *dst = '\0';
+            p = src;
+            if (*p == quote)
+                p++;
+        }
+        else
+        {
+            char *src = p;
+            char *dst = p;
+
+            while (*src && !isspace((unsigned char)*src) && *src != '|' && *src != '<' && *src != '>')
+            {
+                if (*src == '\\' && *(src + 1))
+                {
+                    append_escaped_char(&dst, &src);
+                }
+                else
+                {
+                    *dst++ = *src++;
+                }
+            }
+            char sep = *src;
+            *dst = '\0';
+            p = src;
+
+            if (sep == '\0')
+                break;
+
+            if (sep == '|' || sep == '<' || sep == '>')
+            {
+                const char *op = parse_operator(&p);
+                if (op != NULL)
+                {
+                    argv[argc++] = (char *)op;
+                }
+            }
+            else if (isspace((unsigned char)sep))
+            {
+                p++;
             }
         }
     }

@@ -1,0 +1,24 @@
+/* Monokai Theme */
+QWidget {
+    background-color: #272822;
+    color: #f8f8f2;
+}
+
+QPlainTextEdit {
+    background-color: #272822;
+    color: #f8f8f2;
+    border: 1px solid #3e3d32;
+    selection-background-color: #49483e;
+    selection-color: #f8f8f2;
+}
+
+QMainWindow {
+    background-color: #272822;
+    color: #f8f8f2;
+}
+
+QStatusBar {
+    background-color: #66d9ef;
+    color: #272822;
+    border-top: 1px solid #3e3d32;
+}

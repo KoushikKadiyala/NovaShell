@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+#include "../include/io.h"
+
 #define PATH_MAX 4096
 
 // Remember the previous working directory for `cd -` behavior.
@@ -26,19 +28,19 @@ int handle_builtin(char *argv[]) {
             target = getenv("HOME");
 
             if (target == NULL) {
-                printf("cd: HOME not set\n");
+                shell_printf("cd: HOME not set\n");
                 return 1;
             }
         }
         else if (strcmp(argv[1], "-") == 0) {
 
             if (previous_dir[0] == '\0') {
-                printf("cd: OLDPWD not set\n");
+                shell_printf("cd: OLDPWD not set\n");
                 return 1;
             }
 
             target = previous_dir;
-            printf("%s\n", target);
+            shell_printf("%s\n", target);
         }
         else {
 

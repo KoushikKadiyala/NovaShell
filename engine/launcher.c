@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 #include "../include/launcher.h"
+#include "../include/io.h"
 
 // Set up redirection and exec the requested command.
 // Supported operators are <, >, and >>.
@@ -20,31 +21,29 @@ void launch_process(char *argv[])
         {
             if (argv[i + 1] == NULL)
             {
-                printf("Syntax error: missing input file\n");
+                shell_printf("Syntax error: missing input file\n");
                 _exit(1);
             }
 
             input_file = argv[i + 1];
             argv[i] = NULL;
         }
-
         else if (strcmp(argv[i], ">") == 0)
         {
             if (argv[i + 1] == NULL)
             {
-                printf("Syntax error: missing output file\n");
+                shell_printf("Syntax error: missing output file\n");
                 _exit(1);
             }
 
             output_file = argv[i + 1];
             argv[i] = NULL;
         }
-
         else if (strcmp(argv[i], ">>") == 0)
         {
             if (argv[i + 1] == NULL)
             {
-                printf("Syntax error: missing output file\n");
+                shell_printf("Syntax error: missing output file\n");
                 _exit(1);
             }
 

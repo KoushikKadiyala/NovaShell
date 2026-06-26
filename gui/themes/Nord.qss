@@ -1,0 +1,24 @@
+/* Nord Theme */
+QWidget {
+    background-color: #2e3440;
+    color: #eceff4;
+}
+
+QPlainTextEdit {
+    background-color: #2e3440;
+    color: #eceff4;
+    border: 1px solid #3b4252;
+    selection-background-color: #88c0d0;
+    selection-color: #2e3440;
+}
+
+QMainWindow {
+    background-color: #2e3440;
+    color: #eceff4;
+}
+
+QStatusBar {
+    background-color: #81a1c1;
+    color: #2e3440;
+    border-top: 1px solid #3b4252;
+}

@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -std=gnu++17 -o CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp",
+  "file": "/home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o -c /home/kk/NovaShell/engine/core.c",
+  "file": "/home/kk/NovaShell/engine/core.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o -c /home/kk/NovaShell/engine/parser.c",
+  "file": "/home/kk/NovaShell/engine/parser.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o -c /home/kk/NovaShell/engine/executor.c",
+  "file": "/home/kk/NovaShell/engine/executor.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o -c /home/kk/NovaShell/engine/builtins.c",
+  "file": "/home/kk/NovaShell/engine/builtins.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o -c /home/kk/NovaShell/engine/environment.c",
+  "file": "/home/kk/NovaShell/engine/environment.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o -c /home/kk/NovaShell/engine/launcher.c",
+  "file": "/home/kk/NovaShell/engine/launcher.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o -c /home/kk/NovaShell/engine/process.c",
+  "file": "/home/kk/NovaShell/engine/process.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o -c /home/kk/NovaShell/engine/io.c",
+  "file": "/home/kk/NovaShell/engine/io.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp",
+  "file": "/home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/app/main.cpp.o -c /home/kk/NovaShell/gui/app/main.cpp",
+  "file": "/home/kk/NovaShell/gui/app/main.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/app/main.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o -c /home/kk/NovaShell/gui/app/MainWindow.cpp",
+  "file": "/home/kk/NovaShell/gui/app/MainWindow.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o -c /home/kk/NovaShell/gui/widgets/ShellView.cpp",
+  "file": "/home/kk/NovaShell/gui/widgets/ShellView.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o -c /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp",
+  "file": "/home/kk/NovaShell/gui/widgets/ThemeSelector.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o -c /home/kk/NovaShell/gui/widgets/ShellEdit.cpp",
+  "file": "/home/kk/NovaShell/gui/widgets/ShellEdit.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o"
+}
+]
