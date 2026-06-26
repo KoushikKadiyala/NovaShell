@@ -2,13 +2,13 @@
 CC := gcc
 
 # compiler flags
-CFLAGS := -Wall -Wextra -Werror -pedantic -g
+CFLAGS := -Wall -Wextra -Werror -pedantic -g -std=c11 -fsanitize=address
 
 # include directories
 INCLUDES := -Iinclude
 
 # source files and target
-SRC := CLI/main.c CLI/shell.c engine/core.c engine/parser.c engine/executor.c engine/builtins.c engine/environment.c engine/launcher.c engine/process.c engine/io.c
+SRC := CLI/main.c CLI/shell.c engine/core.c engine/parser.c engine/executor.c engine/builtins.c engine/environment.c engine/launcher.c engine/process.c engine/io.c engine/memory.c
 OBJ := $(SRC:.c=.o)
 TARGET := NovaShell
 

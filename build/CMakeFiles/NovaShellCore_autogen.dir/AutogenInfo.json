@@ -308,6 +308,7 @@
 		[ "/home/kk/NovaShell/engine/executor.c", "MU", null ],
 		[ "/home/kk/NovaShell/engine/io.c", "MU", null ],
 		[ "/home/kk/NovaShell/engine/launcher.c", "MU", null ],
+		[ "/home/kk/NovaShell/engine/memory.c", "MU", null ],
 		[ "/home/kk/NovaShell/engine/parser.c", "MU", null ],
 		[ "/home/kk/NovaShell/engine/process.c", "MU", null ]
 	],

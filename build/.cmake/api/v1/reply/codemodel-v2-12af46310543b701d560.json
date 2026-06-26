@@ -535,7 +535,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "NovaShellCore::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-NovaShellCore-Debug-87168e01273f1fa7b667.json",
+					"jsonFile" : "target-NovaShellCore-Debug-b69e9ec1cb5b0a5ea12b.json",
 					"name" : "NovaShellCore",
 					"projectIndex" : 0
 				},
@@ -556,7 +556,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "NovaShellGUI::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-NovaShellGUI-Debug-5eebb1246e3bd5b09341.json",
+					"jsonFile" : "target-NovaShellGUI-Debug-43d57363884ab63d48c6.json",
 					"name" : "NovaShellGUI",
 					"projectIndex" : 0
 				},

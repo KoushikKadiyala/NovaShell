@@ -434,6 +434,30 @@ home/kk/NovaShell/engine/launcher.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.s
 .PHONY : home/kk/NovaShell/engine/launcher.c.s
 
+home/kk/NovaShell/engine/memory.o: home/kk/NovaShell/engine/memory.c.o
+.PHONY : home/kk/NovaShell/engine/memory.o
+
+# target to build an object file
+home/kk/NovaShell/engine/memory.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o
+.PHONY : home/kk/NovaShell/engine/memory.c.o
+
+home/kk/NovaShell/engine/memory.i: home/kk/NovaShell/engine/memory.c.i
+.PHONY : home/kk/NovaShell/engine/memory.i
+
+# target to preprocess a source file
+home/kk/NovaShell/engine/memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.i
+.PHONY : home/kk/NovaShell/engine/memory.c.i
+
+home/kk/NovaShell/engine/memory.s: home/kk/NovaShell/engine/memory.c.s
+.PHONY : home/kk/NovaShell/engine/memory.s
+
+# target to generate assembly for a file
+home/kk/NovaShell/engine/memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.s
+.PHONY : home/kk/NovaShell/engine/memory.c.s
+
 home/kk/NovaShell/engine/parser.o: home/kk/NovaShell/engine/parser.c.o
 .PHONY : home/kk/NovaShell/engine/parser.o
 
@@ -598,6 +622,9 @@ help:
 	@echo "... home/kk/NovaShell/engine/launcher.o"
 	@echo "... home/kk/NovaShell/engine/launcher.i"
 	@echo "... home/kk/NovaShell/engine/launcher.s"
+	@echo "... home/kk/NovaShell/engine/memory.o"
+	@echo "... home/kk/NovaShell/engine/memory.i"
+	@echo "... home/kk/NovaShell/engine/memory.s"
 	@echo "... home/kk/NovaShell/engine/parser.o"
 	@echo "... home/kk/NovaShell/engine/parser.i"
 	@echo "... home/kk/NovaShell/engine/parser.s"

@@ -55,6 +55,12 @@
 },
 {
   "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/gcc  -I/home/kk/NovaShell/build/NovaShellCore_autogen/include -I/home/kk/NovaShell/gui/../include -g -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o -c /home/kk/NovaShell/engine/memory.c",
+  "file": "/home/kk/NovaShell/engine/memory.c",
+  "output": "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
   "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -I/home/kk/NovaShell/gui/../include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp",
   "file": "/home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o"

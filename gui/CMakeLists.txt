@@ -18,6 +18,7 @@ add_library(NovaShellCore STATIC
     ../engine/launcher.c
     ../engine/process.c
     ../engine/io.c
+    ../engine/memory.c
 )
 target_include_directories(NovaShellCore
     PUBLIC

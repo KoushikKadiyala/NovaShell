@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kk/NovaShell/engine/executor.c" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o" "gcc" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o.d"
   "/home/kk/NovaShell/engine/io.c" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o" "gcc" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o.d"
   "/home/kk/NovaShell/engine/launcher.c" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o" "gcc" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o.d"
+  "/home/kk/NovaShell/engine/memory.c" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o" "gcc" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o.d"
   "/home/kk/NovaShell/engine/parser.c" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o" "gcc" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o.d"
   "/home/kk/NovaShell/engine/process.c" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o" "gcc" "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o.d"
   "" "NovaShellCore_autogen/timestamp" "custom" "NovaShellCore_autogen/deps"

@@ -1,11 +1,11 @@
 #ifndef CORE_H
 #define CORE_H
 
-#ifdef _cplusplus
-extern "c"{
+#ifdef __cplusplus
+extern "C"{
 #endif
 int shell_execute(const char *command);
-#ifdef _cplusplus
+#ifdef __cplusplus
 }
 #endif
 #endif

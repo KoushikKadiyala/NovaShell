@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o.d"
   "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o"
   "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o.d"
+  "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o"
+  "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o.d"
   "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o"
   "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o.d"
   "CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o"

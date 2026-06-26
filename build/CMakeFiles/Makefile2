@@ -93,12 +93,12 @@ CMakeFiles/NovaShellCore.dir/all: CMakeFiles/NovaShellCore_autogen_timestamp_dep
 CMakeFiles/NovaShellCore.dir/all: CMakeFiles/NovaShellCore_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target NovaShellCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target NovaShellCore"
 .PHONY : CMakeFiles/NovaShellCore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NovaShellCore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NovaShellCore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 0
 .PHONY : CMakeFiles/NovaShellCore.dir/rule
@@ -110,7 +110,7 @@ NovaShellCore: CMakeFiles/NovaShellCore.dir/rule
 # codegen rule for target.
 CMakeFiles/NovaShellCore.dir/codegen: CMakeFiles/NovaShellCore_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target NovaShellCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Finished codegen for target NovaShellCore"
 .PHONY : CMakeFiles/NovaShellCore.dir/codegen
 
 # clean rule for target.
@@ -127,12 +127,12 @@ CMakeFiles/NovaShellGUI.dir/all: CMakeFiles/NovaShellGUI_autogen_timestamp_deps.
 CMakeFiles/NovaShellGUI.dir/all: CMakeFiles/NovaShellGUI_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20 "Built target NovaShellGUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=14,15,16,17,18,19,20,21 "Built target NovaShellGUI"
 .PHONY : CMakeFiles/NovaShellGUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NovaShellGUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NovaShellGUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 0
 .PHONY : CMakeFiles/NovaShellGUI.dir/rule
@@ -144,7 +144,7 @@ NovaShellGUI: CMakeFiles/NovaShellGUI.dir/rule
 # codegen rule for target.
 CMakeFiles/NovaShellGUI.dir/codegen: CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20 "Finished codegen for target NovaShellGUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=14,15,16,17,18,19,20,21 "Finished codegen for target NovaShellGUI"
 .PHONY : CMakeFiles/NovaShellGUI.dir/codegen
 
 # clean rule for target.
@@ -191,7 +191,7 @@ CMakeFiles/NovaShellCore_autogen_timestamp_deps.dir/clean:
 CMakeFiles/NovaShellCore_autogen.dir/all: CMakeFiles/NovaShellCore_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore_autogen.dir/build.make CMakeFiles/NovaShellCore_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore_autogen.dir/build.make CMakeFiles/NovaShellCore_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=12 "Built target NovaShellCore_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=13 "Built target NovaShellCore_autogen"
 .PHONY : CMakeFiles/NovaShellCore_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -208,7 +208,7 @@ NovaShellCore_autogen: CMakeFiles/NovaShellCore_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/NovaShellCore_autogen.dir/codegen: CMakeFiles/NovaShellCore_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore_autogen.dir/build.make CMakeFiles/NovaShellCore_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=12 "Finished codegen for target NovaShellCore_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=13 "Finished codegen for target NovaShellCore_autogen"
 .PHONY : CMakeFiles/NovaShellCore_autogen.dir/codegen
 
 # clean rule for target.
@@ -228,7 +228,7 @@ CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/all: CMakeFiles/NovaShellCore
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 0
 .PHONY : CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/rule
@@ -255,12 +255,12 @@ CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/clean:
 CMakeFiles/NovaShellGUI_autogen.dir/all: CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI_autogen.dir/build.make CMakeFiles/NovaShellGUI_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI_autogen.dir/build.make CMakeFiles/NovaShellGUI_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=21 "Built target NovaShellGUI_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=22 "Built target NovaShellGUI_autogen"
 .PHONY : CMakeFiles/NovaShellGUI_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NovaShellGUI_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NovaShellGUI_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kk/NovaShell/build/CMakeFiles 0
 .PHONY : CMakeFiles/NovaShellGUI_autogen.dir/rule
@@ -272,7 +272,7 @@ NovaShellGUI_autogen: CMakeFiles/NovaShellGUI_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/NovaShellGUI_autogen.dir/codegen: CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI_autogen.dir/build.make CMakeFiles/NovaShellGUI_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=21 "Finished codegen for target NovaShellGUI_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=22 "Finished codegen for target NovaShellGUI_autogen"
 .PHONY : CMakeFiles/NovaShellGUI_autogen.dir/codegen
 
 # clean rule for target.

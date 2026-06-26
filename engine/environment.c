@@ -1,4 +1,6 @@
+#define _POSIX_C_SOURCE 200809L
 #include <stdlib.h>
+#include <string.h>
 
 #include "../include/environment.h"
 
@@ -14,10 +16,10 @@ void expand_variables(char *argv[]) {
 
             if (value != NULL)
             {
-                argv[i] = value;
+                argv[i] = strdup(value);
             }
             else {
-                argv[i] = "";
+                argv[i] = strdup("");
             }
         }
     }
