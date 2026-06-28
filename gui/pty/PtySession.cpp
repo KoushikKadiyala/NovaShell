@@ -121,11 +121,8 @@ void PtySession::readFromPty()
 
     if (bytes <= 0)
         return;
-        QByteArray data(buffer, bytes);
-qDebug().noquote() << data.toHex(' ');
-emit dataReceived(data);
-
-    //emit dataReceived(QByteArray(buffer, bytes));
+       
+    emit dataReceived(QByteArray(buffer, bytes));
 }
 void PtySession::writeData(const QByteArray &data)
 {   qDebug()<< "writting"<< data;
