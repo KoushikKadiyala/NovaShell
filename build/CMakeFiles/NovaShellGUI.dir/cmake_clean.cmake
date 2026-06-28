@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o.d"
   "CMakeFiles/NovaShellGUI.dir/app/main.cpp.o"
   "CMakeFiles/NovaShellGUI.dir/app/main.cpp.o.d"
+  "CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o"
+  "CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o.d"
   "CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o"
   "CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o.d"
   "CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o"

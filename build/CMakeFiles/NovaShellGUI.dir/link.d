@@ -8,6 +8,7 @@ NovaShellGUI: \
   CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o \
   CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o \
   CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
   libNovaShellCore.a \
   /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2 \
@@ -94,6 +95,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o:
 CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o:
 
 CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2:
 

@@ -40,13 +40,13 @@ template <> constexpr inline auto ShellEdit::qt_create_metaobjectdata<qt_meta_ta
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "ShellEdit",
-        "commandEntered",
+        "bytesTyped",
         "",
-        "command"
+        "data"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'commandEntered'
+        // Signal 'bytesTyped'
         QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
@@ -73,12 +73,12 @@ void ShellEdit::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     auto *_t = static_cast<ShellEdit *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->commandEntered((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->bytesTyped((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (ShellEdit::*)(const QString & )>(_a, &ShellEdit::commandEntered, 0))
+        if (QtMocHelpers::indexOfMethod<void (ShellEdit::*)(const QString & )>(_a, &ShellEdit::bytesTyped, 0))
             return;
     }
 }
@@ -115,7 +115,7 @@ int ShellEdit::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void ShellEdit::commandEntered(const QString & _t1)
+void ShellEdit::bytesTyped(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }

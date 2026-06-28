@@ -506,6 +506,30 @@ home/kk/NovaShell/engine/process.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore.dir/build.make CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.s
 .PHONY : home/kk/NovaShell/engine/process.c.s
 
+pty/PtySession.o: pty/PtySession.cpp.o
+.PHONY : pty/PtySession.o
+
+# target to build an object file
+pty/PtySession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o
+.PHONY : pty/PtySession.cpp.o
+
+pty/PtySession.i: pty/PtySession.cpp.i
+.PHONY : pty/PtySession.i
+
+# target to preprocess a source file
+pty/PtySession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.i
+.PHONY : pty/PtySession.cpp.i
+
+pty/PtySession.s: pty/PtySession.cpp.s
+.PHONY : pty/PtySession.s
+
+# target to generate assembly for a file
+pty/PtySession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s
+.PHONY : pty/PtySession.cpp.s
+
 widgets/ShellEdit.o: widgets/ShellEdit.cpp.o
 .PHONY : widgets/ShellEdit.o
 
@@ -631,6 +655,9 @@ help:
 	@echo "... home/kk/NovaShell/engine/process.o"
 	@echo "... home/kk/NovaShell/engine/process.i"
 	@echo "... home/kk/NovaShell/engine/process.s"
+	@echo "... pty/PtySession.o"
+	@echo "... pty/PtySession.i"
+	@echo "... pty/PtySession.s"
 	@echo "... widgets/ShellEdit.o"
 	@echo "... widgets/ShellEdit.i"
 	@echo "... widgets/ShellEdit.s"

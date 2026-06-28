@@ -11,23 +11,26 @@ ShellEdit::ShellEdit(QWidget *parent)
 
 void ShellEdit::keyPressEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_Return ||
-        event->key() == Qt::Key_Enter)
+    QByteArray data;
+
+    switch (event->key())
     {
-        QTextCursor cursor = textCursor();
+    case Qt::Key_Return:
+    case Qt::Key_Enter:
+        data = "\r";
+        break;
 
-        cursor.movePosition(QTextCursor::End);
-        cursor.select(QTextCursor::LineUnderCursor);
-        QString command = cursor.selectedText();
-        command.remove("❯");
-        command = command.trimmed();
+    case Qt::Key_Backspace:
+        data = "\b";
+        break;
 
-        emit commandEntered(command);
-
-        event->accept();
-        return;
-        }
-    else{
-    QPlainTextEdit::keyPressEvent(event);
+    default:
+        data = event->text().toUtf8();
+        break;
     }
+
+    if (!data.isEmpty())
+        emit bytesTyped(data);
+
+    event->accept();
 }

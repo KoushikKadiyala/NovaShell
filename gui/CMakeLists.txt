@@ -30,6 +30,7 @@ qt_add_executable(NovaShellGUI
     widgets/ShellView.cpp
     widgets/ThemeSelector.cpp
     widgets/ShellEdit.cpp
+    pty/PtySession.cpp
 )
 
 target_link_libraries(NovaShellGUI 

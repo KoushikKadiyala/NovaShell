@@ -1,10 +1,9 @@
-#ifndef SHELLVIEW_H
-#define SHELLVIEW_H
+#pragma once
 
 #include <QWidget>
-#include "ShellEdit.h"
+#include <QByteArray>
 
-class QPlainTextEdit;
+class ShellEdit;
 
 class ShellView : public QWidget
 {
@@ -13,14 +12,12 @@ class ShellView : public QWidget
 public:
     explicit ShellView(QWidget *parent = nullptr);
 
-    void print(const QString &text);
-    void printPrompt();
+public slots:
+    void insert(const QString &text);
 
-private slots:
-    void executeCommand(const QString &command);
+signals:
+    void bytesTyped(const QString &data);
+
 private:
     ShellEdit *shell;
-    QByteArray m_CurrentCommandBuffer;
 };
-
-#endif

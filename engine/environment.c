@@ -15,10 +15,11 @@ void expand_variables(char *argv[]) {
             char *value = getenv(var_name);
 
             if (value != NULL)
-            {
+            {   free(argv[i]);
                 argv[i] = strdup(value);
             }
             else {
+                free(argv[i]);
                 argv[i] = strdup("");
             }
         }

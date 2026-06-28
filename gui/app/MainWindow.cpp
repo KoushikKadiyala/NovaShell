@@ -1,6 +1,7 @@
 #include "MainWindow.h"
 #include "../widgets/ThemeSelector.h"
 #include "../widgets/ShellView.h"
+#include "../pty/PtySession.h"
 
 #include <QWidget>
 #include <QVBoxLayout>
@@ -32,6 +33,21 @@ MainWindow::MainWindow()
     titleLayout->addStretch();
 
     ShellView *shell = new ShellView(container);
+    PtySession *pty = new PtySession(this);
+    connect(pty,
+    &PtySession::dataReceived,
+    shell,
+    &ShellView::insert );
+
+    connect(shell,
+    &ShellView::bytesTyped,
+    pty,
+    [pty](const QString &command){
+        pty->writeData(command.toUtf8());
+    });
+    pty->start();
+
+
     layout->addWidget(titleBar);
     layout->addWidget(shell);
 

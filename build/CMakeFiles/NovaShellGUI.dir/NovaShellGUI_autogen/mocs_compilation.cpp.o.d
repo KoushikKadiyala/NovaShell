@@ -406,6 +406,10 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/UOCYJYXCJW/moc_PtySession.cpp \
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/UOCYJYXCJW/../../../gui/pty/PtySession.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_ShellEdit.cpp \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ShellEdit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
@@ -437,7 +441,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
@@ -462,6 +465,7 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ShellView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ShellEdit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_ThemeSelector.cpp \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ThemeSelector.h

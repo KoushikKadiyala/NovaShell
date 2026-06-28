@@ -12,7 +12,7 @@ public:
     explicit ShellEdit(QWidget *parent = nullptr);
 
 signals:
-    void commandEntered(const QString &command);
+    void bytesTyped(const QString &data);
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;
