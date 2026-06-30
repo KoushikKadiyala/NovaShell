@@ -1,0 +1,28 @@
+/* ===== NovaShell Dracula ===== */
+
+QMainWindow
+{
+    background-color: #282A36;
+}
+
+QWidget
+{
+    background-color: #282A36;
+    color: #F8F8F2;
+}
+
+QPlainTextEdit
+{
+    background-color: #282A36;
+    color: #F8F8F2;
+
+    border: none;
+
+    selection-background-color: #44475A;
+    selection-color: #F8F8F2;
+
+    padding: 12px;
+}
+QWidget#TitleBar{
+    background-color: #282a36;
+}
