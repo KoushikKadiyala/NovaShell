@@ -400,6 +400,12 @@
 			null
 		],
 		[
+			"/home/kk/NovaShell/gui/widgets/NavigationButtons.h",
+			"MU",
+			"IMAN36LHMA/moc_NavigationButtons.cpp",
+			null
+		],
+		[
 			"/home/kk/NovaShell/gui/widgets/ShellEdit.h",
 			"MU",
 			"IMAN36LHMA/moc_ShellEdit.cpp",
@@ -416,6 +422,12 @@
 			"MU",
 			"IMAN36LHMA/moc_ThemeSelector.cpp",
 			null
+		],
+		[
+			"/home/kk/NovaShell/gui/widgets/TitleBar.h",
+			"MU",
+			"IMAN36LHMA/moc_TitleBar.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -431,7 +443,6 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/kk/NovaShell/include",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
@@ -467,7 +478,11 @@
 	],
 	"MOC_PREDEFS_FILE" : "/home/kk/NovaShell/build/NovaShellGUI_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [ "/home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp" ],
+	"MOC_SKIP" : 
+	[
+		"/home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp",
+		"/home/kk/NovaShell/build/NovaShell_autogen/mocs_compilation.cpp"
+	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/kk/NovaShell/build/CMakeFiles/NovaShellGUI_autogen.dir/ParseCache.txt",
@@ -481,13 +496,19 @@
 		[ "/home/kk/NovaShell/gui/app/MainWindow.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/app/main.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/pty/PtySession.cpp", "MU", null ],
+		[ "/home/kk/NovaShell/gui/widgets/NavigationButtons.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/ShellEdit.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/ShellView.cpp", "MU", null ],
-		[ "/home/kk/NovaShell/gui/widgets/ThemeSelector.cpp", "MU", null ]
+		[ "/home/kk/NovaShell/gui/widgets/ThemeSelector.cpp", "MU", null ],
+		[ "/home/kk/NovaShell/gui/widgets/TitleBar.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [ "/home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp" ],
+	"UIC_SKIP" : 
+	[
+		"/home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp",
+		"/home/kk/NovaShell/build/NovaShell_autogen/mocs_compilation.cpp"
+	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0

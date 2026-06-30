@@ -1,8 +1,11 @@
 /home/kk/NovaShell/build/CMakeFiles/NovaShellCore.dir
+/home/kk/NovaShell/build/CMakeFiles/NovaShell.dir
 /home/kk/NovaShell/build/CMakeFiles/NovaShellGUI.dir
 /home/kk/NovaShell/build/CMakeFiles/edit_cache.dir
 /home/kk/NovaShell/build/CMakeFiles/rebuild_cache.dir
 /home/kk/NovaShell/build/CMakeFiles/NovaShellCore_autogen_timestamp_deps.dir
 /home/kk/NovaShell/build/CMakeFiles/NovaShellCore_autogen.dir
+/home/kk/NovaShell/build/CMakeFiles/NovaShell_autogen_timestamp_deps.dir
+/home/kk/NovaShell/build/CMakeFiles/NovaShell_autogen.dir
 /home/kk/NovaShell/build/CMakeFiles/NovaShellGUI_autogen_timestamp_deps.dir
 /home/kk/NovaShell/build/CMakeFiles/NovaShellGUI_autogen.dir

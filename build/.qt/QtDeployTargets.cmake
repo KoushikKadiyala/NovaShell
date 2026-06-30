@@ -1,4 +1,6 @@
 set(__QT_DEPLOY_TARGET_NovaShellCore_FILE /home/kk/NovaShell/build/libNovaShellCore.a)
 set(__QT_DEPLOY_TARGET_NovaShellCore_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_NovaShell_FILE /home/kk/NovaShell/build/NovaShell)
+set(__QT_DEPLOY_TARGET_NovaShell_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_NovaShellGUI_FILE /home/kk/NovaShell/build/NovaShellGUI)
 set(__QT_DEPLOY_TARGET_NovaShellGUI_TYPE EXECUTABLE)

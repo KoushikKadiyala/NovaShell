@@ -130,6 +130,19 @@ NovaShellCore/fast:
 .PHONY : NovaShellCore/fast
 
 #=============================================================================
+# Target rules for targets named NovaShell
+
+# Build rule for target.
+NovaShell: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NovaShell
+.PHONY : NovaShell
+
+# fast build rule for target.
+NovaShell/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/build
+.PHONY : NovaShell/fast
+
+#=============================================================================
 # Target rules for targets named NovaShellGUI
 
 # Build rule for target.
@@ -167,6 +180,32 @@ NovaShellCore_autogen: cmake_check_build_system
 NovaShellCore_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellCore_autogen.dir/build.make CMakeFiles/NovaShellCore_autogen.dir/build
 .PHONY : NovaShellCore_autogen/fast
+
+#=============================================================================
+# Target rules for targets named NovaShell_autogen_timestamp_deps
+
+# Build rule for target.
+NovaShell_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NovaShell_autogen_timestamp_deps
+.PHONY : NovaShell_autogen_timestamp_deps
+
+# fast build rule for target.
+NovaShell_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell_autogen_timestamp_deps.dir/build.make CMakeFiles/NovaShell_autogen_timestamp_deps.dir/build
+.PHONY : NovaShell_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named NovaShell_autogen
+
+# Build rule for target.
+NovaShell_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NovaShell_autogen
+.PHONY : NovaShell_autogen
+
+# fast build rule for target.
+NovaShell_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell_autogen.dir/build.make CMakeFiles/NovaShell_autogen.dir/build
+.PHONY : NovaShell_autogen/fast
 
 #=============================================================================
 # Target rules for targets named NovaShellGUI_autogen_timestamp_deps
@@ -242,6 +281,30 @@ NovaShellGUI_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.s
 .PHONY : NovaShellGUI_autogen/mocs_compilation.cpp.s
 
+NovaShell_autogen/mocs_compilation.o: NovaShell_autogen/mocs_compilation.cpp.o
+.PHONY : NovaShell_autogen/mocs_compilation.o
+
+# target to build an object file
+NovaShell_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/NovaShell_autogen/mocs_compilation.cpp.o
+.PHONY : NovaShell_autogen/mocs_compilation.cpp.o
+
+NovaShell_autogen/mocs_compilation.i: NovaShell_autogen/mocs_compilation.cpp.i
+.PHONY : NovaShell_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+NovaShell_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/NovaShell_autogen/mocs_compilation.cpp.i
+.PHONY : NovaShell_autogen/mocs_compilation.cpp.i
+
+NovaShell_autogen/mocs_compilation.s: NovaShell_autogen/mocs_compilation.cpp.s
+.PHONY : NovaShell_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+NovaShell_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/NovaShell_autogen/mocs_compilation.cpp.s
+.PHONY : NovaShell_autogen/mocs_compilation.cpp.s
+
 app/MainWindow.o: app/MainWindow.cpp.o
 .PHONY : app/MainWindow.o
 
@@ -289,6 +352,54 @@ app/main.s: app/main.cpp.s
 app/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/app/main.cpp.s
 .PHONY : app/main.cpp.s
+
+home/kk/NovaShell/CLI/main.o: home/kk/NovaShell/CLI/main.c.o
+.PHONY : home/kk/NovaShell/CLI/main.o
+
+# target to build an object file
+home/kk/NovaShell/CLI/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/home/kk/NovaShell/CLI/main.c.o
+.PHONY : home/kk/NovaShell/CLI/main.c.o
+
+home/kk/NovaShell/CLI/main.i: home/kk/NovaShell/CLI/main.c.i
+.PHONY : home/kk/NovaShell/CLI/main.i
+
+# target to preprocess a source file
+home/kk/NovaShell/CLI/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/home/kk/NovaShell/CLI/main.c.i
+.PHONY : home/kk/NovaShell/CLI/main.c.i
+
+home/kk/NovaShell/CLI/main.s: home/kk/NovaShell/CLI/main.c.s
+.PHONY : home/kk/NovaShell/CLI/main.s
+
+# target to generate assembly for a file
+home/kk/NovaShell/CLI/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/home/kk/NovaShell/CLI/main.c.s
+.PHONY : home/kk/NovaShell/CLI/main.c.s
+
+home/kk/NovaShell/CLI/shell.o: home/kk/NovaShell/CLI/shell.c.o
+.PHONY : home/kk/NovaShell/CLI/shell.o
+
+# target to build an object file
+home/kk/NovaShell/CLI/shell.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/home/kk/NovaShell/CLI/shell.c.o
+.PHONY : home/kk/NovaShell/CLI/shell.c.o
+
+home/kk/NovaShell/CLI/shell.i: home/kk/NovaShell/CLI/shell.c.i
+.PHONY : home/kk/NovaShell/CLI/shell.i
+
+# target to preprocess a source file
+home/kk/NovaShell/CLI/shell.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/home/kk/NovaShell/CLI/shell.c.i
+.PHONY : home/kk/NovaShell/CLI/shell.c.i
+
+home/kk/NovaShell/CLI/shell.s: home/kk/NovaShell/CLI/shell.c.s
+.PHONY : home/kk/NovaShell/CLI/shell.s
+
+# target to generate assembly for a file
+home/kk/NovaShell/CLI/shell.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShell.dir/build.make CMakeFiles/NovaShell.dir/home/kk/NovaShell/CLI/shell.c.s
+.PHONY : home/kk/NovaShell/CLI/shell.c.s
 
 home/kk/NovaShell/engine/builtins.o: home/kk/NovaShell/engine/builtins.c.o
 .PHONY : home/kk/NovaShell/engine/builtins.o
@@ -530,6 +641,30 @@ pty/PtySession.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s
 .PHONY : pty/PtySession.cpp.s
 
+widgets/NavigationButtons.o: widgets/NavigationButtons.cpp.o
+.PHONY : widgets/NavigationButtons.o
+
+# target to build an object file
+widgets/NavigationButtons.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o
+.PHONY : widgets/NavigationButtons.cpp.o
+
+widgets/NavigationButtons.i: widgets/NavigationButtons.cpp.i
+.PHONY : widgets/NavigationButtons.i
+
+# target to preprocess a source file
+widgets/NavigationButtons.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.i
+.PHONY : widgets/NavigationButtons.cpp.i
+
+widgets/NavigationButtons.s: widgets/NavigationButtons.cpp.s
+.PHONY : widgets/NavigationButtons.s
+
+# target to generate assembly for a file
+widgets/NavigationButtons.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.s
+.PHONY : widgets/NavigationButtons.cpp.s
+
 widgets/ShellEdit.o: widgets/ShellEdit.cpp.o
 .PHONY : widgets/ShellEdit.o
 
@@ -602,6 +737,30 @@ widgets/ThemeSelector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s
 .PHONY : widgets/ThemeSelector.cpp.s
 
+widgets/TitleBar.o: widgets/TitleBar.cpp.o
+.PHONY : widgets/TitleBar.o
+
+# target to build an object file
+widgets/TitleBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o
+.PHONY : widgets/TitleBar.cpp.o
+
+widgets/TitleBar.i: widgets/TitleBar.cpp.i
+.PHONY : widgets/TitleBar.i
+
+# target to preprocess a source file
+widgets/TitleBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.i
+.PHONY : widgets/TitleBar.cpp.i
+
+widgets/TitleBar.s: widgets/TitleBar.cpp.s
+.PHONY : widgets/TitleBar.s
+
+# target to generate assembly for a file
+widgets/TitleBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.s
+.PHONY : widgets/TitleBar.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -614,6 +773,9 @@ help:
 	@echo "... NovaShellCore_autogen_timestamp_deps"
 	@echo "... NovaShellGUI_autogen"
 	@echo "... NovaShellGUI_autogen_timestamp_deps"
+	@echo "... NovaShell_autogen"
+	@echo "... NovaShell_autogen_timestamp_deps"
+	@echo "... NovaShell"
 	@echo "... NovaShellCore"
 	@echo "... NovaShellGUI"
 	@echo "... NovaShellCore_autogen/mocs_compilation.o"
@@ -622,12 +784,21 @@ help:
 	@echo "... NovaShellGUI_autogen/mocs_compilation.o"
 	@echo "... NovaShellGUI_autogen/mocs_compilation.i"
 	@echo "... NovaShellGUI_autogen/mocs_compilation.s"
+	@echo "... NovaShell_autogen/mocs_compilation.o"
+	@echo "... NovaShell_autogen/mocs_compilation.i"
+	@echo "... NovaShell_autogen/mocs_compilation.s"
 	@echo "... app/MainWindow.o"
 	@echo "... app/MainWindow.i"
 	@echo "... app/MainWindow.s"
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... home/kk/NovaShell/CLI/main.o"
+	@echo "... home/kk/NovaShell/CLI/main.i"
+	@echo "... home/kk/NovaShell/CLI/main.s"
+	@echo "... home/kk/NovaShell/CLI/shell.o"
+	@echo "... home/kk/NovaShell/CLI/shell.i"
+	@echo "... home/kk/NovaShell/CLI/shell.s"
 	@echo "... home/kk/NovaShell/engine/builtins.o"
 	@echo "... home/kk/NovaShell/engine/builtins.i"
 	@echo "... home/kk/NovaShell/engine/builtins.s"
@@ -658,6 +829,9 @@ help:
 	@echo "... pty/PtySession.o"
 	@echo "... pty/PtySession.i"
 	@echo "... pty/PtySession.s"
+	@echo "... widgets/NavigationButtons.o"
+	@echo "... widgets/NavigationButtons.i"
+	@echo "... widgets/NavigationButtons.s"
 	@echo "... widgets/ShellEdit.o"
 	@echo "... widgets/ShellEdit.i"
 	@echo "... widgets/ShellEdit.s"
@@ -667,6 +841,9 @@ help:
 	@echo "... widgets/ThemeSelector.o"
 	@echo "... widgets/ThemeSelector.i"
 	@echo "... widgets/ThemeSelector.s"
+	@echo "... widgets/TitleBar.o"
+	@echo "... widgets/TitleBar.i"
+	@echo "... widgets/TitleBar.s"
 .PHONY : help
 
 

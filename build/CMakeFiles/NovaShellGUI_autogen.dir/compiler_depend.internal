@@ -12,12 +12,16 @@
  /home/kk/NovaShell/gui/app/main.cpp
  /home/kk/NovaShell/gui/pty/PtySession.cpp
  /home/kk/NovaShell/gui/pty/PtySession.h
+ /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp
+ /home/kk/NovaShell/gui/widgets/NavigationButtons.h
  /home/kk/NovaShell/gui/widgets/ShellEdit.cpp
  /home/kk/NovaShell/gui/widgets/ShellEdit.h
  /home/kk/NovaShell/gui/widgets/ShellView.cpp
  /home/kk/NovaShell/gui/widgets/ShellView.h
  /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp
  /home/kk/NovaShell/gui/widgets/ThemeSelector.h
+ /home/kk/NovaShell/gui/widgets/TitleBar.cpp
+ /home/kk/NovaShell/gui/widgets/TitleBar.h
  /usr/bin/cmake
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
@@ -296,6 +300,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
@@ -437,6 +442,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeyEvent
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h
@@ -487,11 +493,14 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h

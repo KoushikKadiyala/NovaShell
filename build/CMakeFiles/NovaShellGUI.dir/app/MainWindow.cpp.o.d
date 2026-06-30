@@ -401,20 +401,20 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
- /home/kk/NovaShell/gui/app/../widgets/ThemeSelector.h \
+ /home/kk/NovaShell/gui/app/../widgets/ShellView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/kk/NovaShell/gui/app/../widgets/ShellView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
  /home/kk/NovaShell/gui/app/../pty/PtySession.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /home/kk/NovaShell/gui/app/../widgets/TitleBar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h

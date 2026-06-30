@@ -410,6 +410,13 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/UOCYJYXCJW/../../../gui/pty/PtySession.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp \
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/NavigationButtons.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_ShellEdit.cpp \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ShellEdit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
@@ -468,4 +475,8 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_ThemeSelector.cpp \
- /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ThemeSelector.h
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ThemeSelector.h \
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_TitleBar.cpp \
+ /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/TitleBar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h

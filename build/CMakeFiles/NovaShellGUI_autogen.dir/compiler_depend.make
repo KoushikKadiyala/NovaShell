@@ -11,12 +11,16 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /home/kk/NovaShell/gui/app/main.cpp \
   /home/kk/NovaShell/gui/pty/PtySession.cpp \
   /home/kk/NovaShell/gui/pty/PtySession.h \
+  /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp \
+  /home/kk/NovaShell/gui/widgets/NavigationButtons.h \
   /home/kk/NovaShell/gui/widgets/ShellEdit.cpp \
   /home/kk/NovaShell/gui/widgets/ShellEdit.h \
   /home/kk/NovaShell/gui/widgets/ShellView.cpp \
   /home/kk/NovaShell/gui/widgets/ShellView.h \
   /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp \
   /home/kk/NovaShell/gui/widgets/ThemeSelector.h \
+  /home/kk/NovaShell/gui/widgets/TitleBar.cpp \
+  /home/kk/NovaShell/gui/widgets/TitleBar.h \
   /usr/bin/cmake \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -295,6 +299,7 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -436,6 +441,7 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeyEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
@@ -486,11 +492,14 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
@@ -931,8 +940,6 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
-
 /usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
@@ -987,21 +994,19 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
+/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
 
-/usr/include/c++/15/concepts:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
 
-/usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -1131,6 +1136,10 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/15/string:
@@ -1191,6 +1200,10 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/ext/numeric_traits.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
+
+/usr/include/c++/15/bits/exception_ptr.h:
+
 /usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
 
 /usr/include/linux/types.h:
@@ -1203,21 +1216,11 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/c++/15/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
-
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
-
-/usr/include/c++/15/bits/exception_ptr.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 /usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake:
 
@@ -1230,6 +1233,16 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/c++/15/ctime:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
+
+/usr/include/c++/15/cmath:
+
+/usr/include/c++/15/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray:
 
 /usr/include/c++/15/ext/type_traits.h:
 
@@ -1253,27 +1266,15 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/compare:
 
+/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:
+
+/usr/include/c++/15/bits/stl_algo.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
 /usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/specfun.h:
-
-/usr/include/c++/15/bits/basic_string.tcc:
-
-/usr/include/c++/15/bits/streambuf.tcc:
-
-/home/kk/NovaShell/gui/pty/PtySession.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
-
-/home/kk/NovaShell/gui/app/MainWindow.h:
-
-/usr/include/c++/15/cmath:
-
-/usr/include/c++/15/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
 
 /usr/include/c++/15/streambuf:
 
@@ -1317,33 +1318,21 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h:
 
-/usr/include/linux/posix_types.h:
+/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
+/usr/include/c++/15/array:
 
-/usr/include/c++/15/typeinfo:
+/home/kk/NovaShell/gui/pty/PtySession.h:
 
-/usr/include/c++/15/bits/ios_base.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
-/usr/include/c++/15/bits/stringfwd.h:
+/home/kk/NovaShell/gui/app/MainWindow.h:
 
-/usr/include/c++/15/iterator:
+/usr/include/c++/15/bits/basic_string.tcc:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h:
-
-/usr/include/c++/15/bits/hashtable.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
-
-/usr/include/c++/15/tr1/bessel_function.tcc:
-
-/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:
-
-/usr/include/c++/15/bits/stl_algo.h:
+/usr/include/c++/15/bits/streambuf.tcc:
 
 /usr/include/c++/15/tr1/ell_integral.tcc:
 
@@ -1353,13 +1342,45 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
 
-/usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake:
+/usr/include/c++/15/cstdlib:
 
-/usr/include/c++/15/bits/invoke.h:
+/usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/GNU.cmake:
+
+/usr/include/c++/15/bits/requires_hosted.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
+
+/usr/include/c++/15/set:
+
+/home/kk/NovaShell/gui/pty/PtySession.cpp:
+
+/usr/include/c++/15/typeinfo:
+
+/usr/include/c++/15/bits/std_abs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
+
+/usr/include/c++/15/bits/stl_tempbuf.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -1373,25 +1394,27 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
 
-/usr/include/c++/15/bits/stl_tempbuf.h:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/home/kk/NovaShell/gui/pty/PtySession.cpp:
-
 /usr/include/c++/15/bits/align.h:
 
 /usr/include/c++/15/bits/string_view.tcc:
+
+/usr/include/linux/posix_types.h:
+
+/usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:
+
+CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/15/bits/stl_tree.h:
 
 /usr/include/string.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h:
+/usr/include/c++/15/bits/memory_resource.h:
 
-/usr/include/c++/15/cwchar:
+/usr/include/c++/15/bits/stl_function.h:
 
 /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake:
 
@@ -1399,13 +1422,45 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/alloca.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
+
+/usr/include/c++/15/tr1/bessel_function.tcc:
+
+/usr/include/c++/15/iterator:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h:
+
+/usr/include/c++/15/bits/hashtable.h:
+
+/home/kk/NovaShell/gui/widgets/TitleBar.cpp:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
 
 /usr/include/c++/15/version:
 
+/usr/include/c++/15/climits:
+
+/usr/include/c++/15/bits/vector.tcc:
+
 /usr/include/locale.h:
 
 /usr/include/c++/15/bits/allocated_ptr.h:
+
+/usr/include/c++/15/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/15/cwchar:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h:
+
+/usr/include/c++/15/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1437,43 +1492,11 @@ NovaShellGUI_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h:
 
-/usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
-
-/usr/include/c++/15/set:
-
-/usr/include/c++/15/bits/stl_function.h:
-
-/usr/include/c++/15/bits/memory_resource.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/c++/15/bits/std_abs.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
-
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /home/kk/NovaShell/gui/app/main.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:
-
-CMakeFiles/4.2.3/CMakeCCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
-
-/usr/include/c++/15/array:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
 
@@ -1485,21 +1508,13 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
 
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h:
 
-/usr/include/c++/15/cstdlib:
+/usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/GNU.cmake:
-
-/usr/include/c++/15/bits/requires_hosted.h:
+/usr/include/c++/15/bits/invoke.h:
 
 /usr/include/c++/15/bits/hash_bytes.h:
 
@@ -1509,10 +1524,6 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/15/bits/locale_classes.tcc:
 
-/home/kk/NovaShell/gui/widgets/ShellEdit.cpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
-
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/15/bits/nested_exception.h:
@@ -1520,10 +1531,6 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/c++/15/bits/memoryfwd.h:
 
 /usr/include/c++/15/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/c++/15/bits/unordered_set.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
 
@@ -1544,8 +1551,6 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/parse_numbers.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/c++/15/bits/postypes.h:
 
@@ -1586,6 +1591,28 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h:
+
+/usr/include/c++/15/concepts:
+
+/usr/include/c++/15/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
+
+/usr/include/c++/15/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/15/bits/stl_relops.h:
+
+/usr/include/c++/15/bits/atomic_lockfree_defines.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QList:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
+
+/home/kk/NovaShell/gui/widgets/NavigationButtons.cpp:
 
 /usr/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake:
 
@@ -1636,12 +1663,6 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake:
 
 /usr/include/c++/15/bits/localefwd.h:
-
-/usr/include/c++/15/bits/stl_relops.h:
-
-/usr/include/c++/15/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QList:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
 
@@ -1699,21 +1720,21 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/15/cctype:
 
-/usr/include/c++/15/bits/vector.tcc:
+/usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
-/usr/include/c++/15/climits:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
+/usr/include/c++/15/bits/unordered_set.h:
 
-/usr/include/c++/15/pstl/glue_numeric_defs.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -1734,6 +1755,12 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h:
 
@@ -1775,6 +1802,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsysinfo.h:
 
+/home/kk/NovaShell/gui/widgets/TitleBar.h:
+
 /usr/include/c++/15/bits/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h:
@@ -1782,6 +1811,20 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
+
+/usr/include/c++/15/bits/stl_algobase.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h:
 
@@ -1925,6 +1968,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
+
 /usr/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h:
@@ -2029,6 +2074,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtclasshelpermacros.h:
 
+/home/kk/NovaShell/gui/widgets/NavigationButtons.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreexports.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h:
@@ -2079,6 +2126,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QColor:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h:
@@ -2101,6 +2150,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
@@ -2112,6 +2163,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextlayout.h:
 
@@ -2138,6 +2191,12 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
+
+/home/kk/NovaShell/gui/widgets/ShellEdit.cpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
 
@@ -2208,35 +2267,3 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
-
-/usr/include/c++/15/bits/stl_algobase.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
