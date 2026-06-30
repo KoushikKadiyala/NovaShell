@@ -4,6 +4,7 @@
 #include <QPoint>
 
 class QLabel;
+class QWindow;
 class ThemeSelector;
 class NavigationButtons;
 
@@ -18,15 +19,10 @@ private:
 
     ThemeSelector *themeSelector;
 
-    QPoint dragPosition;
-    bool dragging{false};
-
     NavigationButtons *closeButton;
     NavigationButtons *minimizeButton;
     NavigationButtons *maximizeButton;
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
-    void mouseReleaseEvent(QMouseEvent *event) override;
 };

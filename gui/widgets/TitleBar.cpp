@@ -6,37 +6,21 @@
 #include <QHBoxLayout>
 #include <QMouseEvent>
 #include <QLabel>
+#include <QWindow>
 
 void TitleBar::mousePressEvent(QMouseEvent *event)
 {
+    qDebug()<<event->button();
     if (event->button() == Qt::LeftButton)
     {
-        dragging = true;
-
-        dragPosition =
-            event->globalPosition().toPoint()
-            - window()->frameGeometry().topLeft();
-
-        event->accept();
+       
+       if(QWindow *win = window()->windowHandle())
+       {
+        win->startSystemMove();
+       }
+       event->accept();
+       
     }
-}
-
-void TitleBar::mouseMoveEvent(QMouseEvent *event)
-{
-    if (!dragging)
-        return;
-
-    window()->move(
-        event->globalPosition().toPoint()
-        - dragPosition
-    );
-}
-
-void TitleBar::mouseReleaseEvent(QMouseEvent *event)
-{
-    Q_UNUSED(event);
-
-    dragging = false;
 }
 
 TitleBar::TitleBar(QWidget *parent)
@@ -92,8 +76,6 @@ TitleBar::TitleBar(QWidget *parent)
             });
 
     layout->addWidget(themeSelector);
-
-    layout->addSpacing(500);
 
     layout->addWidget(title);
 

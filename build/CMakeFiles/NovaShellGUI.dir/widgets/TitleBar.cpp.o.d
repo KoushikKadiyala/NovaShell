@@ -453,4 +453,12 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QWindow \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h

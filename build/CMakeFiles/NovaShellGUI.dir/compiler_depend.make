@@ -5053,7 +5053,9 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: /home/kk/NovaShell/gui/widge
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
@@ -5200,6 +5202,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: /home/kk/NovaShell/gui/widge
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
@@ -5230,6 +5233,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: /home/kk/NovaShell/gui/widge
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
@@ -5237,6 +5242,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: /home/kk/NovaShell/gui/widge
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
@@ -5388,7 +5394,11 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h:
 
@@ -5755,6 +5765,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_ShellView.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QWindow:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
 
@@ -6298,6 +6310,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/15/iterator:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h:
@@ -6307,6 +6321,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /home/kk/NovaShell/gui/widgets/TitleBar.cpp:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
 
@@ -6615,6 +6631,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_TitleBar.cpp:
 /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindow.h:
 
 /usr/include/c++/15/bits/uses_allocator.h:
 

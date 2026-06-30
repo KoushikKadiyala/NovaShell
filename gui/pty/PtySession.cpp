@@ -12,10 +12,11 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-#define WEXITSTATUS(status) __WEXITSTATUS (status)
+// #define WEXITSTATUS(status) __WEXITSTATUS (status)
 
 bool PtySession::start(){
     masterFd = posix_openpt(O_RDWR | O_NOCTTY);
+    fcntl(masterFd, F_SETFL, O_NONBLOCK);
 
 if (masterFd == -1)
 {
@@ -136,8 +137,6 @@ void PtySession::readFromPty()
     char buffer[4096];
 
     ssize_t bytes = read(masterFd, buffer, sizeof(buffer));
-
-    fcntl(masterFd, F_SETFL, O_NONBLOCK);
 
     if (bytes > 0)
     {
