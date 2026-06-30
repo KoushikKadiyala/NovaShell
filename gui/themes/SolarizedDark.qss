@@ -7,7 +7,6 @@ QWidget {
 QPlainTextEdit {
     background-color: #002b36;
     color: #839496;
-    border: 1px solid #073642;
     selection-background-color: #268bd2;
     selection-color: #002b36;
 }

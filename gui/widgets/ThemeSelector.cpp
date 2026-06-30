@@ -6,6 +6,8 @@
 #include <QApplication>
 #include <QFile>
 #include <QHBoxLayout>
+#include <QCoreApplication>
+#include <QDir>
 
 ThemeSelector::ThemeSelector(QWidget *parent)
     : QWidget(parent), button(nullptr), menu(nullptr), currentTheme("Dracula")
@@ -61,12 +63,12 @@ void ThemeSelector::initUI()
 void ThemeSelector::setTheme(const QString &themeName)
 {
     currentTheme = themeName;
-    QString themePath = QString("../gui/themes/%1.qss").arg(themeName);
+    QString themePath = QDir(QCoreApplication::applicationDirPath()).filePath("../gui/themes/"+themeName+".qss");
     QFile file(themePath);
-    if (file.open(QIODevice::ReadOnly))
+    if (!file.open(QIODevice::ReadOnly))
     {
-        QString styleSheet = QLatin1String(file.readAll());
-        qApp->setStyleSheet(styleSheet);
-        file.close();
+       qDebug()<<"unable to load theme:"<<themePath;
+       return;
     }
+    qApp->setStyleSheet(QString::fromUtf8(file.readAll()));
 }

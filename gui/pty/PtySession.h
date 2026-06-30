@@ -17,6 +17,7 @@ public:
 
 signals:
     void dataReceived(const QByteArray &data);
+    void shellExited(int exitcode);
 
 private slots:
     void readFromPty();

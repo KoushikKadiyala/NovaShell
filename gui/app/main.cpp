@@ -3,7 +3,6 @@
 #include <QDebug>
 
 #include "MainWindow.h"
-#include "../gui/pty/PtySession.h"
 
 int main(int argc, char *argv[])
 {

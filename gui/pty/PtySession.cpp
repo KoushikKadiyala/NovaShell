@@ -1,5 +1,6 @@
 #include "PtySession.h"
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QSocketNotifier>
 #include <QString>
@@ -10,6 +11,8 @@
 
 #include <sys/types.h>
 #include <sys/wait.h>
+
+#define WEXITSTATUS(status) __WEXITSTATUS (status)
 
 bool PtySession::start(){
     masterFd = posix_openpt(O_RDWR | O_NOCTTY);
@@ -85,9 +88,11 @@ close(slaveFd);
 // Parent owns the master.
 // Child doesn't need it.
 close(masterFd);
+QString shellPath =QCoreApplication::applicationDirPath()+"/NovaShell";
+QByteArray path = shellPath.toLocal8Bit();
 
  execl(
-            "/home/kk/NovaShell/NovaShell",   // <-- Adjust if your CLI binary is elsewhere
+            path.constData(),
             "NovaShell",
             (char *)nullptr
         );
@@ -112,6 +117,19 @@ PtySession::PtySession(QObject *parent)
 
 PtySession::~PtySession()
 {
+    if (notifier)
+        notifier->setEnabled(false);
+    if(masterFd != -1)
+    {
+        close(masterFd);
+        masterFd = -1;
+    }
+    if(childPid > -1)
+    {
+        kill(childPid,SIGTERM);
+        waitpid(childPid, nullptr,0);
+        childPid = -1;
+    }
 }
 void PtySession::readFromPty()
 {
@@ -119,10 +137,40 @@ void PtySession::readFromPty()
 
     ssize_t bytes = read(masterFd, buffer, sizeof(buffer));
 
-    if (bytes <= 0)
+    fcntl(masterFd, F_SETFL, O_NONBLOCK);
+
+    if (bytes > 0)
+    {
+        emit dataReceived(QByteArray(buffer, bytes));
         return;
-       
-    emit dataReceived(QByteArray(buffer, bytes));
+    }
+
+    notifier->setEnabled(false);
+
+    if (masterFd != -1)
+    {
+        close(masterFd);
+        masterFd = -1;
+    }
+
+    int status = 0;          
+
+    if (childPid > 0)
+    {
+        pid_t pid = waitpid(childPid, &status, 0);
+
+        if (pid > 0)
+        {
+            childPid = -1;
+
+            int exitCode = -1;
+
+            if (WIFEXITED(status))
+                exitCode = WEXITSTATUS(status);
+
+            emit shellExited(exitCode);
+        }
+    }
 }
 void PtySession::writeData(const QByteArray &data)
 {   qDebug()<< "writting"<< data;
