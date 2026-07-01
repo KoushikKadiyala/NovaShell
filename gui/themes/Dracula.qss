@@ -23,6 +23,7 @@ QPlainTextEdit
 
     padding: 12px;
 }
-QWidget#TitleBar{
-    background-color: #282a36;
+QWidget#TitleBar {
+    background-color: #343746;
+    color: #F8F8F2;
 }

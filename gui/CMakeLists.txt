@@ -60,6 +60,9 @@ qt_add_executable(NovaShellGUI
     pty/PtySession.cpp
     widgets/TitleBar.cpp
     widgets/NavigationButtons.cpp
+    renderer/ScreenRenderer.cpp
+    screen/ScreenBuffer.cpp
+    screen/ScreenWidget.cpp
 )
 
 target_link_libraries(NovaShellGUI

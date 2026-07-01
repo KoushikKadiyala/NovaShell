@@ -42,8 +42,7 @@ template <> constexpr inline auto ShellView::qt_create_metaobjectdata<qt_meta_ta
         "bytesTyped",
         "",
         "data",
-        "insert",
-        "text"
+        "insert"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,8 +51,8 @@ template <> constexpr inline auto ShellView::qt_create_metaobjectdata<qt_meta_ta
             { QMetaType::QString, 3 },
         }}),
         // Slot 'insert'
-        QtMocHelpers::SlotData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 5 },
+        QtMocHelpers::SlotData<void(const QByteArray &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QByteArray, 3 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -79,7 +78,7 @@ void ShellView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->bytesTyped((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->insert((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->insert((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
         }
     }

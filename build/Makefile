@@ -641,6 +641,78 @@ pty/PtySession.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s
 .PHONY : pty/PtySession.cpp.s
 
+renderer/ScreenRenderer.o: renderer/ScreenRenderer.cpp.o
+.PHONY : renderer/ScreenRenderer.o
+
+# target to build an object file
+renderer/ScreenRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o
+.PHONY : renderer/ScreenRenderer.cpp.o
+
+renderer/ScreenRenderer.i: renderer/ScreenRenderer.cpp.i
+.PHONY : renderer/ScreenRenderer.i
+
+# target to preprocess a source file
+renderer/ScreenRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.i
+.PHONY : renderer/ScreenRenderer.cpp.i
+
+renderer/ScreenRenderer.s: renderer/ScreenRenderer.cpp.s
+.PHONY : renderer/ScreenRenderer.s
+
+# target to generate assembly for a file
+renderer/ScreenRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.s
+.PHONY : renderer/ScreenRenderer.cpp.s
+
+screen/ScreenBuffer.o: screen/ScreenBuffer.cpp.o
+.PHONY : screen/ScreenBuffer.o
+
+# target to build an object file
+screen/ScreenBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o
+.PHONY : screen/ScreenBuffer.cpp.o
+
+screen/ScreenBuffer.i: screen/ScreenBuffer.cpp.i
+.PHONY : screen/ScreenBuffer.i
+
+# target to preprocess a source file
+screen/ScreenBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.i
+.PHONY : screen/ScreenBuffer.cpp.i
+
+screen/ScreenBuffer.s: screen/ScreenBuffer.cpp.s
+.PHONY : screen/ScreenBuffer.s
+
+# target to generate assembly for a file
+screen/ScreenBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.s
+.PHONY : screen/ScreenBuffer.cpp.s
+
+screen/ScreenWidget.o: screen/ScreenWidget.cpp.o
+.PHONY : screen/ScreenWidget.o
+
+# target to build an object file
+screen/ScreenWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o
+.PHONY : screen/ScreenWidget.cpp.o
+
+screen/ScreenWidget.i: screen/ScreenWidget.cpp.i
+.PHONY : screen/ScreenWidget.i
+
+# target to preprocess a source file
+screen/ScreenWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.i
+.PHONY : screen/ScreenWidget.cpp.i
+
+screen/ScreenWidget.s: screen/ScreenWidget.cpp.s
+.PHONY : screen/ScreenWidget.s
+
+# target to generate assembly for a file
+screen/ScreenWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s
+.PHONY : screen/ScreenWidget.cpp.s
+
 widgets/NavigationButtons.o: widgets/NavigationButtons.cpp.o
 .PHONY : widgets/NavigationButtons.o
 
@@ -829,6 +901,15 @@ help:
 	@echo "... pty/PtySession.o"
 	@echo "... pty/PtySession.i"
 	@echo "... pty/PtySession.s"
+	@echo "... renderer/ScreenRenderer.o"
+	@echo "... renderer/ScreenRenderer.i"
+	@echo "... renderer/ScreenRenderer.s"
+	@echo "... screen/ScreenBuffer.o"
+	@echo "... screen/ScreenBuffer.i"
+	@echo "... screen/ScreenBuffer.s"
+	@echo "... screen/ScreenWidget.o"
+	@echo "... screen/ScreenWidget.i"
+	@echo "... screen/ScreenWidget.s"
 	@echo "... widgets/NavigationButtons.o"
 	@echo "... widgets/NavigationButtons.i"
 	@echo "... widgets/NavigationButtons.s"

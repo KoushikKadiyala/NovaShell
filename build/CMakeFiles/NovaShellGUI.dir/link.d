@@ -11,6 +11,9 @@ NovaShellGUI: \
   CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o \
   CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o \
   CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
@@ -102,6 +105,12 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o:
 CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o:
 
 CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2:
 

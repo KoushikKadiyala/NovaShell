@@ -7,6 +7,7 @@
 #include <QMouseEvent>
 #include <QLabel>
 #include <QWindow>
+#include <QGraphicsDropShadowEffect>
 
 void TitleBar::mousePressEvent(QMouseEvent *event)
 {
@@ -31,6 +32,12 @@ TitleBar::TitleBar(QWidget *parent)
     setObjectName("TitleBar");
     setAttribute(Qt::WA_StyledBackground,true);
 
+    auto *shadow = new QGraphicsDropShadowEffect(this);
+    shadow->setBlurRadius(18);
+    shadow->setOffset(0, 2);
+    shadow->setColor(QColor(0, 0, 0, 70));
+    setGraphicsEffect(shadow);
+
     auto *layout = new QHBoxLayout(this);
 
     layout->setContentsMargins(10,0,10,0);
@@ -46,6 +53,9 @@ TitleBar::TitleBar(QWidget *parent)
         new NavigationButtons(QColor("#27c93f"));
 
     auto *title = new QLabel("NovaShell");
+    title->setObjectName("TitleLabel");
+    title->setAutoFillBackground(false);
+    title->setStyleSheet("QLabel#TitleLabel { background: transparent; }");
 
     themeSelector = new ThemeSelector;
 

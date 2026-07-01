@@ -72,7 +72,7 @@ NovaShellCore_autogen/timestamp: /usr/lib/qt6/libexec/moc
 NovaShellCore_autogen/timestamp: /usr/lib/qt6/libexec/uic
 NovaShellCore_autogen/timestamp: CMakeFiles/NovaShellCore_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target NovaShellCore"
-	/usr/bin/cmake -E cmake_autogen /home/kk/NovaShell/build/CMakeFiles/NovaShellCore_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/kk/NovaShell/build/CMakeFiles/NovaShellCore_autogen.dir/AutogenInfo.json Debug
 	/usr/bin/cmake -E touch /home/kk/NovaShell/build/NovaShellCore_autogen/timestamp
 
 CMakeFiles/NovaShellCore_autogen.dir/codegen:

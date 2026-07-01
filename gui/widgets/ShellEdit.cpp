@@ -11,26 +11,24 @@ ShellEdit::ShellEdit(QWidget *parent)
 
 void ShellEdit::keyPressEvent(QKeyEvent *event)
 {
-    QByteArray data;
-
     switch (event->key())
     {
     case Qt::Key_Return:
     case Qt::Key_Enter:
-        data = "\r";
-        break;
+       emit bytesTyped("\r");
+        event->accept();
+        return;
 
     case Qt::Key_Backspace:
-        data = "\b";
-        break;
+        emit bytesTyped("\b");
+        event->accept();
+        return;
 
     default:
-        data = event->text().toUtf8();
-        break;
+        if (!event->text().isEmpty())
+            emit bytesTyped(event->text().toUtf8());
+
+        event->accept();
+        return;
     }
-
-    if (!data.isEmpty())
-        emit bytesTyped(data);
-
-    event->accept();
 }

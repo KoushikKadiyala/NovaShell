@@ -27,7 +27,7 @@ void start_shell()
             snprintf(
                 prompt,
                 sizeof(prompt),
-                "\001" BLUE BOLD "\002%s \001" RESET "\002\001" RED BOLD "\002> \001" RESET "\002",
+                "\001" BLUE BOLD "\002%s \001" RESET "\002\001" RED BOLD "\002❯ \001" RESET "\002",
                 cwd
             );
         }

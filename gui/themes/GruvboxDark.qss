@@ -21,3 +21,8 @@ QStatusBar {
     color: #ebdbb2;
     border-top: 1px solid #3c3836;
 }
+
+QWidget#TitleBar {
+    background-color: #504945;
+    color: #ebdbb2;
+}

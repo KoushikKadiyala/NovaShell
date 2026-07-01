@@ -48,7 +48,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-g -std=gnu++17"
 				}
 			],
 			"includes" : 
@@ -77,6 +77,12 @@
 			]
 		},
 		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -106,11 +112,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "NovaShellCore_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "NovaShellCore_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "NovaShellCore_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "NovaShellCore::@6890427a1f51a3e7e1df",
@@ -125,11 +131,11 @@
 			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "NovaShellCore_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "NovaShellCore_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "NovaShellCore_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 

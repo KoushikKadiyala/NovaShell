@@ -406,6 +406,22 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
+ /home/kk/NovaShell/gui/app/../widgets/../renderer/ScreenRenderer.h \
+ /home/kk/NovaShell/gui/app/../widgets/../renderer/../screen/ScreenBuffer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
+ /home/kk/NovaShell/gui/app/../widgets/../renderer/../screen/ScreenCell.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
+ /home/kk/NovaShell/gui/app/../widgets/../screen/ScreenWidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
  /home/kk/NovaShell/gui/app/../pty/PtySession.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
