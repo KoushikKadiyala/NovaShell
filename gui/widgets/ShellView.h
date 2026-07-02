@@ -23,6 +23,7 @@ public slots:
 
 signals:
     void bytesTyped(const QString &data);
+    void terminalResized(int rows,int cols);
 
 private:
     ScreenWidget *screenWidget;

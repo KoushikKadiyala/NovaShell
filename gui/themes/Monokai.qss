@@ -25,4 +25,12 @@ QStatusBar {
 QWidget#TitleBar {
     background-color: #3b3a32;
     color: #f8f8f2;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+QWidget#windowContainer {
+    background-color: #272822;
+    border: 1px solid #49483e;
+    border-radius: 14px;
 }

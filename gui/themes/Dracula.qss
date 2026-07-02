@@ -26,4 +26,12 @@ QPlainTextEdit
 QWidget#TitleBar {
     background-color: #343746;
     color: #F8F8F2;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+QWidget#windowContainer {
+    background-color: #282A36;
+    border: 1px solid #44475A;
+    border-radius: 14px;
 }

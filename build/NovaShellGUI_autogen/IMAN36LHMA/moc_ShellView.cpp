@@ -42,6 +42,9 @@ template <> constexpr inline auto ShellView::qt_create_metaobjectdata<qt_meta_ta
         "bytesTyped",
         "",
         "data",
+        "terminalResized",
+        "rows",
+        "cols",
         "insert"
     };
 
@@ -50,8 +53,12 @@ template <> constexpr inline auto ShellView::qt_create_metaobjectdata<qt_meta_ta
         QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
+        // Signal 'terminalResized'
+        QtMocHelpers::SignalData<void(int, int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 5 }, { QMetaType::Int, 6 },
+        }}),
         // Slot 'insert'
-        QtMocHelpers::SlotData<void(const QByteArray &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(const QByteArray &)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QByteArray, 3 },
         }}),
     };
@@ -78,12 +85,15 @@ void ShellView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->bytesTyped((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->insert((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 1: _t->terminalResized((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
+        case 2: _t->insert((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (ShellView::*)(const QString & )>(_a, &ShellView::bytesTyped, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (ShellView::*)(int , int )>(_a, &ShellView::terminalResized, 1))
             return;
     }
 }
@@ -107,14 +117,14 @@ int ShellView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -123,5 +133,11 @@ int ShellView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void ShellView::bytesTyped(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
+}
+
+// SIGNAL 1
+void ShellView::terminalResized(int _t1, int _t2)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1, _t2);
 }
 QT_WARNING_POP

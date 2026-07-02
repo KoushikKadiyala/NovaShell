@@ -14,6 +14,10 @@ ShellView::ShellView(QWidget *parent)
             &ScreenWidget::bytesTyped, 
             this,
             &ShellView::bytesTyped);
+    connect(screenWidget,
+            &ScreenWidget::terminalResized,
+            this,
+            &ShellView::terminalResized);
 
     // Monospace font
     QFont font("JetBrains Mono", 12);
@@ -30,5 +34,6 @@ ShellView::ShellView(QWidget *parent)
 void ShellView::insert(const QByteArray &data)
 {
    renderer.render(data, Buffer);
+   Buffer.setCursorVisible(true);
    screenWidget->update();
 }

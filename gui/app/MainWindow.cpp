@@ -7,11 +7,12 @@
 #include <QVBoxLayout>
 
 MainWindow::MainWindow()
-{
+{  setAttribute(Qt::WA_TranslucentBackground);
    setWindowFlags(Qt::FramelessWindowHint);
    resize(1200,800);
 
     QWidget *container = new QWidget(this);
+    container->setObjectName("windowContainer");
     auto *layout = new QVBoxLayout(container);
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
@@ -35,6 +36,10 @@ MainWindow::MainWindow()
             &PtySession::shellExited,
             this,
             [](int code){qDebug() << "shell exited:"<< code;});
+    connect(shell,
+            &ShellView::terminalResized,
+            pty,
+            &PtySession::resize);
     pty->start();
 
 

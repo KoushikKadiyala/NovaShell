@@ -311,6 +311,7 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -432,6 +433,7 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -841,6 +843,10 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
@@ -946,8 +952,6 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h:
 
 /usr/include/c++/15/tr1/legendre_function.tcc:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 /usr/include/time.h:
 
@@ -1409,6 +1413,8 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/15/bits/stl_multiset.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h:
 
 /usr/include/c++/15/type_traits:
@@ -1424,8 +1430,6 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -1668,6 +1672,10 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/include/c++/15/clocale:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h:
 
@@ -2008,8 +2016,6 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessAliasTargets.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
 

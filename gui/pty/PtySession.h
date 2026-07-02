@@ -14,7 +14,8 @@ public:
 
     bool start();
     void writeData(const QByteArray &data);
-
+public slots:
+    void resize(int rows,int cols);
 signals:
     void dataReceived(const QByteArray &data);
     void shellExited(int exitcode);

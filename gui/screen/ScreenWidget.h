@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include <QTimer>
+#include <QFont>
 
 class ScreenBuffer;
 
@@ -16,15 +17,25 @@ public:
 
 signals:
     void bytesTyped(const QByteArray &data);
+    void terminalResized(int rows,int cols);
 
 protected:
     void keyPressEvent(QKeyEvent *event) override;
     void paintEvent(QPaintEvent *event) override;
+    void resizeEvent(QResizeEvent *event) override;
+    void wheelEvent(QWheelEvent *event) override;
 
 
 private:
+    void updateFonts();
+
     ScreenBuffer *buffer_;
+
     QTimer blinkTimer;
-    static constexpr int LEFT_MARGIN = 8;
-    static constexpr int TOP_MARGIN = 8;
+    
+    QFont normalFont_;
+    QFont boldFont_;
+    
+    static constexpr int LEFT_MARGIN = 5;
+    static constexpr int TOP_MARGIN = 5;
 };

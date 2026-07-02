@@ -420,6 +420,8 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/NavigationButtons.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
@@ -483,8 +485,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/../renderer/../screen/ScreenCell.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_ThemeSelector.cpp \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/../../../gui/widgets/ThemeSelector.h \
  /home/kk/NovaShell/build/NovaShellGUI_autogen/IMAN36LHMA/moc_TitleBar.cpp \

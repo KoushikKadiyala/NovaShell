@@ -11,6 +11,8 @@
 
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/ioctl.h>
+#include <termios.h>
 
 // #define WEXITSTATUS(status) __WEXITSTATUS (status)
 
@@ -177,4 +179,10 @@ void PtySession::writeData(const QByteArray &data)
     {
         write(masterFd, data.constData(), data.size());
     }
+}
+void PtySession::resize(int rows,int cols){
+    if (masterFd == -1)
+        return;
+    struct winsize ws = {(unsigned short)rows, (unsigned short)cols, 0, 0};
+    ioctl(masterFd, TIOCSWINSZ, &ws);
 }

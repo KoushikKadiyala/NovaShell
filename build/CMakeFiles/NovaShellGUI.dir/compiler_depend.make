@@ -1003,6 +1003,7 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: NovaShe
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -1125,6 +1126,7 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: NovaShe
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
@@ -1524,6 +1526,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -1532,6 +1535,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -1542,6 +1546,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
@@ -1561,8 +1566,10 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
@@ -1635,6 +1642,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -2224,7 +2232,10 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/Pty
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/asm-generic/ioctls.h \
   /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/sockios.h \
   /usr/include/asm-generic/types.h \
   /usr/include/assert.h \
   /usr/include/c++/15/algorithm \
@@ -2402,10 +2413,12 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/Pty
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/falloc.h \
+  /usr/include/linux/ioctl.h \
   /usr/include/linux/limits.h \
   /usr/include/linux/openat2.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
+  /usr/include/linux/sockios.h \
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
@@ -2419,13 +2432,17 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/Pty
   /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
   /usr/include/x86_64-linux-gnu/asm/posix_types.h \
   /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+  /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/x86_64-linux-gnu/asm/types.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -2444,6 +2461,8 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/Pty
   /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -2487,6 +2506,17 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/Pty
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-cbaud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -2676,8 +2706,10 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/Pty
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/sys/wait.h \
@@ -3768,6 +3800,7 @@ CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o: /home/kk/NovaShell/gui/sc
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -3889,6 +3922,7 @@ CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o: /home/kk/NovaShell/gui/sc
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -3911,6 +3945,7 @@ CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o: /home/kk/NovaShell/gui/sc
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QFontMetrics \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeyEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QResizeEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
@@ -5236,6 +5271,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -5244,6 +5280,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -5254,6 +5291,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
@@ -5273,8 +5311,10 @@ CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
@@ -5347,6 +5387,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -6575,13 +6616,9 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libGLX.so:
 
-/usr/lib/x86_64-linux-gnu/libEGL.so.1:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
 /usr/lib/x86_64-linux-gnu/libm.so:
 
@@ -6619,11 +6656,13 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCursor:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h:
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
 /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QResizeEvent:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
@@ -6634,6 +6673,20 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-misc.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
@@ -6657,6 +6710,10 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
+/usr/lib/x86_64-linux-gnu/libEGL.so.1:
+
+/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
@@ -6667,7 +6724,17 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
+/usr/include/linux/sockios.h:
+
+/usr/include/linux/ioctl.h:
+
 /usr/include/linux/close_range.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
+
+/usr/include/asm-generic/ioctls.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
 
@@ -6682,6 +6749,8 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h:
+
+/usr/include/termios.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
 
@@ -7061,6 +7130,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_ShellView.cpp:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -7068,6 +7139,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_ShellView.cpp:
 /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/c++/15/string:
 
@@ -7092,6 +7165,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_ShellView.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 
 /usr/include/c++/15/pstl/execution_defs.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
 /usr/include/c++/15/optional:
 
@@ -7144,6 +7219,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
 
@@ -7329,6 +7406,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_TitleBar.cpp:
 
 /usr/include/c++/15/bits/allocator.h:
 
+/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/15/bit:
@@ -7344,6 +7423,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_TitleBar.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/termios-cbaud.h:
 
 /usr/include/c++/15/bits/char_traits.h:
 
@@ -7843,6 +7924,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont:
 
+/usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
+
 /home/kk/NovaShell/gui/widgets/TitleBar.h:
 
 /usr/include/c++/15/bits/alloc_traits.h:
@@ -7979,6 +8062,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
 
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
 /usr/include/c++/15/bits/basic_ios.h:
 
 /usr/include/c++/15/variant:
@@ -8087,6 +8172,8 @@ CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
 
+/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
@@ -8161,6 +8248,8 @@ NovaShellGUI_autogen/UOCYJYXCJW/moc_PtySession.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel:
 
+/usr/include/asm-generic/ioctl.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h:
@@ -8220,6 +8309,8 @@ NovaShellGUI_autogen/UOCYJYXCJW/moc_PtySession.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
 
