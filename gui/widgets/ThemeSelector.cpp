@@ -19,6 +19,8 @@ void ThemeSelector::initUI()
 {
     button = new QPushButton(QStringLiteral("●"), this);
     button->setFixedSize(24, 24);
+    button->setFocusPolicy(Qt::NoFocus);
+    setFocusPolicy(Qt::NoFocus);
     button->setStyleSheet(
         "QPushButton {"
         "  border-radius: 12px;"

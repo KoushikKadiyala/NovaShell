@@ -31,8 +31,8 @@ MainWindow::MainWindow()
     connect(shell,
     &ShellView::bytesTyped,
     pty,
-    [pty](const QString &command){
-        pty->writeData(command.toUtf8());
+    [pty](const QByteArray &command){
+        pty->writeData(command);
     });
     connect(pty,
             &PtySession::shellExited,

@@ -16,6 +16,7 @@ void start_shell()
 {
     // Ignore SIGINT in the shell process so Ctrl+C does not exit the shell itself.
     signal(SIGINT, SIG_IGN);
+    rl_bind_key('\t', rl_complete);
 
     while (1)
     {

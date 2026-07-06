@@ -154,7 +154,9 @@ void ScreenWidget::keyPressEvent(QKeyEvent *event)
     case Qt::Key_Enter:
         emit bytesTyped("\r");
         break;
-
+    case Qt::Key_Tab:
+        emit bytesTyped("\t");
+        break;
     case Qt::Key_Backspace:
         emit bytesTyped("\b");
         break;

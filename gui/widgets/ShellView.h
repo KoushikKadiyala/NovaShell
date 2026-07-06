@@ -22,7 +22,7 @@ public slots:
     void insert(const QByteArray &data);
 
 signals:
-    void bytesTyped(const QString &data);
+    void bytesTyped(const QByteArray &data);
     void terminalResized(int rows,int cols);
 
 private:

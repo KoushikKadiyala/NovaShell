@@ -141,7 +141,8 @@ void PtySession::readFromPty()
     ssize_t bytes = read(masterFd, buffer, sizeof(buffer));
 
     if (bytes > 0)
-    {
+    {   QByteArray data(buffer,bytes);
+        qDebug()<<data.toHex();
         emit dataReceived(QByteArray(buffer, bytes));
         return;
     }
@@ -175,6 +176,7 @@ void PtySession::readFromPty()
 }
 void PtySession::writeData(const QByteArray &data)
 {   qDebug()<< "writting"<< data;
+    qDebug()<< data.toHex();
     if (masterFd != -1)
     {
         write(masterFd, data.constData(), data.size());

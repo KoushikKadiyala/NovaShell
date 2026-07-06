@@ -8,7 +8,6 @@ ScreenBuffer::ScreenBuffer(int rows, int cols)
       cells_(rows, std::vector<ScreenCell>(cols))
 {
 }
-
 void ScreenBuffer::put(const ScreenCell &cell)
 {
     if (cursorRow_ >= screenRows_)
@@ -24,12 +23,10 @@ void ScreenBuffer::put(const ScreenCell &cell)
         lineFeed();
     }
 }
-
 void ScreenBuffer::carriageReturn()
 {
     cursorCol_ = 0;
 }
-
 void ScreenBuffer::lineFeed()
 {
     cursorRow_++;
@@ -39,7 +36,6 @@ void ScreenBuffer::lineFeed()
         scrollUp();
     }
 }
-
 void ScreenBuffer::moveLeft(int count)
 {
     cursorCol_ -= count;
@@ -47,7 +43,6 @@ void ScreenBuffer::moveLeft(int count)
     if (cursorCol_ < 0)
         cursorCol_ = 0;
 }
-
 void ScreenBuffer::moveRight(int count)
 {
     cursorCol_ += count;
@@ -55,14 +50,11 @@ void ScreenBuffer::moveRight(int count)
     if (cursorCol_ >= screenCols_)
         cursorCol_ = screenCols_ - 1;
 }
-
 void ScreenBuffer::eraseToEndOfLine()
 {
     for (int c = cursorCol_; c < screenCols_; ++c)
         cells_[cursorRow_][c] = ScreenCell{};
 }
-
-
 void ScreenBuffer::scrollUp()
 {   
     scrollback_.push_back(cells_[0]);
@@ -110,12 +102,10 @@ int ScreenBuffer::row() const
 {
     return cursorRow_;
 }
-
 int ScreenBuffer::column() const
 {
     return cursorCol_;
 }
-
 const std::vector<std::vector<ScreenCell>>& ScreenBuffer::cells() const
 {
     return cells_;
@@ -124,7 +114,6 @@ bool ScreenBuffer::cursorVisible() const
 {
     return cursorVisible_;
 }
-
 void ScreenBuffer::setCursorVisible(bool visible)
 {
     cursorVisible_ = visible;

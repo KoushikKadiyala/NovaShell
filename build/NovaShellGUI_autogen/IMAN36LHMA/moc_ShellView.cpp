@@ -50,8 +50,8 @@ template <> constexpr inline auto ShellView::qt_create_metaobjectdata<qt_meta_ta
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'bytesTyped'
-        QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 3 },
+        QtMocHelpers::SignalData<void(const QByteArray &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QByteArray, 3 },
         }}),
         // Signal 'terminalResized'
         QtMocHelpers::SignalData<void(int, int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
@@ -84,14 +84,14 @@ void ShellView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     auto *_t = static_cast<ShellView *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->bytesTyped((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->bytesTyped((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
         case 1: _t->terminalResized((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
         case 2: _t->insert((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (ShellView::*)(const QString & )>(_a, &ShellView::bytesTyped, 0))
+        if (QtMocHelpers::indexOfMethod<void (ShellView::*)(const QByteArray & )>(_a, &ShellView::bytesTyped, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (ShellView::*)(int , int )>(_a, &ShellView::terminalResized, 1))
             return;
@@ -130,7 +130,7 @@ int ShellView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void ShellView::bytesTyped(const QString & _t1)
+void ShellView::bytesTyped(const QByteArray & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }

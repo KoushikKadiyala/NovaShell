@@ -2,6 +2,7 @@
 
 #include <QColor>
 #include <QList>
+#include <QApplication>
 
 ScreenRenderer::ScreenRenderer()
 {
@@ -50,6 +51,21 @@ void ScreenRenderer::render(const QByteArray &data,
             continue;
         }
 
+        // --------- Tab ---------------
+        if (data[i] == '\t')
+        {
+            i++;
+            continue;
+        }
+
+        // --------- BEL --------------
+        if(data[i] == '\a')
+        {
+            flushText(plainText,buffer);
+            QApplication::beep();
+            ++i;
+            continue;
+        }
         // ---------- ANSI CSI ----------
         if (data[i] == '\x1b' &&
             i + 1 < data.size() &&
