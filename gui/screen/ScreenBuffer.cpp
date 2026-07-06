@@ -146,7 +146,24 @@ int ScreenBuffer::screenRows() const
 {
     return screenRows_;
 }
+int ScreenBuffer::screenCols() const
+{
+    return screenCols_;
+}
 const std::vector<std::vector<ScreenCell>> &ScreenBuffer::scrollBack() const
 {
     return scrollback_;
+}
+void ScreenBuffer::deleteChars(int count)
+{
+    int end = screenCols_ - count;
+
+    for (int c = cursorCol_; c < end; ++c)
+    {
+        cells_[cursorRow_][c] = cells_[cursorRow_][c + count];
+    }
+    for (int c = end; c < screenCols_; ++c)
+    {
+        cells_[cursorRow_][c] = ScreenCell{};
+    }
 }

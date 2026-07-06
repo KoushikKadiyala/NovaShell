@@ -41,6 +41,15 @@ void ScreenRenderer::render(const QByteArray &data,
             continue;
         }
 
+        // ---------- Backspace ----------
+        if (data[i] == '\b')
+        {
+            flushText(plainText, buffer);
+            buffer.moveLeft();
+            ++i;
+            continue;
+        }
+
         // ---------- ANSI CSI ----------
         if (data[i] == '\x1b' &&
             i + 1 < data.size() &&
@@ -100,6 +109,12 @@ void ScreenRenderer::render(const QByteArray &data,
             case 'K':
             {
                 buffer.eraseToEndOfLine();
+                break;
+            }
+            case 'P':
+            {
+                int count = sequence.isEmpty() ? 1 : sequence.toInt();
+                buffer.deleteChars(count);
                 break;
             }
 

@@ -37,7 +37,8 @@ public:
     
     int screenRows() const;
     int screenCols() const;
-
+    void deleteChars(int count);
+    
 private:
     int screenRows_;
     int screenCols_;

@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <QTimer>
 #include <QFont>
+#include <QPoint>
 
 class ScreenBuffer;
 
@@ -24,10 +25,22 @@ protected:
     void paintEvent(QPaintEvent *event) override;
     void resizeEvent(QResizeEvent *event) override;
     void wheelEvent(QWheelEvent *event) override;
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
 
 
 private:
     void updateFonts();
+
+    void copySelection();
+
+    bool selecting = false;
+    QPoint selectionStart; 
+    QPoint selectionEnd;
+
+    QPoint cellFromPosition(const QPointF &pos) const;
+    bool isCellSelected(int row, int col) const;
 
     ScreenBuffer *buffer_;
 
