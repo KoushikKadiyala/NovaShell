@@ -63,6 +63,7 @@ qt_add_executable(NovaShellGUI
     renderer/ScreenRenderer.cpp
     screen/ScreenBuffer.cpp
     screen/ScreenWidget.cpp
+    session/ShellSession.cpp
 )
 
 target_link_libraries(NovaShellGUI

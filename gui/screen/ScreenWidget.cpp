@@ -223,6 +223,7 @@ void ScreenWidget::copySelection()
 
     }
     QApplication::clipboard()->setText(text);
+    hasSelection = false;
     selecting = false;
     selectionStart = {};
     selectionEnd = {};
@@ -250,6 +251,7 @@ void ScreenWidget::mousePressEvent(QMouseEvent *event)
         return;
 
     selecting = true;
+    hasSelection = false;
 
     selectionStart = cellFromPosition(event->position());
     selectionEnd   = selectionStart;
@@ -263,6 +265,8 @@ void ScreenWidget::mouseMoveEvent(QMouseEvent *event)
         return;
 
     selectionEnd = cellFromPosition(event->position());
+    if(selectionEnd != selectionStart)
+        hasSelection = true;
 
     update();
 }
@@ -277,7 +281,9 @@ void ScreenWidget::mouseReleaseEvent(QMouseEvent *event)
 }
 
 bool ScreenWidget::isCellSelected(int row, int col) const
-{
+{   
+    if (!hasSelection)
+        return false;
     QPoint a = selectionStart;
     QPoint b = selectionEnd;
 
@@ -296,6 +302,5 @@ bool ScreenWidget::isCellSelected(int row, int col) const
 
     if (row == b.y())
         return col <= b.x();
-
     return true;
 }

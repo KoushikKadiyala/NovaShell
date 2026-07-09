@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o.d"
   "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o"
   "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o.d"
+  "CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o"
+  "CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o.d"
   "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o"
   "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o.d"
   "CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o"

@@ -2,6 +2,7 @@
 #include "VJIZ3MDCXP/moc_MainWindow.cpp"
 #include "UOCYJYXCJW/moc_PtySession.cpp"
 #include "JGIV4DAHX4/moc_ScreenWidget.cpp"
+#include "ZNMSKYHDQK/moc_ShellSession.cpp"
 #include "IMAN36LHMA/moc_NavigationButtons.cpp"
 #include "IMAN36LHMA/moc_ShellEdit.cpp"
 #include "IMAN36LHMA/moc_ShellView.cpp"

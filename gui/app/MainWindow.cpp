@@ -7,6 +7,7 @@
 #include <QVBoxLayout>
 #include <QMouseEvent>
 #include <QWindow>
+#include <QApplication>
 
 MainWindow::MainWindow()
 {  setAttribute(Qt::WA_TranslucentBackground);
@@ -47,8 +48,10 @@ MainWindow::MainWindow()
     setCentralWidget(container);
     layout->addWidget(titleBar);
     layout->addWidget(shell);
+
     setMouseTracking(true);
-    centralWidget()->setMouseTracking(true);
+    enableMouseTracking(this);
+    qApp->installEventFilter(this);
 
     container->setLayout(layout);
 }
@@ -56,22 +59,19 @@ Qt::Edges MainWindow::hitTest(const QPoint &pos)
 {
     Qt::Edges edges;
 
-    if (pos.x() < RESIZE_MARGIN)
+    if (pos.x() <= RESIZE_MARGIN)
         edges |= Qt::LeftEdge;
-    else if (pos.x() > width() - RESIZE_MARGIN)
+    else if (pos.x() >= width() - RESIZE_MARGIN)
         edges |= Qt::RightEdge;
-
-    if (pos.y() < RESIZE_MARGIN)
-        edges |= Qt::TopEdge;
-    else if (pos.y() > height() - RESIZE_MARGIN)
+    else if (pos.y() >= height() - RESIZE_MARGIN)
         edges |= Qt::BottomEdge;
 
     return edges;
 }
 
-void MainWindow::mouseMoveEvent(QMouseEvent *event)
+void MainWindow::updateResizeCursor(const QPoint &pos)
 {
-    Qt::Edges edges = hitTest(event->pos());
+    Qt::Edges edges = hitTest(pos);
 
     if (edges == (Qt::LeftEdge | Qt::TopEdge) ||
         edges == (Qt::RightEdge | Qt::BottomEdge))
@@ -96,6 +96,7 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
         unsetCursor();
     }
 }
+
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() != Qt::LeftButton)
@@ -115,4 +116,26 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 void MainWindow::leaveEvent(QEvent *)
 {
     unsetCursor();
+}
+void MainWindow::enableMouseTracking(QWidget *widget){
+    widget->setMouseTracking(true);
+    for(QObject *obj : widget->children())
+    {
+        if(QWidget *child = qobject_cast<QWidget*>(obj))
+            enableMouseTracking(child);
+    }
+}
+
+bool MainWindow::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::MouseMove)
+    {
+        auto *mouse = static_cast<QMouseEvent*>(event);
+
+        QPoint p = mapFromGlobal(mouse->globalPosition().toPoint());
+
+        updateResizeCursor(p);
+    }
+
+    return QMainWindow::eventFilter(obj, event);
 }

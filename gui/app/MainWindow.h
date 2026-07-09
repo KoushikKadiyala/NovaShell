@@ -11,11 +11,13 @@ public:
     MainWindow();
 protected:
     void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
     void leaveEvent(QEvent *event) override;
+    void enableMouseTracking(QWidget *widget);
+    bool eventFilter(QObject *obj,QEvent *event) override;
 private:
-    static constexpr int RESIZE_MARGIN = 6;
+    static constexpr int RESIZE_MARGIN = 8;
     Qt::Edges hitTest(const QPoint &pos);
+    void updateResizeCursor(const QPoint &pos);
 };
 
 #endif

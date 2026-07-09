@@ -35,6 +35,7 @@ private:
     void copySelection();
 
     bool selecting = false;
+    bool hasSelection = false;
     QPoint selectionStart; 
     QPoint selectionEnd;
 

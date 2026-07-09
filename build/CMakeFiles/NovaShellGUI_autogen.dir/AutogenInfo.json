@@ -279,6 +279,12 @@
 			null
 		],
 		[
+			"/home/kk/NovaShell/gui/session/ShellSession.h",
+			"MU",
+			"ZNMSKYHDQK/moc_ShellSession.cpp",
+			null
+		],
+		[
 			"/home/kk/NovaShell/gui/widgets/NavigationButtons.h",
 			"MU",
 			"IMAN36LHMA/moc_NavigationButtons.cpp",
@@ -378,6 +384,7 @@
 		[ "/home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/screen/ScreenBuffer.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/screen/ScreenWidget.cpp", "MU", null ],
+		[ "/home/kk/NovaShell/gui/session/ShellSession.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/NavigationButtons.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/ShellEdit.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/ShellView.cpp", "MU", null ],

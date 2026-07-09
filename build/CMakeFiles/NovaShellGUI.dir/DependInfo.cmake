@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o.d"
   "/home/kk/NovaShell/gui/screen/ScreenBuffer.cpp" "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o.d"
   "/home/kk/NovaShell/gui/screen/ScreenWidget.cpp" "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o.d"
+  "/home/kk/NovaShell/gui/session/ShellSession.cpp" "CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o.d"
   "/home/kk/NovaShell/gui/widgets/NavigationButtons.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o.d"
   "/home/kk/NovaShell/gui/widgets/ShellEdit.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o.d"
   "/home/kk/NovaShell/gui/widgets/ShellView.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o.d"

@@ -713,6 +713,30 @@ screen/ScreenWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s
 .PHONY : screen/ScreenWidget.cpp.s
 
+session/ShellSession.o: session/ShellSession.cpp.o
+.PHONY : session/ShellSession.o
+
+# target to build an object file
+session/ShellSession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o
+.PHONY : session/ShellSession.cpp.o
+
+session/ShellSession.i: session/ShellSession.cpp.i
+.PHONY : session/ShellSession.i
+
+# target to preprocess a source file
+session/ShellSession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.i
+.PHONY : session/ShellSession.cpp.i
+
+session/ShellSession.s: session/ShellSession.cpp.s
+.PHONY : session/ShellSession.s
+
+# target to generate assembly for a file
+session/ShellSession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.s
+.PHONY : session/ShellSession.cpp.s
+
 widgets/NavigationButtons.o: widgets/NavigationButtons.cpp.o
 .PHONY : widgets/NavigationButtons.o
 
@@ -910,6 +934,9 @@ help:
 	@echo "... screen/ScreenWidget.o"
 	@echo "... screen/ScreenWidget.i"
 	@echo "... screen/ScreenWidget.s"
+	@echo "... session/ShellSession.o"
+	@echo "... session/ShellSession.i"
+	@echo "... session/ShellSession.s"
 	@echo "... widgets/NavigationButtons.o"
 	@echo "... widgets/NavigationButtons.i"
 	@echo "... widgets/NavigationButtons.s"
