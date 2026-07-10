@@ -33,9 +33,9 @@ ShellSession::ShellSession(QWidget *parent)
     connect(&pty_,
             &PtySession::shellExited,
             this,
-            [](int code)
-            {
-                qDebug()<<"shell exited:"<<code;
+            [this](int code)
+            {   Q_UNUSED(code);
+                emit sessionEnded();
             });
 
     pty_.start();

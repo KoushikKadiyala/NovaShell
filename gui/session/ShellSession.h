@@ -14,6 +14,9 @@ class ShellSession : public QWidget
 public:
     explicit ShellSession(QWidget *parent = nullptr);
 
+signals:
+    void sessionEnded();
+
 private slots:
     void HandlePtyOutput(const QByteArray &data);
     void refresh();

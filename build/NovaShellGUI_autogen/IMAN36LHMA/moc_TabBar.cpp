@@ -42,7 +42,8 @@ template <> constexpr inline auto TabBar::qt_create_metaobjectdata<qt_meta_tag_Z
         "currentChanged",
         "",
         "index",
-        "newTabRequested"
+        "newTabRequested",
+        "tabCloseRequested"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,6 +53,10 @@ template <> constexpr inline auto TabBar::qt_create_metaobjectdata<qt_meta_tag_Z
         }}),
         // Signal 'newTabRequested'
         QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'tabCloseRequested'
+        QtMocHelpers::SignalData<void(int)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 3 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -77,6 +82,7 @@ void TabBar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         switch (_id) {
         case 0: _t->currentChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         case 1: _t->newTabRequested(); break;
+        case 2: _t->tabCloseRequested((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -84,6 +90,8 @@ void TabBar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         if (QtMocHelpers::indexOfMethod<void (TabBar::*)(int )>(_a, &TabBar::currentChanged, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (TabBar::*)()>(_a, &TabBar::newTabRequested, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (TabBar::*)(int )>(_a, &TabBar::tabCloseRequested, 2))
             return;
     }
 }
@@ -107,14 +115,14 @@ int TabBar::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -129,5 +137,11 @@ void TabBar::currentChanged(int _t1)
 void TabBar::newTabRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void TabBar::tabCloseRequested(int _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }
 QT_WARNING_POP

@@ -610,25 +610,102 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in \
+  /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-4.2/Modules/CMakeCInformation.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in \
+  /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake \
+  /usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-C.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
+  /usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/FindOpenGL.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake \
@@ -638,9 +715,13 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake \
+  /usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU-C.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU.cmake \
@@ -649,6 +730,7 @@ NovaShellGUI_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-C.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake \
+  /usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake \
@@ -1165,7 +1247,13 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: NovaShe
   /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h
 
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/MainWindow.cpp \
+  /home/kk/NovaShell/gui/pty/PtySession.h \
+  /home/kk/NovaShell/gui/renderer/ScreenRenderer.h \
+  /home/kk/NovaShell/gui/screen/ScreenBuffer.h \
+  /home/kk/NovaShell/gui/screen/ScreenCell.h \
+  /home/kk/NovaShell/gui/screen/ScreenWidget.h \
   /home/kk/NovaShell/gui/session/SessionManager.h \
+  /home/kk/NovaShell/gui/session/ShellSession.h \
   /home/kk/NovaShell/gui/widgets/TabBar.h \
   /home/kk/NovaShell/gui/widgets/TitleBar.h \
   /home/kk/NovaShell/gui/app/MainWindow.h \
@@ -1458,6 +1546,8 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
@@ -1466,6 +1556,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -1588,6 +1679,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -1606,6 +1698,8 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QWindow \
@@ -2003,6 +2097,7 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: /home/kk/NovaShell/gui/app/main.cpp 
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -2029,6 +2124,7 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: /home/kk/NovaShell/gui/app/main.cpp 
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcheckedint_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
@@ -2046,13 +2142,17 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: /home/kk/NovaShell/gui/app/main.cpp 
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
@@ -2127,6 +2227,7 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: /home/kk/NovaShell/gui/app/main.cpp 
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -6250,6 +6351,12 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -6258,6 +6365,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -6268,6 +6376,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
@@ -6285,10 +6394,15 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
@@ -6300,12 +6414,14 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
@@ -6315,6 +6431,7 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qminmax.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
@@ -6371,39 +6488,64 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widg
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversionchecks.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
@@ -7536,8 +7678,6 @@ NovaShellGUI: /lib64/ld-linux-x86-64.so.2 \
 
 CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o:
 
-CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o:
-
 CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o:
 
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o:
@@ -7547,8 +7687,6 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o:
 CMakeFiles/NovaShellGUI.dir/app/main.cpp.o:
 
 CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
-
-/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0:
 
 /usr/lib/x86_64-linux-gnu/libsystemd.so.0:
 
@@ -7594,31 +7732,21 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/Scrt1.o:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsDropShadowEffect:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qclipboard.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QClipboard:
 
@@ -7657,8 +7785,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
@@ -7702,11 +7828,19 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/asm-generic/ioctls.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h:
+
 /usr/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug:
 
@@ -7721,8 +7855,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 /usr/include/wctype.h:
 
 /usr/include/c++/15/sstream:
-
-/usr/include/c++/15/istream:
 
 /usr/include/c++/15/cwctype:
 
@@ -7780,8 +7912,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h:
 
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o:
@@ -7836,13 +7966,15 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-C.cmake:
 
-/usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
+/usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake:
 
-/usr/share/cmake-4.2/Modules/Linker/GNU.cmake:
+/usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
 
 /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake:
 
 /usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:
+
+/usr/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake:
 
 /usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
@@ -7862,9 +7994,83 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-4.2/Modules/FindOpenGL.cmake:
 
+CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o:
+
+/usr/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
+
+/usr/include/c++/15/istream:
+
+/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:
+
 /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake:
 
+/usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake:
+
 /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qclipboard.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake:
 
@@ -7874,9 +8080,21 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:
 
+/usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:
+
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake:
 
@@ -7884,9 +8102,33 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake:
 
+/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:
+
+/usr/share/cmake-4.2/Modules/Linker/GNU.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:
+
+/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake:
+
 /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
+
+/usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in:
+
+/usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeCInformation.cmake:
 
@@ -7921,6 +8163,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
@@ -8026,6 +8270,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15/debug/assertions.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake:
+
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/15/list:
@@ -8052,6 +8298,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake:
 
+/usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
 
 /usr/include/c++/15/tr1/special_function_util.h:
@@ -8060,6 +8308,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h:
 
+/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
@@ -8067,6 +8317,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/15/tr1/poly_laguerre.tcc:
+
+/usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
@@ -8111,6 +8363,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/string:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h:
+
+/usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake:
 
 /usr/include/c++/15/stdexcept:
 
@@ -8166,6 +8420,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 
 /usr/lib/x86_64-linux-gnu/libc.so.6:
 
+/usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h:
@@ -8177,6 +8433,8 @@ NovaShellGUI_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/bits/exception_ptr.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
+
+/usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h:
 
@@ -8214,6 +8472,8 @@ NovaShellGUI_autogen/JGIV4DAHX4/moc_ScreenWidget.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake:
+
 /usr/include/c++/15/bits/exception_defines.h:
 
 /usr/include/c++/15/bits/enable_special_members.h:
@@ -8227,6 +8487,8 @@ NovaShellGUI_autogen/JGIV4DAHX4/moc_ScreenWidget.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h:
 
 /usr/include/c++/15/bits/shared_ptr_atomic.h:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:
 
 /usr/include/c++/15/bits/stl_algo.h:
 
@@ -8406,6 +8668,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+
 /usr/include/c++/15/bits/specfun.h:
 
 /home/kk/NovaShell/gui/screen/ScreenBuffer.h:
@@ -8440,6 +8704,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/cstdlib:
 
+/usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
@@ -8458,9 +8724,13 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
+
 /usr/include/c++/15/set:
 
 /home/kk/NovaShell/gui/screen/ScreenWidget.h:
+
+/usr/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in:
 
 /usr/include/c++/15/cstdio:
 
@@ -8531,6 +8801,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/filesystem:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/15/bits/range_access.h:
 
@@ -8612,6 +8884,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake:
+
 /usr/include/c++/15/bits/invoke.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QList:
@@ -8638,6 +8912,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o:
 
 /usr/include/c++/15/bits/new_allocator.h:
 
+/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake:
+
 /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h:
 
 /usr/include/c++/15/bits/node_handle.h:
@@ -8648,6 +8924,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake:
+
 /usr/include/c++/15/bits/parse_numbers.h:
 
 /usr/include/c++/15/bits/postypes.h:
@@ -8657,6 +8935,10 @@ CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o:
 CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o:
+
+/usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
 
@@ -8712,6 +8994,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QSocketNotifier:
@@ -8727,6 +9011,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o:
 /usr/include/c++/15/tr1/gamma.tcc:
 
 /usr/include/limits.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake:
 
 /usr/include/c++/15/ext/concurrence.h:
 
@@ -8768,6 +9054,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake:
 
+/usr/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake:
+
 /usr/include/c++/15/bits/move.h:
 
 /usr/include/c++/15/bits/unique_ptr.h:
@@ -8783,6 +9071,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qswap.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
 
 /usr/include/c++/15/bits/locale_classes.h:
 
@@ -8892,6 +9182,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector:
 
 /usr/lib/x86_64-linux-gnu/libxcb.so.1:
@@ -8961,6 +9253,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h:
+
+/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
@@ -9034,6 +9328,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_NavigationButtons.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
 
+/usr/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h:
 
 CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o:
@@ -9069,6 +9365,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
+
+/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:
 
@@ -9112,6 +9410,8 @@ CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
 
+/usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
@@ -9148,9 +9448,13 @@ CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
 
+/usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
+
+/usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
 
@@ -9303,6 +9607,8 @@ CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o:
 /usr/include/c++/15/bits/std_function.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/Compiler/GNU-C.cmake:
 

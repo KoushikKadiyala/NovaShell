@@ -22,6 +22,10 @@ public:
 
     int count() const;
 
+    int indexOf(ShellSession *session) const;
+    
+    void moveSession(int from,int to);
+    void removeSession(int index);
 private:
     QStackedWidget *stack_;
 };

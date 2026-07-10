@@ -11,7 +11,6 @@
 
 void TitleBar::mousePressEvent(QMouseEvent *event)
 {
-    qDebug()<<event->button();
     if (event->button() == Qt::LeftButton)
     {
        

@@ -37,14 +37,34 @@ int TabBar::addTab(const QString &title)
     const int index = tabs_.size() - 1;
 
     connect(tab,
-            &QPushButton::clicked,
+            &TabButton::clicked,
             this,
             [this, index]()
-            {
+            {   auto *tab = qobject_cast<TabButton*>(sender());
+
+                if(!tab)
+                    return;
+                if(index == -1)
+                    return;
+                
                 setCurrentTab(index);
                 emit currentChanged(index);
             });
+    connect(tab,
+            &TabButton::closeRequested,
+            this,
+            [this](){
+                auto *tab = qobject_cast<TabButton*>(sender());
+                if(!tab)
+                    return;
 
+                int index = tabs_.indexOf(tab);
+
+                if(index == -1)
+                    return;
+
+                emit tabCloseRequested(index);
+            });
     if (currentIndex_ == -1)
         setCurrentTab(0);
 
@@ -55,7 +75,6 @@ void TabBar::setCurrentTab(int index)
 {
     if (index < 0 || index >= tabs_.size())
         return;
-    qDebug()<<"current tab ="<< index;
     currentIndex_ = index;
 
     for (int i = 0; i < tabs_.size(); ++i)
@@ -65,4 +84,17 @@ void TabBar::setCurrentTab(int index)
 int TabBar::currentTab() const
 {
     return currentIndex_;
+}
+void TabBar::removeTab(int index){
+    if(index<0 || index >= tabs_.size())
+        return;
+    TabButton *tab = tabs_[index];
+    layout_->removeWidget(tab);
+    tabs_.remove(index);
+    tab->deleteLater();
+
+    if(currentIndex_>= tabs_.size())
+        currentIndex_ = tabs_.size() -1;
+    if(currentIndex_ >= 0)
+        setCurrentTab(currentIndex_);
 }

@@ -20,11 +20,19 @@ public:
 
     int currentTab() const;
 
+    void removeTab(int index);
+
 signals:
     void currentChanged(int index);
     void newTabRequested();
-
+    void tabCloseRequested(int index);
 private:
+    bool dragging_ = false;
+
+    QPoint dragStartPos_;
+
+    TabButton *draggedTab_ = nullptr;
+    
     QVector<TabButton*> tabs_;
 
     QHBoxLayout *layout_;

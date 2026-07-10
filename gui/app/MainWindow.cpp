@@ -1,5 +1,6 @@
 #include "MainWindow.h"
 #include "../session/SessionManager.h"
+#include "../session/ShellSession.h"
 #include "../widgets/TitleBar.h"
 #include "../widgets/TabBar.h"
 
@@ -16,27 +17,57 @@ MainWindow::MainWindow()
 
     QWidget *container = new QWidget(this);
     container->setObjectName("windowContainer");
+
     auto *layout = new QVBoxLayout(container);
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
 
    auto *titleBar = new TitleBar(container);
-   auto *tabBar = new TabBar(container);
-    tabBar->addTab("shell 1");
+   tabBar_ = new TabBar(container);
+   manager_ = new SessionManager(container);
 
+    connect(tabBar_, &TabBar::currentChanged,
+            manager_, &SessionManager::setCurrentSession);
+    
+    connect(tabBar_,&TabBar::newTabRequested,
+            this, &MainWindow::addTab);
+    connect(tabBar_,&TabBar::tabCloseRequested,
+            this, &MainWindow::removeTab);
 
-    SessionManager *manager = new SessionManager(container);
-    setCentralWidget(container);
-    manager ->createSession();
     layout->addWidget(titleBar);
-    layout->addWidget(tabBar);
-    layout->addWidget(manager);
+    layout->addWidget(tabBar_);
+    layout->addWidget(manager_);
+
+    container->setLayout(layout);
+    setCentralWidget(container);
 
     setMouseTracking(true);
     enableMouseTracking(this);
     qApp->installEventFilter(this);
 
-    container->setLayout(layout);
+    addTab();
+}
+void MainWindow::addTab(){
+    ShellSession *session = manager_ ->createSession();
+
+    int index = tabBar_->addTab(QString("shell %1").arg(manager_->count()));
+
+    tabBar_->setCurrentTab(index);
+    connect(session, &ShellSession::sessionEnded,
+            this,[this,session](){
+                int idx = manager_ ->indexOf(session);
+                if (idx != -1)
+                    removeTab(idx);
+            });
+
+}
+
+void MainWindow::removeTab(int index)
+{
+    tabBar_->removeTab(index);
+    manager_->removeSession(index);
+    if (manager_ -> count()==0)
+        addTab();
 }
 Qt::Edges MainWindow::hitTest(const QPoint &pos)
 {

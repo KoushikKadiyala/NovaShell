@@ -38,10 +38,32 @@ template <> constexpr inline auto TabButton::qt_create_metaobjectdata<qt_meta_ta
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "TabButton"
+        "TabButton",
+        "clicked",
+        "",
+        "closeRequested",
+        "dragStrated",
+        "QPoint",
+        "globalPos",
+        "dragged",
+        "dragFinished"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Signal 'clicked'
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'closeRequested'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'dragStrated'
+        QtMocHelpers::SignalData<void(const QPoint &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 },
+        }}),
+        // Signal 'dragged'
+        QtMocHelpers::SignalData<void(const QPoint &)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 },
+        }}),
+        // Signal 'dragFinished'
+        QtMocHelpers::SignalData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -51,7 +73,7 @@ template <> constexpr inline auto TabButton::qt_create_metaobjectdata<qt_meta_ta
             qt_methods, qt_properties, qt_enums);
 }
 Q_CONSTINIT const QMetaObject TabButton::staticMetaObject = { {
-    QMetaObject::SuperData::link<QPushButton::staticMetaObject>(),
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9TabButtonE_t>.stringdata,
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9TabButtonE_t>.data,
     qt_static_metacall,
@@ -63,10 +85,28 @@ Q_CONSTINIT const QMetaObject TabButton::staticMetaObject = { {
 void TabButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     auto *_t = static_cast<TabButton *>(_o);
-    (void)_t;
-    (void)_c;
-    (void)_id;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->clicked(); break;
+        case 1: _t->closeRequested(); break;
+        case 2: _t->dragStrated((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
+        case 3: _t->dragged((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
+        case 4: _t->dragFinished(); break;
+        default: ;
+        }
+    }
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::clicked, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::closeRequested, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)(const QPoint & )>(_a, &TabButton::dragStrated, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)(const QPoint & )>(_a, &TabButton::dragged, 3))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::dragFinished, 4))
+            return;
+    }
 }
 
 const QMetaObject *TabButton::metaObject() const
@@ -79,12 +119,54 @@ void *TabButton::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9TabButtonE_t>.strings))
         return static_cast<void*>(this);
-    return QPushButton::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
 int TabButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QPushButton::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 5)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 5;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 5)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 5;
+    }
     return _id;
+}
+
+// SIGNAL 0
+void TabButton::clicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void TabButton::closeRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void TabButton::dragStrated(const QPoint & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
+}
+
+// SIGNAL 3
+void TabButton::dragged(const QPoint & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
+}
+
+// SIGNAL 4
+void TabButton::dragFinished()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 QT_WARNING_POP

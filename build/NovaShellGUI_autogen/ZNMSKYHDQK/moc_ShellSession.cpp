@@ -39,19 +39,22 @@ template <> constexpr inline auto ShellSession::qt_create_metaobjectdata<qt_meta
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "ShellSession",
-        "HandlePtyOutput",
+        "sessionEnded",
         "",
+        "HandlePtyOutput",
         "data",
         "refresh"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Signal 'sessionEnded'
+        QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'HandlePtyOutput'
-        QtMocHelpers::SlotData<void(const QByteArray &)>(1, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::QByteArray, 3 },
+        QtMocHelpers::SlotData<void(const QByteArray &)>(3, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QByteArray, 4 },
         }}),
         // Slot 'refresh'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -75,10 +78,15 @@ void ShellSession::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     auto *_t = static_cast<ShellSession *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->HandlePtyOutput((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
-        case 1: _t->refresh(); break;
+        case 0: _t->sessionEnded(); break;
+        case 1: _t->HandlePtyOutput((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 2: _t->refresh(); break;
         default: ;
         }
+    }
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (ShellSession::*)()>(_a, &ShellSession::sessionEnded, 0))
+            return;
     }
 }
 
@@ -101,15 +109,21 @@ int ShellSession::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
+}
+
+// SIGNAL 0
+void ShellSession::sessionEnded()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP

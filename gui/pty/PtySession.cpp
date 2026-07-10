@@ -102,11 +102,6 @@ QByteArray path = shellPath.toLocal8Bit();
         perror("execl");
         _exit(EXIT_FAILURE);
 }
-else{
-    qDebug() << "Parent: Master FD =" << masterFd;
-    qDebug() << "Parent: Slave PTY =" << slaveName;
-    qDebug() << "Parent: Child PID =" << childPid;
-}
 notifier = new QSocketNotifier(masterFd,QSocketNotifier::Read,this);
 connect(notifier,&QSocketNotifier::activated,this,&PtySession::readFromPty);
 
