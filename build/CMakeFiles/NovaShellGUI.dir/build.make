@@ -73,7 +73,7 @@ NovaShellGUI_autogen/timestamp: /usr/lib/qt6/libexec/moc
 NovaShellGUI_autogen/timestamp: /usr/lib/qt6/libexec/uic
 NovaShellGUI_autogen/timestamp: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target NovaShellGUI"
-	/usr/bin/cmake -E cmake_autogen /home/kk/NovaShell/build/CMakeFiles/NovaShellGUI_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/kk/NovaShell/build/CMakeFiles/NovaShellGUI_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/kk/NovaShell/build/NovaShellGUI_autogen/timestamp
 
 CMakeFiles/NovaShellGUI.dir/codegen:
@@ -83,199 +83,214 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: CMakeFi
 CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: NovaShellGUI_autogen/mocs_compilation.cpp
 CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o -MF CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o -MF CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp
 
 CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp > CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp > CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp -o CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp -o CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: /home/kk/NovaShell/gui/app/main.cpp
 CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NovaShellGUI.dir/app/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/app/main.cpp.o -MF CMakeFiles/NovaShellGUI.dir/app/main.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/app/main.cpp.o -c /home/kk/NovaShell/gui/app/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/app/main.cpp.o -MF CMakeFiles/NovaShellGUI.dir/app/main.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/app/main.cpp.o -c /home/kk/NovaShell/gui/app/main.cpp
 
 CMakeFiles/NovaShellGUI.dir/app/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/app/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/app/main.cpp > CMakeFiles/NovaShellGUI.dir/app/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/app/main.cpp > CMakeFiles/NovaShellGUI.dir/app/main.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/app/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/app/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/app/main.cpp -o CMakeFiles/NovaShellGUI.dir/app/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/app/main.cpp -o CMakeFiles/NovaShellGUI.dir/app/main.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/MainWindow.cpp
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o -MF CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o -c /home/kk/NovaShell/gui/app/MainWindow.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o -MF CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o -c /home/kk/NovaShell/gui/app/MainWindow.cpp
 
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/app/MainWindow.cpp > CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/app/MainWindow.cpp > CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/app/MainWindow.cpp -o CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.s
-
-CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
-CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: /home/kk/NovaShell/gui/widgets/ShellView.cpp
-CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o -c /home/kk/NovaShell/gui/widgets/ShellView.cpp
-
-CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/ShellView.cpp > CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.i
-
-CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/ShellView.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.s
-
-CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
-CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o: /home/kk/NovaShell/gui/widgets/ShellEdit.cpp
-CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o -c /home/kk/NovaShell/gui/widgets/ShellEdit.cpp
-
-CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/ShellEdit.cpp > CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.i
-
-CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/ShellEdit.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.s
-
-CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
-CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o: /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp
-CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o -c /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp
-
-CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp > CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.i
-
-CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/app/MainWindow.cpp -o CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: /home/kk/NovaShell/gui/pty/PtySession.cpp
 CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o -MF CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o -c /home/kk/NovaShell/gui/pty/PtySession.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o -MF CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o -c /home/kk/NovaShell/gui/pty/PtySession.cpp
 
 CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/pty/PtySession.cpp > CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/pty/PtySession.cpp > CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/pty/PtySession.cpp -o CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/pty/PtySession.cpp -o CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s
+
+CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
+CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o: /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp
+CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o -c /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp
+
+CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp > CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.i
+
+CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/ThemeSelector.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: /home/kk/NovaShell/gui/widgets/TitleBar.cpp
 CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o -c /home/kk/NovaShell/gui/widgets/TitleBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o -c /home/kk/NovaShell/gui/widgets/TitleBar.cpp
 
 CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/TitleBar.cpp > CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/TitleBar.cpp > CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/TitleBar.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/TitleBar.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o: /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp
 CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o -c /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o -c /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp
 
 CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp > CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp > CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/NavigationButtons.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.s
+
+CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
+CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o: /home/kk/NovaShell/gui/widgets/TabBar.cpp
+CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o -c /home/kk/NovaShell/gui/widgets/TabBar.cpp
+
+CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/TabBar.cpp > CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.i
+
+CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/TabBar.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.s
+
+CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
+CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: /home/kk/NovaShell/gui/widgets/TabButton.cpp
+CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o -MF CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o -c /home/kk/NovaShell/gui/widgets/TabButton.cpp
+
+CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/widgets/TabButton.cpp > CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.i
+
+CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/widgets/TabButton.cpp -o CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o: /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o -MF CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o -c /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o -MF CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o -c /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp
 
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp > CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp > CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp -o CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp -o CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o: /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp
 CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o -MF CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o -c /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o -MF CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o -c /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp > CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp > CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp -o CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp -o CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o: /home/kk/NovaShell/gui/screen/ScreenWidget.cpp
 CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o -MF CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o -c /home/kk/NovaShell/gui/screen/ScreenWidget.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o -MF CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o -c /home/kk/NovaShell/gui/screen/ScreenWidget.cpp
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/screen/ScreenWidget.cpp > CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/screen/ScreenWidget.cpp > CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/screen/ScreenWidget.cpp -o CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/screen/ScreenWidget.cpp -o CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s
 
 CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
 CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o: /home/kk/NovaShell/gui/session/ShellSession.cpp
 CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o -MF CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o -c /home/kk/NovaShell/gui/session/ShellSession.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o -MF CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o -c /home/kk/NovaShell/gui/session/ShellSession.cpp
 
 CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/session/ShellSession.cpp > CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/session/ShellSession.cpp > CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.i
 
 CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/session/ShellSession.cpp -o CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/session/ShellSession.cpp -o CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.s
+
+CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o: CMakeFiles/NovaShellGUI.dir/flags.make
+CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o: /home/kk/NovaShell/gui/session/SessionManager.cpp
+CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o -MF CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o.d -o CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o -c /home/kk/NovaShell/gui/session/SessionManager.cpp
+
+CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/gui/session/SessionManager.cpp > CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.i
+
+CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/gui/session/SessionManager.cpp -o CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.s
 
 # Object files for target NovaShellGUI
 NovaShellGUI_OBJECTS = \
 "CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/app/main.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o" \
-"CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o" \
-"CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o" \
-"CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o" \
+"CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o" \
+"CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o" \
+"CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o" \
 "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o" \
-"CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o"
+"CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o" \
+"CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o"
 
 # External object files for target NovaShellGUI
 NovaShellGUI_EXTERNAL_OBJECTS =
@@ -283,16 +298,17 @@ NovaShellGUI_EXTERNAL_OBJECTS =
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/app/main.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o
-NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o
-NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o
-NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o
+NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o
+NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o
+NovaShellGUI: CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o
+NovaShellGUI: CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/build.make
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/compiler_depend.ts
 NovaShellGUI: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2
@@ -301,7 +317,7 @@ NovaShellGUI: /usr/lib/x86_64-linux-gnu/libGLX.so
 NovaShellGUI: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 NovaShellGUI: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2
 NovaShellGUI: CMakeFiles/NovaShellGUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable NovaShellGUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable NovaShellGUI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NovaShellGUI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

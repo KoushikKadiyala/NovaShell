@@ -1,7 +1,7 @@
 #include "MainWindow.h"
-#include "../widgets/ShellView.h"
-#include "../pty/PtySession.h"
+#include "../session/SessionManager.h"
 #include "../widgets/TitleBar.h"
+#include "../widgets/TabBar.h"
 
 #include <QWidget>
 #include <QVBoxLayout>
@@ -21,33 +21,16 @@ MainWindow::MainWindow()
     layout->setSpacing(0);
 
    auto *titleBar = new TitleBar(container);
+   auto *tabBar = new TabBar(container);
+    tabBar->addTab("shell 1");
 
-    ShellView *shell = new ShellView(container);
-    PtySession *pty = new PtySession(this);
-    connect(pty,
-    &PtySession::dataReceived,
-    shell,
-    &ShellView::insert );
 
-    connect(shell,
-    &ShellView::bytesTyped,
-    pty,
-    [pty](const QByteArray &command){
-        pty->writeData(command);
-    });
-    connect(pty,
-            &PtySession::shellExited,
-            this,
-            [](int code){qDebug() << "shell exited:"<< code;});
-    connect(shell,
-            &ShellView::terminalResized,
-            pty,
-            &PtySession::resize);
-    pty->start();
-
+    SessionManager *manager = new SessionManager(container);
     setCentralWidget(container);
+    manager ->createSession();
     layout->addWidget(titleBar);
-    layout->addWidget(shell);
+    layout->addWidget(tabBar);
+    layout->addWidget(manager);
 
     setMouseTracking(true);
     enableMouseTracking(this);

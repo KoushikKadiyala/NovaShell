@@ -71,7 +71,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 69,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
@@ -238,7 +238,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"defines" : 
@@ -250,6 +250,10 @@
 				{
 					"backtrace" : 5,
 					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 31,
+					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 5,
@@ -312,7 +316,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -331,10 +336,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"backtrace" : 5,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2",
@@ -404,7 +405,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				13
+				14
 			]
 		},
 		{
@@ -422,14 +423,15 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14
+				15
 			]
 		}
 	],
@@ -457,25 +459,13 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "widgets/ShellView.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "widgets/ShellEdit.cpp",
+			"path" : "pty/PtySession.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "widgets/ThemeSelector.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "pty/PtySession.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -488,6 +478,18 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "widgets/NavigationButtons.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "widgets/TabBar.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "widgets/TabButton.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -512,6 +514,12 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "session/ShellSession.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "session/SessionManager.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{

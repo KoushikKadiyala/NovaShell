@@ -54,16 +54,23 @@ target_link_libraries(NovaShell
 qt_add_executable(NovaShellGUI
     app/main.cpp
     app/MainWindow.cpp
-    widgets/ShellView.cpp
-    widgets/ShellEdit.cpp
-    widgets/ThemeSelector.cpp
+
     pty/PtySession.cpp
+    
+    widgets/ThemeSelector.cpp
     widgets/TitleBar.cpp
     widgets/NavigationButtons.cpp
+    widgets/TabBar.cpp
+    widgets/TabButton.cpp
+    
     renderer/ScreenRenderer.cpp
+    
     screen/ScreenBuffer.cpp
     screen/ScreenWidget.cpp
+    
     session/ShellSession.cpp
+    session/SessionManager.cpp
+    
 )
 
 target_link_libraries(NovaShellGUI

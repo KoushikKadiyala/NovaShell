@@ -282,7 +282,7 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/g++",
+		"/usr/bin/c++",
 		"-std=gnu++17",
 		"-w",
 		"-dM",

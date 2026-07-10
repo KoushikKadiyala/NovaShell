@@ -73,7 +73,7 @@ NovaShellCore_autogen/timestamp: /usr/lib/qt6/libexec/moc
 NovaShellCore_autogen/timestamp: /usr/lib/qt6/libexec/uic
 NovaShellCore_autogen/timestamp: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target NovaShellCore"
-	/usr/bin/cmake -E cmake_autogen /home/kk/NovaShell/build/CMakeFiles/NovaShellCore_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/kk/NovaShell/build/CMakeFiles/NovaShellCore_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/kk/NovaShell/build/NovaShellCore_autogen/timestamp
 
 CMakeFiles/NovaShellCore.dir/codegen:
@@ -83,141 +83,141 @@ CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o: CMake
 CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o: NovaShellCore_autogen/mocs_compilation.cpp
 CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o -MF CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o -MF CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.o -c /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp
 
 CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp > CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp > CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp -o CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kk/NovaShell/build/NovaShellCore_autogen/mocs_compilation.cpp -o CMakeFiles/NovaShellCore.dir/NovaShellCore_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o: /home/kk/NovaShell/engine/core.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o -c /home/kk/NovaShell/engine/core.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.o -c /home/kk/NovaShell/engine/core.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/core.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/core.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/core.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/core.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/core.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o: /home/kk/NovaShell/engine/parser.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o -c /home/kk/NovaShell/engine/parser.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.o -c /home/kk/NovaShell/engine/parser.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/parser.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/parser.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/parser.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/parser.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/parser.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o: /home/kk/NovaShell/engine/executor.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o -c /home/kk/NovaShell/engine/executor.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.o -c /home/kk/NovaShell/engine/executor.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/executor.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/executor.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/executor.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/executor.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/executor.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o: /home/kk/NovaShell/engine/builtins.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o -c /home/kk/NovaShell/engine/builtins.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.o -c /home/kk/NovaShell/engine/builtins.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/builtins.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/builtins.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/builtins.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/builtins.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/builtins.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o: /home/kk/NovaShell/engine/environment.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o -c /home/kk/NovaShell/engine/environment.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.o -c /home/kk/NovaShell/engine/environment.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/environment.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/environment.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/environment.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/environment.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/environment.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o: /home/kk/NovaShell/engine/launcher.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o -c /home/kk/NovaShell/engine/launcher.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.o -c /home/kk/NovaShell/engine/launcher.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/launcher.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/launcher.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/launcher.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/launcher.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/launcher.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/NovaShell/engine/process.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o -c /home/kk/NovaShell/engine/process.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o -c /home/kk/NovaShell/engine/process.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/process.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/process.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/process.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/process.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o: /home/kk/NovaShell/engine/io.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o -c /home/kk/NovaShell/engine/io.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.o -c /home/kk/NovaShell/engine/io.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/io.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/io.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/io.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/io.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/io.c.s
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o: CMakeFiles/NovaShellCore.dir/flags.make
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o: /home/kk/NovaShell/engine/memory.c
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o: CMakeFiles/NovaShellCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kk/NovaShell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o -c /home/kk/NovaShell/engine/memory.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o -MF CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o.d -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.o -c /home/kk/NovaShell/engine/memory.c
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/memory.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kk/NovaShell/engine/memory.c > CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.i
 
 CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/memory.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kk/NovaShell/engine/memory.c -o CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/memory.c.s
 
 # Object files for target NovaShellCore
 NovaShellCore_OBJECTS = \

@@ -279,6 +279,12 @@
 			null
 		],
 		[
+			"/home/kk/NovaShell/gui/session/SessionManager.h",
+			"MU",
+			"ZNMSKYHDQK/moc_SessionManager.cpp",
+			null
+		],
+		[
 			"/home/kk/NovaShell/gui/session/ShellSession.h",
 			"MU",
 			"ZNMSKYHDQK/moc_ShellSession.cpp",
@@ -291,15 +297,15 @@
 			null
 		],
 		[
-			"/home/kk/NovaShell/gui/widgets/ShellEdit.h",
+			"/home/kk/NovaShell/gui/widgets/TabBar.h",
 			"MU",
-			"IMAN36LHMA/moc_ShellEdit.cpp",
+			"IMAN36LHMA/moc_TabBar.cpp",
 			null
 		],
 		[
-			"/home/kk/NovaShell/gui/widgets/ShellView.h",
+			"/home/kk/NovaShell/gui/widgets/TabButton.h",
 			"MU",
-			"IMAN36LHMA/moc_ShellView.cpp",
+			"IMAN36LHMA/moc_TabButton.cpp",
 			null
 		],
 		[
@@ -318,7 +324,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/kk/NovaShell/build/NovaShellGUI_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -354,7 +360,7 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/g++",
+		"/usr/bin/c++",
 		"-std=gnu++17",
 		"-w",
 		"-dM",
@@ -384,10 +390,11 @@
 		[ "/home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/screen/ScreenBuffer.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/screen/ScreenWidget.cpp", "MU", null ],
+		[ "/home/kk/NovaShell/gui/session/SessionManager.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/session/ShellSession.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/NavigationButtons.cpp", "MU", null ],
-		[ "/home/kk/NovaShell/gui/widgets/ShellEdit.cpp", "MU", null ],
-		[ "/home/kk/NovaShell/gui/widgets/ShellView.cpp", "MU", null ],
+		[ "/home/kk/NovaShell/gui/widgets/TabBar.cpp", "MU", null ],
+		[ "/home/kk/NovaShell/gui/widgets/TabButton.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/ThemeSelector.cpp", "MU", null ],
 		[ "/home/kk/NovaShell/gui/widgets/TitleBar.cpp", "MU", null ]
 	],

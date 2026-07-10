@@ -54,7 +54,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
@@ -83,12 +83,6 @@
 			]
 		},
 		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "-g"
-				}
-			],
 			"includes" : 
 			[
 				{
@@ -127,10 +121,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"backtrace" : 2,
 				"fragment" : "libNovaShellCore.a",

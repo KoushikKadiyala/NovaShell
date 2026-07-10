@@ -713,6 +713,30 @@ screen/ScreenWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.s
 .PHONY : screen/ScreenWidget.cpp.s
 
+session/SessionManager.o: session/SessionManager.cpp.o
+.PHONY : session/SessionManager.o
+
+# target to build an object file
+session/SessionManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o
+.PHONY : session/SessionManager.cpp.o
+
+session/SessionManager.i: session/SessionManager.cpp.i
+.PHONY : session/SessionManager.i
+
+# target to preprocess a source file
+session/SessionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.i
+.PHONY : session/SessionManager.cpp.i
+
+session/SessionManager.s: session/SessionManager.cpp.s
+.PHONY : session/SessionManager.s
+
+# target to generate assembly for a file
+session/SessionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.s
+.PHONY : session/SessionManager.cpp.s
+
 session/ShellSession.o: session/ShellSession.cpp.o
 .PHONY : session/ShellSession.o
 
@@ -761,53 +785,53 @@ widgets/NavigationButtons.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.s
 .PHONY : widgets/NavigationButtons.cpp.s
 
-widgets/ShellEdit.o: widgets/ShellEdit.cpp.o
-.PHONY : widgets/ShellEdit.o
+widgets/TabBar.o: widgets/TabBar.cpp.o
+.PHONY : widgets/TabBar.o
 
 # target to build an object file
-widgets/ShellEdit.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.o
-.PHONY : widgets/ShellEdit.cpp.o
+widgets/TabBar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o
+.PHONY : widgets/TabBar.cpp.o
 
-widgets/ShellEdit.i: widgets/ShellEdit.cpp.i
-.PHONY : widgets/ShellEdit.i
+widgets/TabBar.i: widgets/TabBar.cpp.i
+.PHONY : widgets/TabBar.i
 
 # target to preprocess a source file
-widgets/ShellEdit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.i
-.PHONY : widgets/ShellEdit.cpp.i
+widgets/TabBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.i
+.PHONY : widgets/TabBar.cpp.i
 
-widgets/ShellEdit.s: widgets/ShellEdit.cpp.s
-.PHONY : widgets/ShellEdit.s
+widgets/TabBar.s: widgets/TabBar.cpp.s
+.PHONY : widgets/TabBar.s
 
 # target to generate assembly for a file
-widgets/ShellEdit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ShellEdit.cpp.s
-.PHONY : widgets/ShellEdit.cpp.s
+widgets/TabBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.s
+.PHONY : widgets/TabBar.cpp.s
 
-widgets/ShellView.o: widgets/ShellView.cpp.o
-.PHONY : widgets/ShellView.o
+widgets/TabButton.o: widgets/TabButton.cpp.o
+.PHONY : widgets/TabButton.o
 
 # target to build an object file
-widgets/ShellView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.o
-.PHONY : widgets/ShellView.cpp.o
+widgets/TabButton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o
+.PHONY : widgets/TabButton.cpp.o
 
-widgets/ShellView.i: widgets/ShellView.cpp.i
-.PHONY : widgets/ShellView.i
+widgets/TabButton.i: widgets/TabButton.cpp.i
+.PHONY : widgets/TabButton.i
 
 # target to preprocess a source file
-widgets/ShellView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.i
-.PHONY : widgets/ShellView.cpp.i
+widgets/TabButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.i
+.PHONY : widgets/TabButton.cpp.i
 
-widgets/ShellView.s: widgets/ShellView.cpp.s
-.PHONY : widgets/ShellView.s
+widgets/TabButton.s: widgets/TabButton.cpp.s
+.PHONY : widgets/TabButton.s
 
 # target to generate assembly for a file
-widgets/ShellView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/ShellView.cpp.s
-.PHONY : widgets/ShellView.cpp.s
+widgets/TabButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.s
+.PHONY : widgets/TabButton.cpp.s
 
 widgets/ThemeSelector.o: widgets/ThemeSelector.cpp.o
 .PHONY : widgets/ThemeSelector.o
@@ -934,18 +958,21 @@ help:
 	@echo "... screen/ScreenWidget.o"
 	@echo "... screen/ScreenWidget.i"
 	@echo "... screen/ScreenWidget.s"
+	@echo "... session/SessionManager.o"
+	@echo "... session/SessionManager.i"
+	@echo "... session/SessionManager.s"
 	@echo "... session/ShellSession.o"
 	@echo "... session/ShellSession.i"
 	@echo "... session/ShellSession.s"
 	@echo "... widgets/NavigationButtons.o"
 	@echo "... widgets/NavigationButtons.i"
 	@echo "... widgets/NavigationButtons.s"
-	@echo "... widgets/ShellEdit.o"
-	@echo "... widgets/ShellEdit.i"
-	@echo "... widgets/ShellEdit.s"
-	@echo "... widgets/ShellView.o"
-	@echo "... widgets/ShellView.i"
-	@echo "... widgets/ShellView.s"
+	@echo "... widgets/TabBar.o"
+	@echo "... widgets/TabBar.i"
+	@echo "... widgets/TabBar.s"
+	@echo "... widgets/TabButton.o"
+	@echo "... widgets/TabButton.i"
+	@echo "... widgets/TabButton.s"
 	@echo "... widgets/ThemeSelector.o"
 	@echo "... widgets/ThemeSelector.i"
 	@echo "... widgets/ThemeSelector.s"

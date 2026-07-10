@@ -28,11 +28,23 @@ ShellSession::ShellSession(QWidget *parent)
         &pty_,
         &PtySession::dataReceived,
         this,
-        [this](const QByteArray &data)
-        {
-            renderer_.render(data, buffer_);
-            screen_->update();
-        });
+        &ShellSession::HandlePtyOutput);
+
+    connect(&pty_,
+            &PtySession::shellExited,
+            this,
+            [](int code)
+            {
+                qDebug()<<"shell exited:"<<code;
+            });
 
     pty_.start();
+}
+
+void ShellSession::HandlePtyOutput(const QByteArray &data){
+    renderer_.render(data, buffer_);
+    refresh();
+}
+void ShellSession::refresh(){
+    screen_->update();
 }

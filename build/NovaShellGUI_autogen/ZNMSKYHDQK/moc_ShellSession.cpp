@@ -38,10 +38,20 @@ template <> constexpr inline auto ShellSession::qt_create_metaobjectdata<qt_meta
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "ShellSession"
+        "ShellSession",
+        "HandlePtyOutput",
+        "",
+        "data",
+        "refresh"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Slot 'HandlePtyOutput'
+        QtMocHelpers::SlotData<void(const QByteArray &)>(1, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QByteArray, 3 },
+        }}),
+        // Slot 'refresh'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -63,10 +73,13 @@ Q_CONSTINIT const QMetaObject ShellSession::staticMetaObject = { {
 void ShellSession::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     auto *_t = static_cast<ShellSession *>(_o);
-    (void)_t;
-    (void)_c;
-    (void)_id;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->HandlePtyOutput((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 1: _t->refresh(); break;
+        default: ;
+        }
+    }
 }
 
 const QMetaObject *ShellSession::metaObject() const
@@ -85,6 +98,18 @@ void *ShellSession::qt_metacast(const char *_clname)
 int ShellSession::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 2;
+    }
     return _id;
 }
 QT_WARNING_POP
