@@ -79,6 +79,35 @@ void TabButton::updateStyle()
 void TabButton::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton)
-        emit clicked();
-    QWidget::mousePressEvent(event);
+     {
+        dragStartPos_ = event->globalPosition().toPoint();
+        dragging_ = false;
+           emit clicked();
+     }
+           QWidget::mousePressEvent(event);
+}
+
+void TabButton::mouseMoveEvent(QMouseEvent *event)
+{
+    if(!(event->buttons() & Qt::LeftButton))
+        return;
+    QPoint delta = event->globalPosition().toPoint()-dragStartPos_;
+
+    if(!dragging_ && delta.manhattanLength() > 8)
+    {
+        dragging_ = true;
+        emit dragStrated(event->globalPosition().toPoint());
+    }
+    if(dragging_)
+        emit dragged(event->globalPosition().toPoint());
+}
+
+void TabButton::mouseReleaseEvent(QMouseEvent *event)
+{
+    if(event->buttons()== Qt::LeftButton && dragging_)
+    {
+        dragging_ = false;
+        emit dragFinished();
+    }
+    QWidget::mouseReleaseEvent(event);
 }

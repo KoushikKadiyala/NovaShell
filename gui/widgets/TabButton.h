@@ -23,13 +23,15 @@ signals:
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
-    // void mouseMoveEvent(QMouseEvent *event) override;
-    // void mouseReleaseEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
 
 private:
     QLabel *label_;
     QPushButton *closeBtn_;
-    bool         active_ = false;
+    QPoint dragStartPos_;
+    bool active_ = false;
+    bool dragging_ = false;
 
     void updateStyle();
 };

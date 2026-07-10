@@ -65,6 +65,51 @@ int TabBar::addTab(const QString &title)
 
                 emit tabCloseRequested(index);
             });
+            connect(tab, &TabButton::dragStrated,
+        this, [this, tab](const QPoint &globalPos) {
+            dragSourceIndex = tabs_.indexOf(tab);
+            dragTargetIndex = dragSourceIndex;
+            tab->setCursor(Qt::ClosedHandCursor);
+        });
+
+connect(tab, &TabButton::dragged,
+        this, [this, tab](const QPoint &globalPos) {
+            if (dragSourceIndex == -1) return;
+
+            QPoint local = mapFromGlobal(globalPos);
+            int targetIndex = -1;
+
+            for (int i = 0; i < tabs_.size(); ++i)
+            {
+                if (tabs_[i]->geometry().contains(local))
+                {
+                    targetIndex = i;
+                    break;
+                }
+            }
+
+            if (targetIndex == -1 || targetIndex == dragTargetIndex)
+                return;
+
+            dragTargetIndex = targetIndex;
+
+            layout_->removeWidget(tabs_[dragSourceIndex]);
+            layout_->insertWidget(dragTargetIndex, tabs_[dragSourceIndex]);
+
+            tabs_.move(dragSourceIndex, dragTargetIndex);
+            dragSourceIndex = dragTargetIndex;
+
+            emit tabMoved(dragSourceIndex, dragTargetIndex);
+
+            setCurrentTab(dragSourceIndex);
+        });
+
+connect(tab, &TabButton::dragFinished,
+        this, [this, tab]() {
+            dragSourceIndex = -1;
+            dragTargetIndex = -1;
+            tab->setCursor(Qt::PointingHandCursor);
+        });
     if (currentIndex_ == -1)
         setCurrentTab(0);
 

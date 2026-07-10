@@ -33,6 +33,8 @@ MainWindow::MainWindow()
             this, &MainWindow::addTab);
     connect(tabBar_,&TabBar::tabCloseRequested,
             this, &MainWindow::removeTab);
+    connect(tabBar_, &TabBar::tabMoved,
+            manager_, &SessionManager::moveSession);
 
     layout->addWidget(titleBar);
     layout->addWidget(tabBar_);

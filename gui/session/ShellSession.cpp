@@ -39,6 +39,7 @@ ShellSession::ShellSession(QWidget *parent)
             });
 
     pty_.start();
+    screen_->setFocus();
 }
 
 void ShellSession::HandlePtyOutput(const QByteArray &data){

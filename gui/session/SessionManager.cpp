@@ -34,6 +34,8 @@ int SessionManager::currentIndex()const{
 
 void SessionManager::setCurrentSession(int index){
     stack_->setCurrentIndex(index);
+    if(auto *s = currentSession())
+        s->setFocus();
 }
 
 int SessionManager::count() const{
@@ -54,7 +56,7 @@ void SessionManager::removeSession(int index){
 
 void SessionManager::moveSession(int from,int to)
 {
-    if(from = to)
+    if(from == to)
         return;
     if(from<0 || from >= stack_->count())
         return;
