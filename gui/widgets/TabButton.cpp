@@ -26,7 +26,6 @@ TabButton::TabButton(const QString &title, QWidget *parent)
     closeBtn_->setCursor(Qt::PointingHandCursor);
 
     layout->addWidget(label_);
-    layout->addStretch();
     layout->addWidget(closeBtn_);
 
     connect(closeBtn_, &QPushButton::clicked,
@@ -50,6 +49,7 @@ void TabButton::updateStyle()
             "  background: #2d2d2d;"
             "  border-bottom: 2px solid #4a6cf7;"
             "  border-radius: 4px;"
+            " border-right: 1px solid #44475a;"
             "}"
         );
         label_->setStyleSheet("QLabel { color: white; background: transparent; }");
@@ -65,6 +65,7 @@ void TabButton::updateStyle()
             "  background: transparent;"
             "  border-bottom: 2px solid transparent;"
             "  border-radius: 4px;"
+            "  border-right: 1px solid #44475a"
             "}"
             "QWidget:hover { background: #252525; }"
         );
@@ -77,18 +78,22 @@ void TabButton::updateStyle()
 }
 
 void TabButton::mousePressEvent(QMouseEvent *event)
-{
+{   
     if (event->button() == Qt::LeftButton)
      {
         dragStartPos_ = event->globalPosition().toPoint();
         dragging_ = false;
            emit clicked();
      }
+     else if(event->button() == Qt::MiddleButton)
+        {
+            emit middleClicked();
+        }
            QWidget::mousePressEvent(event);
 }
 
 void TabButton::mouseMoveEvent(QMouseEvent *event)
-{
+{   
     if(!(event->buttons() & Qt::LeftButton))
         return;
     QPoint delta = event->globalPosition().toPoint()-dragStartPos_;

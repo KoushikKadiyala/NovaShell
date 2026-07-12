@@ -39,11 +39,13 @@ int TabBar::addTab(const QString &title)
     connect(tab,
             &TabButton::clicked,
             this,
-            [this, index]()
+            [this]()
             {   auto *tab = qobject_cast<TabButton*>(sender());
 
                 if(!tab)
                     return;
+                int index = tabs_.indexOf(tab);
+
                 if(index == -1)
                     return;
                 
@@ -70,6 +72,24 @@ int TabBar::addTab(const QString &title)
             dragSourceIndex = tabs_.indexOf(tab);
             dragTargetIndex = dragSourceIndex;
             tab->setCursor(Qt::ClosedHandCursor);
+        });
+
+connect(tab,
+        &TabButton::middleClicked,
+        this,
+        [this]()
+        {
+            auto *tab = qobject_cast<TabButton*>(sender());
+
+            if (!tab)
+                return;
+
+            int index = tabs_.indexOf(tab);
+
+            if (index == -1)
+                return;
+
+            emit tabCloseRequested(index);
         });
 
 connect(tab, &TabButton::dragged,

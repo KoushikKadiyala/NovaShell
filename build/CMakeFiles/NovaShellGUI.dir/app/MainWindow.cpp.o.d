@@ -478,5 +478,9 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeySequence \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h

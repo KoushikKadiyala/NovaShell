@@ -40,8 +40,8 @@ void ThemeSelector::initUI()
         "QMenu { background-color: #282a36; color: #f8f8f2; }"
         "QMenu::item:selected { background-color: #44475a; }");
 
-    QStringList themes = {"Dracula", "Dark", "Light", "MaterialDark",
-                         "SolarizedDark", "SolarizedLight", "Monokai",
+    QStringList themes = {"Dracula", "Dark", "MaterialDark",
+                         "SolarizedDark", "Monokai",
                          "Nord", "GruvboxDark"};
 
     for (const QString &theme : themes)

@@ -27,14 +27,8 @@ signals:
     void newTabRequested();
     void tabCloseRequested(int index);
     void tabMoved(int from,int to);
-    
+
 private:
-    bool dragging_ = false;
-
-    QPoint dragStartPos_;
-
-    TabButton *draggedTab_ = nullptr;
-    
     QVector<TabButton*> tabs_;
 
     QHBoxLayout *layout_;

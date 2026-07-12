@@ -432,8 +432,6 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /home/kk/NovaShell/gui/app/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \

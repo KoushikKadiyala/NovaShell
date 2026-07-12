@@ -1700,7 +1700,9 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeySequence \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -1732,6 +1734,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o: /home/kk/NovaShell/gui/app/Mai
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
@@ -2096,7 +2099,6 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o: /home/kk/NovaShell/gui/app/main.cpp 
   /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
@@ -7752,6 +7754,8 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug:
+
 /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication:
@@ -7800,8 +7804,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
 /usr/lib/x86_64-linux-gnu/libEGL.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
@@ -7841,8 +7843,6 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h:
 
@@ -7911,6 +7911,10 @@ CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h:
 
@@ -8313,6 +8317,8 @@ CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QKeySequence:
 
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
 
@@ -9169,6 +9175,8 @@ NovaShellGUI_autogen/IMAN36LHMA/moc_TabButton.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 

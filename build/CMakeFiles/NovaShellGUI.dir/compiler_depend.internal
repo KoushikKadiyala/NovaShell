@@ -1703,7 +1703,9 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeySequence
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QWindow
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h
@@ -1735,6 +1737,7 @@ CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qshortcut.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h
@@ -2100,7 +2103,6 @@ CMakeFiles/NovaShellGUI.dir/app/main.cpp.o
  /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h

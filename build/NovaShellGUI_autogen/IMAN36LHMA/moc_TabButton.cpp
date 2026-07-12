@@ -42,6 +42,7 @@ template <> constexpr inline auto TabButton::qt_create_metaobjectdata<qt_meta_ta
         "clicked",
         "",
         "closeRequested",
+        "middleClicked",
         "dragStrated",
         "QPoint",
         "globalPos",
@@ -54,16 +55,18 @@ template <> constexpr inline auto TabButton::qt_create_metaobjectdata<qt_meta_ta
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'closeRequested'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'middleClicked'
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'dragStrated'
-        QtMocHelpers::SignalData<void(const QPoint &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 5, 6 },
+        QtMocHelpers::SignalData<void(const QPoint &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 6, 7 },
         }}),
         // Signal 'dragged'
-        QtMocHelpers::SignalData<void(const QPoint &)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 5, 6 },
+        QtMocHelpers::SignalData<void(const QPoint &)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 6, 7 },
         }}),
         // Signal 'dragFinished'
-        QtMocHelpers::SignalData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void()>(9, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -89,9 +92,10 @@ void TabButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         switch (_id) {
         case 0: _t->clicked(); break;
         case 1: _t->closeRequested(); break;
-        case 2: _t->dragStrated((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
-        case 3: _t->dragged((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
-        case 4: _t->dragFinished(); break;
+        case 2: _t->middleClicked(); break;
+        case 3: _t->dragStrated((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
+        case 4: _t->dragged((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
+        case 5: _t->dragFinished(); break;
         default: ;
         }
     }
@@ -100,11 +104,13 @@ void TabButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             return;
         if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::closeRequested, 1))
             return;
-        if (QtMocHelpers::indexOfMethod<void (TabButton::*)(const QPoint & )>(_a, &TabButton::dragStrated, 2))
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::middleClicked, 2))
             return;
-        if (QtMocHelpers::indexOfMethod<void (TabButton::*)(const QPoint & )>(_a, &TabButton::dragged, 3))
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)(const QPoint & )>(_a, &TabButton::dragStrated, 3))
             return;
-        if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::dragFinished, 4))
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)(const QPoint & )>(_a, &TabButton::dragged, 4))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (TabButton::*)()>(_a, &TabButton::dragFinished, 5))
             return;
     }
 }
@@ -128,14 +134,14 @@ int TabButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }
@@ -153,20 +159,26 @@ void TabButton::closeRequested()
 }
 
 // SIGNAL 2
-void TabButton::dragStrated(const QPoint & _t1)
+void TabButton::middleClicked()
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 
 // SIGNAL 3
-void TabButton::dragged(const QPoint & _t1)
+void TabButton::dragStrated(const QPoint & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
 }
 
 // SIGNAL 4
+void TabButton::dragged(const QPoint & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 4, nullptr, _t1);
+}
+
+// SIGNAL 5
 void TabButton::dragFinished()
 {
-    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
 }
 QT_WARNING_POP

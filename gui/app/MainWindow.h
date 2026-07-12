@@ -19,6 +19,10 @@ private:
     void enableMouseTracking(QWidget *widget);
     void removeTab(int index);
     void addTab();
+    void nextTab();
+    void previousTab();
+    void setupConnections();
+    void setupShortcuts();
 
     TabBar          *tabBar_{nullptr};
     SessionManager *manager_{nullptr};

@@ -67,81 +67,146 @@ void ScreenRenderer::render(const QByteArray &data,
             continue;
         }
         // ---------- ANSI CSI ----------
-        if (data[i] == '\x1b' &&
-            i + 1 < data.size() &&
-            data[i + 1] == '[')
+if (data[i] == '\x1b')
+{
+    flushText(plainText, buffer);
+
+    if (i + 1 >= data.size())
+        break;
+
+    char introducer = data[i + 1];
+
+    // ---------------- CSI ----------------
+    if (introducer == '[')
+    {
+        i += 2;
+
+        QByteArray sequence;
+
+        while (i < data.size() &&
+               !(data[i] >= '@' && data[i] <= '~'))
         {
-            flushText(plainText, buffer);
+            sequence.append(data[i]);
+            ++i;
+        }
 
-            i += 2;
+        if (i >= data.size())
+            break;
 
-            QByteArray sequence;
+        char final = data[i++];
+        qDebug()<< "csi:"<< sequence << final;
 
-            while (i < data.size() &&
-                   !(data[i] >= '@' && data[i] <= '~'))
-            {
-                sequence.append(data[i]);
-                ++i;
-            }
-
-            if (i >= data.size())
-                break;
-
-            char final = data[i++];
-
-            switch (final)
-            {
-            case 'm':
-            {
-                QList<int> codes;
-
-                for (const QByteArray &part : sequence.split(';'))
-                {
-                    bool ok;
-                    int value = part.toInt(&ok);
-
-                    if (ok)
-                        codes.append(value);
-                }
-
-                applySGR(codes);
-                break;
-            }
-
-            case 'C':
-            {
-                int count = sequence.isEmpty() ? 1 : sequence.toInt();
-                buffer.moveRight(count);
-                break;
-            }
-
-            case 'D':
-            {
-                int count = sequence.isEmpty() ? 1 : sequence.toInt();
-                buffer.moveLeft(count);
-                break;
-            }
-
-            case 'K':
-            {
-                buffer.eraseToEndOfLine();
-                break;
-            }
-            case 'P':
-            {
-                int count = sequence.isEmpty() ? 1 : sequence.toInt();
-                buffer.deleteChars(count);
-                break;
-            }
-
-            default:
-                // Ignore unsupported CSI commands
-                break;
-            }
+        if (sequence == "?1049")
+        {
+            if (final == 'h')
+                buffer.enterAlternateScreen();
+            else if (final == 'l')
+                buffer.leaveAlternateScreen();
 
             continue;
         }
+        if(sequence == "?25")
+        {
+            if(final == 'h')
+            buffer.setCursorVisible(true);
+        else
+            buffer.setCursorVisible(false);
 
+        continue;
+        }
+
+        switch (final)
+        {
+        case 'm':
+        {
+            QList<int> codes;
+
+            for (const QByteArray &part : sequence.split(';'))
+            {
+                bool ok;
+                int value = part.toInt(&ok);
+
+                if (ok)
+                    codes.append(value);
+            }
+
+            applySGR(codes);
+            break;
+        }
+
+        case 'C':
+            buffer.moveRight(sequence.isEmpty() ? 1 : sequence.toInt());
+            break;
+
+        case 'D':
+            buffer.moveLeft(sequence.isEmpty() ? 1 : sequence.toInt());
+            break;
+
+        case 'K':
+            buffer.eraseToEndOfLine();
+            break;
+
+        case 'P':
+            buffer.deleteChars(sequence.isEmpty() ? 1 : sequence.toInt());
+            break;
+
+        case 'H':
+        case 'f':
+        {
+            int row = 1;
+            int col =1;
+
+            QList<QByteArray> parts = sequence.split(';');
+
+            if(parts.size()>=1 && !parts[0].isEmpty())
+                row = parts[0].toInt();
+
+            if(parts.size()>= 2 && !parts[1].isEmpty())
+                col = parts[1].toInt();
+
+            buffer.setCursorPosition(row-1,col-1);
+            break;
+        }
+        case 'J':
+        {
+            int mode = sequence.isEmpty() ? 0 : sequence.toInt();
+
+            buffer.eraseDisplay(mode);
+            break;
+        }
+        case 'd':
+        {
+            int row = sequence.isEmpty() ? 1 : sequence.toInt();
+
+            buffer.setCursorRow(row - 1);
+        }
+        case 'G':
+        {
+            int col = sequence.isEmpty() ? 1 : sequence.toInt();
+            buffer.setCursorColumn(col - 1);
+
+            break;
+        }
+        default:
+            break;
+        }
+
+        continue;
+    }
+
+    // ---------------- Charset selection ----------------
+    if ((introducer == '(' || introducer == ')') &&
+        i + 2 < data.size())
+    {
+        // Ignore ESC(B, ESC)B, ESC(0, etc.
+        i += 3;
+        continue;
+    }
+
+    // ---------------- Unknown ESC ----------------
+    ++i;
+    continue;
+}
         // ---------- Normal text ----------
         plainText.append(data[i]);
         ++i;

@@ -41,7 +41,7 @@ template <> constexpr inline auto ShellSession::qt_create_metaobjectdata<qt_meta
         "ShellSession",
         "sessionEnded",
         "",
-        "HandlePtyOutput",
+        "handlePtyOutput",
         "data",
         "refresh"
     };
@@ -49,7 +49,7 @@ template <> constexpr inline auto ShellSession::qt_create_metaobjectdata<qt_meta
     QtMocHelpers::UintData qt_methods {
         // Signal 'sessionEnded'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'HandlePtyOutput'
+        // Slot 'handlePtyOutput'
         QtMocHelpers::SlotData<void(const QByteArray &)>(3, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { QMetaType::QByteArray, 4 },
         }}),
@@ -79,7 +79,7 @@ void ShellSession::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->sessionEnded(); break;
-        case 1: _t->HandlePtyOutput((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 1: _t->handlePtyOutput((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
         case 2: _t->refresh(); break;
         default: ;
         }

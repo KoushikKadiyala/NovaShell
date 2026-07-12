@@ -18,7 +18,7 @@ signals:
     void sessionEnded();
 
 private slots:
-    void HandlePtyOutput(const QByteArray &data);
+    void handlePtyOutput(const QByteArray &data);
     void refresh();
 
 private:

@@ -8,6 +8,8 @@
 #include <QVBoxLayout>
 #include <QMouseEvent>
 #include <QWindow>
+#include <QShortcut>
+#include <QKeySequence>
 #include <QApplication>
 
 MainWindow::MainWindow()
@@ -15,7 +17,7 @@ MainWindow::MainWindow()
    setWindowFlags(Qt::FramelessWindowHint);
    resize(1200,800);
 
-    QWidget *container = new QWidget(this);
+    auto *container = new QWidget(this);
     container->setObjectName("windowContainer");
 
     auto *layout = new QVBoxLayout(container);
@@ -26,15 +28,8 @@ MainWindow::MainWindow()
    tabBar_ = new TabBar(container);
    manager_ = new SessionManager(container);
 
-    connect(tabBar_, &TabBar::currentChanged,
-            manager_, &SessionManager::setCurrentSession);
-    
-    connect(tabBar_,&TabBar::newTabRequested,
-            this, &MainWindow::addTab);
-    connect(tabBar_,&TabBar::tabCloseRequested,
-            this, &MainWindow::removeTab);
-    connect(tabBar_, &TabBar::tabMoved,
-            manager_, &SessionManager::moveSession);
+   setupConnections();
+   setupShortcuts();
 
     layout->addWidget(titleBar);
     layout->addWidget(tabBar_);
@@ -65,7 +60,7 @@ void MainWindow::addTab(){
 }
 
 void MainWindow::removeTab(int index)
-{
+{   
     tabBar_->removeTab(index);
     manager_->removeSession(index);
     if (manager_ -> count()==0)
@@ -141,7 +136,6 @@ void MainWindow::enableMouseTracking(QWidget *widget){
             enableMouseTracking(child);
     }
 }
-
 bool MainWindow::eventFilter(QObject *obj, QEvent *event)
 {
     if (event->type() == QEvent::MouseMove)
@@ -154,4 +148,63 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event)
     }
 
     return QMainWindow::eventFilter(obj, event);
+}
+void MainWindow::nextTab()
+{
+    if(manager_->count()<=1)
+     return;
+    int index = tabBar_->currentTab();
+    index = (index+1)%manager_->count();
+
+    tabBar_->setCurrentTab(index);
+    manager_->setCurrentSession(index);
+    
+}
+void MainWindow::previousTab()
+{
+    if(manager_->count()<=1)
+     return;
+    int index = tabBar_->currentTab();
+    index--;
+
+    if(index < 0)
+        index = manager_->count()-1;
+
+    tabBar_->setCurrentTab(index);
+    manager_->setCurrentSession(index);
+}
+void MainWindow::setupConnections(){
+    connect(tabBar_, &TabBar::currentChanged,
+            manager_, &SessionManager::setCurrentSession);
+    
+    connect(tabBar_,&TabBar::newTabRequested,
+            this, &MainWindow::addTab);
+    connect(tabBar_,&TabBar::tabCloseRequested,
+            this, &MainWindow::removeTab);
+    connect(tabBar_, &TabBar::tabMoved,
+            manager_, &SessionManager::moveSession);
+  
+}
+void MainWindow::setupShortcuts(){
+    auto *newTabShortcut = new QShortcut(QKeySequence("Ctrl+Shift+T"), this);
+   auto *closeTabShortcut = new QShortcut(QKeySequence("Ctrl+W"),this);
+   auto *nextTabShortcut = new QShortcut(QKeySequence("Ctrl+Tab"),this);
+   auto *previousTabShortcut = new QShortcut(QKeySequence("Ctrl+Shift+Tab"),this);
+
+    connect(newTabShortcut, &QShortcut::activated,
+            this, &MainWindow::addTab);
+    connect(closeTabShortcut, &QShortcut::activated,
+            this, [this](){
+                int index = tabBar_->currentTab();
+                if (index != -1)
+                    removeTab(index);
+            });
+    connect(nextTabShortcut,
+            &QShortcut::activated,
+            this,
+            &MainWindow::nextTab);
+    connect(previousTabShortcut,
+            &QShortcut::activated,
+            this,
+            &MainWindow::previousTab);
 }

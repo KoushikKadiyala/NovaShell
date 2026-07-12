@@ -17,6 +17,8 @@ public:
 signals:
     void clicked();
     void closeRequested();
+    void middleClicked();
+
     void dragStrated(const QPoint &globalPos);
     void dragged(const QPoint &globalPos);
     void dragFinished();

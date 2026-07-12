@@ -28,7 +28,7 @@ ShellSession::ShellSession(QWidget *parent)
         &pty_,
         &PtySession::dataReceived,
         this,
-        &ShellSession::HandlePtyOutput);
+        &ShellSession::handlePtyOutput);
 
     connect(&pty_,
             &PtySession::shellExited,
@@ -42,7 +42,7 @@ ShellSession::ShellSession(QWidget *parent)
     screen_->setFocus();
 }
 
-void ShellSession::HandlePtyOutput(const QByteArray &data){
+void ShellSession::handlePtyOutput(const QByteArray &data){
     renderer_.render(data, buffer_);
     refresh();
 }
