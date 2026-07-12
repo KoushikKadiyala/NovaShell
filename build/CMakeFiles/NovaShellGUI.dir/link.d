@@ -12,6 +12,11 @@ NovaShellGUI: \
   CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o \
   CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o \
   CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o \
+  CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o \
   CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o \
   CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o \
   CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o \
@@ -109,6 +114,16 @@ CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o:
 CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o:
 
 CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o:
+
+CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o:
 
 CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o:
 

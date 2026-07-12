@@ -641,6 +641,126 @@ pty/PtySession.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.s
 .PHONY : pty/PtySession.cpp.s
 
+renderer/RendererCSI.o: renderer/RendererCSI.cpp.o
+.PHONY : renderer/RendererCSI.o
+
+# target to build an object file
+renderer/RendererCSI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o
+.PHONY : renderer/RendererCSI.cpp.o
+
+renderer/RendererCSI.i: renderer/RendererCSI.cpp.i
+.PHONY : renderer/RendererCSI.i
+
+# target to preprocess a source file
+renderer/RendererCSI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.i
+.PHONY : renderer/RendererCSI.cpp.i
+
+renderer/RendererCSI.s: renderer/RendererCSI.cpp.s
+.PHONY : renderer/RendererCSI.s
+
+# target to generate assembly for a file
+renderer/RendererCSI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.s
+.PHONY : renderer/RendererCSI.cpp.s
+
+renderer/RendererESC.o: renderer/RendererESC.cpp.o
+.PHONY : renderer/RendererESC.o
+
+# target to build an object file
+renderer/RendererESC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o
+.PHONY : renderer/RendererESC.cpp.o
+
+renderer/RendererESC.i: renderer/RendererESC.cpp.i
+.PHONY : renderer/RendererESC.i
+
+# target to preprocess a source file
+renderer/RendererESC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.i
+.PHONY : renderer/RendererESC.cpp.i
+
+renderer/RendererESC.s: renderer/RendererESC.cpp.s
+.PHONY : renderer/RendererESC.s
+
+# target to generate assembly for a file
+renderer/RendererESC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.s
+.PHONY : renderer/RendererESC.cpp.s
+
+renderer/RendererOSC.o: renderer/RendererOSC.cpp.o
+.PHONY : renderer/RendererOSC.o
+
+# target to build an object file
+renderer/RendererOSC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o
+.PHONY : renderer/RendererOSC.cpp.o
+
+renderer/RendererOSC.i: renderer/RendererOSC.cpp.i
+.PHONY : renderer/RendererOSC.i
+
+# target to preprocess a source file
+renderer/RendererOSC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.i
+.PHONY : renderer/RendererOSC.cpp.i
+
+renderer/RendererOSC.s: renderer/RendererOSC.cpp.s
+.PHONY : renderer/RendererOSC.s
+
+# target to generate assembly for a file
+renderer/RendererOSC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.s
+.PHONY : renderer/RendererOSC.cpp.s
+
+renderer/RendererSGR.o: renderer/RendererSGR.cpp.o
+.PHONY : renderer/RendererSGR.o
+
+# target to build an object file
+renderer/RendererSGR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o
+.PHONY : renderer/RendererSGR.cpp.o
+
+renderer/RendererSGR.i: renderer/RendererSGR.cpp.i
+.PHONY : renderer/RendererSGR.i
+
+# target to preprocess a source file
+renderer/RendererSGR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.i
+.PHONY : renderer/RendererSGR.cpp.i
+
+renderer/RendererSGR.s: renderer/RendererSGR.cpp.s
+.PHONY : renderer/RendererSGR.s
+
+# target to generate assembly for a file
+renderer/RendererSGR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.s
+.PHONY : renderer/RendererSGR.cpp.s
+
+renderer/RendererUtils.o: renderer/RendererUtils.cpp.o
+.PHONY : renderer/RendererUtils.o
+
+# target to build an object file
+renderer/RendererUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o
+.PHONY : renderer/RendererUtils.cpp.o
+
+renderer/RendererUtils.i: renderer/RendererUtils.cpp.i
+.PHONY : renderer/RendererUtils.i
+
+# target to preprocess a source file
+renderer/RendererUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.i
+.PHONY : renderer/RendererUtils.cpp.i
+
+renderer/RendererUtils.s: renderer/RendererUtils.cpp.s
+.PHONY : renderer/RendererUtils.s
+
+# target to generate assembly for a file
+renderer/RendererUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NovaShellGUI.dir/build.make CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.s
+.PHONY : renderer/RendererUtils.cpp.s
+
 renderer/ScreenRenderer.o: renderer/ScreenRenderer.cpp.o
 .PHONY : renderer/ScreenRenderer.o
 
@@ -949,6 +1069,21 @@ help:
 	@echo "... pty/PtySession.o"
 	@echo "... pty/PtySession.i"
 	@echo "... pty/PtySession.s"
+	@echo "... renderer/RendererCSI.o"
+	@echo "... renderer/RendererCSI.i"
+	@echo "... renderer/RendererCSI.s"
+	@echo "... renderer/RendererESC.o"
+	@echo "... renderer/RendererESC.i"
+	@echo "... renderer/RendererESC.s"
+	@echo "... renderer/RendererOSC.o"
+	@echo "... renderer/RendererOSC.i"
+	@echo "... renderer/RendererOSC.s"
+	@echo "... renderer/RendererSGR.o"
+	@echo "... renderer/RendererSGR.i"
+	@echo "... renderer/RendererSGR.s"
+	@echo "... renderer/RendererUtils.o"
+	@echo "... renderer/RendererUtils.i"
+	@echo "... renderer/RendererUtils.s"
 	@echo "... renderer/ScreenRenderer.o"
 	@echo "... renderer/ScreenRenderer.i"
 	@echo "... renderer/ScreenRenderer.s"

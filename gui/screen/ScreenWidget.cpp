@@ -86,26 +86,28 @@ for (int viewrow = 0; viewrow < screenRows_; ++viewrow)
     {
         const ScreenCell &cell = (*row)[col];
 
-        if (cell.ch == ' ')
-            continue;
-
-        painter.setPen(cell.fg);
         QRect cellRect(
         LEFT_MARGIN + col * cellWidth,
         TOP_MARGIN + viewrow * cellHeight,
         cellWidth,
         cellHeight);
+        if (cell.bg != Qt::black)
+        painter.fillRect(cellRect,cell.bg);
 
         if (isCellSelected(viewrow, col))
         {
             painter.fillRect(cellRect, QColor("#4a6cf7")); // selection color
         }
+        if (cell.ch != ' ')
+        {
         painter.setFont(cell.bold? boldFont_ : normalFont_);
+        painter.setPen(cell.fg);
 
         painter.drawText(
            LEFT_MARGIN + col * cellWidth,
             TOP_MARGIN + (viewrow + 1) * cellHeight - fm.descent(),
             QString(cell.ch));
+        }
     }
     
 }
@@ -172,6 +174,7 @@ void ScreenWidget::keyPressEvent(QKeyEvent *event)
     }
 
     event->accept();
+
 }
 void ScreenWidget::resizeEvent(QResizeEvent *event)
 {

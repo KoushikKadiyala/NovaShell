@@ -139,6 +139,36 @@
 },
 {
   "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o -c /home/kk/NovaShell/gui/renderer/RendererCSI.cpp",
+  "file": "/home/kk/NovaShell/gui/renderer/RendererCSI.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o -c /home/kk/NovaShell/gui/renderer/RendererESC.cpp",
+  "file": "/home/kk/NovaShell/gui/renderer/RendererESC.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o -c /home/kk/NovaShell/gui/renderer/RendererOSC.cpp",
+  "file": "/home/kk/NovaShell/gui/renderer/RendererOSC.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o -c /home/kk/NovaShell/gui/renderer/RendererSGR.cpp",
+  "file": "/home/kk/NovaShell/gui/renderer/RendererSGR.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o -c /home/kk/NovaShell/gui/renderer/RendererUtils.cpp",
+  "file": "/home/kk/NovaShell/gui/renderer/RendererUtils.cpp",
+  "output": "CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o"
+},
+{
+  "directory": "/home/kk/NovaShell/build",
   "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/kk/NovaShell/build/NovaShellGUI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -o CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o -c /home/kk/NovaShell/gui/screen/ScreenBuffer.cpp",
   "file": "/home/kk/NovaShell/gui/screen/ScreenBuffer.cpp",
   "output": "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o"

@@ -64,6 +64,11 @@ qt_add_executable(NovaShellGUI
     widgets/TabButton.cpp
     
     renderer/ScreenRenderer.cpp
+    renderer/RendererCSI.cpp
+    renderer/RendererESC.cpp
+    renderer/RendererOSC.cpp
+    renderer/RendererSGR.cpp
+    renderer/RendererUtils.cpp
     
     screen/ScreenBuffer.cpp
     screen/ScreenWidget.cpp

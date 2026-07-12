@@ -9,6 +9,11 @@ NovaShellGUI_autogen/timestamp: \
 	/home/kk/NovaShell/gui/app/main.cpp \
 	/home/kk/NovaShell/gui/pty/PtySession.cpp \
 	/home/kk/NovaShell/gui/pty/PtySession.h \
+	/home/kk/NovaShell/gui/renderer/RendererCSI.cpp \
+	/home/kk/NovaShell/gui/renderer/RendererESC.cpp \
+	/home/kk/NovaShell/gui/renderer/RendererOSC.cpp \
+	/home/kk/NovaShell/gui/renderer/RendererSGR.cpp \
+	/home/kk/NovaShell/gui/renderer/RendererUtils.cpp \
 	/home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp \
 	/home/kk/NovaShell/gui/renderer/ScreenRenderer.h \
 	/home/kk/NovaShell/gui/screen/ScreenBuffer.cpp \

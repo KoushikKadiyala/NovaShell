@@ -21,7 +21,7 @@ private:
     int savedRow_{0};
     int savedCol_{0};
     ScreenCell savedStyle_;
-
+    bool handleEscape(int &i,const QByteArray &data, QByteArray &plain,ScreenBuffer &buffer);
     void handleCSI(const QByteArray &seq, char final, ScreenBuffer &buf);
     void handleOSC(const QByteArray &seq);
     void applySGR(const QList<int> &codes);
