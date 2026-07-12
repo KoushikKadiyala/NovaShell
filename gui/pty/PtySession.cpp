@@ -1,7 +1,6 @@
 #include "PtySession.h"
 
 #include <QCoreApplication>
-#include <QDebug>
 #include <QSocketNotifier>
 #include <QString>
 
@@ -169,7 +168,7 @@ void PtySession::readFromPty()
     }
 }
 void PtySession::writeData(const QByteArray &data)
-{   qDebug()<< "writting"<< data;
+{   
     if (masterFd != -1)
     {
         write(masterFd, data.constData(), data.size());

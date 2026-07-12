@@ -130,102 +130,25 @@ NovaShellCore_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in \
-  /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c \
   /usr/share/cmake-4.2/Modules/CMakeCInformation.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake \
   /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-C.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
-  /usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-4.2/Modules/FindOpenGL.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake \
@@ -235,13 +158,9 @@ NovaShellCore_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake \
-  /usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake \
-  /usr/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake \
-  /usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake \
-  /usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU-C.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Linker/GNU.cmake \
@@ -250,7 +169,6 @@ NovaShellCore_autogen/timestamp: CMakeFiles/4.2.3/CMakeCCompiler.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-C.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake \
-  /usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-C.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake \
@@ -814,11 +732,15 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
@@ -832,123 +754,21 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Targets.cmake:
 
-/home/kk/NovaShell/include/process.h:
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
-/home/kk/NovaShell/include/launcher.h:
-
-/home/kk/NovaShell/include/memory.h:
-
-/home/kk/NovaShell/include/executor.h:
-
-/home/kk/NovaShell/include/builtins.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/once_flag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/unistd.h:
-
-/usr/include/string.h:
-
-/usr/include/features.h:
-
-/home/kk/NovaShell/include/io.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
 
-/usr/include/fcntl.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
@@ -956,11 +776,17 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/share/cmake-4.2/Modules/GNUInstallDirs.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets-none.cmake:
 
@@ -969,10 +795,6 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
@@ -984,21 +806,31 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+/home/kk/NovaShell/include/environment.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
 
@@ -1006,11 +838,17 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/home/kk/NovaShell/include/builtins.h:
 
 /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/home/kk/NovaShell/include/process.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets.cmake:
 
@@ -1018,15 +856,11 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
-/home/kk/NovaShell/include/environment.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
@@ -1034,9 +868,13 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
 
+/usr/share/cmake-4.2/Modules/FindThreads.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
@@ -1050,31 +888,39 @@ CMakeFiles/NovaShellCore.dir/home/kk/NovaShell/engine/process.c.o: /home/kk/Nova
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/ctype.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAndroidHelpers.cmake:
+
 /usr/share/cmake-4.2/Modules/CMakeCInformation.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Targets.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake:
+/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
 CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
@@ -1086,45 +932,27 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake:
 
 /home/kk/NovaShell/engine/parser.c:
 
-/usr/include/endian.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
 
-/home/kk/NovaShell/include/parser.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusMacros.cmake:
+NovaShellCore_autogen/mocs_compilation.cpp:
 
-/usr/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusMacros.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 CMakeFiles/4.2.3/CMakeSystem.cmake:
-
-/usr/include/stdio.h:
-
-/home/kk/NovaShell/engine/executor.c:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 
@@ -1132,47 +960,45 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
 
-/usr/include/ctype.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAndroidHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake:
-
 /home/kk/NovaShell/engine/environment.c:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeature.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/home/kk/NovaShell/engine/builtins.c:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/once_flag.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake:
+
+/home/kk/NovaShell/engine/builtins.c:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets-none.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /home/kk/NovaShell/gui/CMakeLists.txt:
 
@@ -1180,17 +1006,11 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:
-
 /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/bin/cmake:
 
-/home/kk/NovaShell/engine/memory.c:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake:
 
@@ -1202,25 +1022,23 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake:
+/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
 
@@ -1232,9 +1050,13 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+/home/kk/NovaShell/include/io.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 CMakeFiles/4.2.3/CMakeCCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake:
 
@@ -1264,85 +1086,51 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
 
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:
+/usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:
+/usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
-
-/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:
+/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiDependencies.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake:
-
-/usr/share/cmake-4.2/Modules/FindThreads.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeSystem.cmake.in:
-
-/usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in:
+/usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
-
 /usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/share/cmake-4.2/Modules/CheckIncludeFile.cmake:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/signal.h:
 
@@ -1350,176 +1138,142 @@ CMakeFiles/4.2.3/CMakeCCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/FindVulkan.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake:
-
 /usr/share/cmake-4.2/Modules/Compiler/GNU-C.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
 
 /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake:
 
-/usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake:
+/usr/share/cmake-4.2/Modules/FindOpenGL.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+/usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/share/cmake-4.2/Modules/FindVulkan.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake:
+/usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+/usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
+/usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:
 
-/usr/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
-NovaShellCore_autogen/mocs_compilation.cpp:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linux.cmake:
-
-/usr/include/alloca.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
-
-/usr/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:
 
 /usr/include/stdlib.h:
 
 /usr/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
-
-/usr/bin/cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c:
-
-/usr/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
-
-/usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
-
-/usr/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:
-
-/usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake:
-
-/usr/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake:
-
-/usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:
-
-/usr/include/features-time64.h:
-
-/usr/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake:
-
 /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-C.cmake:
+
+/usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
 
 /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linux-Determine-CXX.cmake:
-
 /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-C.cmake:
+
+/usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake:
+
+/usr/share/cmake-4.2/Modules/Platform/Linux.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:
 
 /usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake:
+
+/usr/include/alloca.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
+
+/usr/include/endian.h:
+
+/usr/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake:
+
+/usr/include/features-time64.h:
+
+/usr/include/features.h:
+
+/home/kk/NovaShell/engine/executor.c:
+
+/usr/include/stdio.h:
+
+/usr/include/string.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/home/kk/NovaShell/engine/memory.c:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
+
+/home/kk/NovaShell/include/executor.h:
+
+/home/kk/NovaShell/include/memory.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake:
+
+/home/kk/NovaShell/include/parser.h:
+
+/home/kk/NovaShell/include/launcher.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+
+/usr/include/fcntl.h:

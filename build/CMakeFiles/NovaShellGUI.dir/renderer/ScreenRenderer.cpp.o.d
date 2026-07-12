@@ -287,14 +287,6 @@ CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h \
  /usr/include/c++/15/stdlib.h \
- /home/kk/NovaShell/gui/renderer/../screen/ScreenBuffer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
- /home/kk/NovaShell/gui/renderer/../screen/ScreenCell.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -305,6 +297,10 @@ CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
@@ -328,6 +324,10 @@ CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/kk/NovaShell/gui/renderer/../screen/ScreenBuffer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QChar \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
+ /home/kk/NovaShell/gui/renderer/../screen/ScreenCell.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \

@@ -342,32 +342,6 @@ CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
- /usr/include/c++/15/climits \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
- /usr/include/c++/15/set /usr/include/c++/15/bits/stl_set.h \
- /usr/include/c++/15/bits/stl_multiset.h \
- /usr/include/c++/15/unordered_set \
- /usr/include/c++/15/bits/unordered_set.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSocketNotifier \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsocketnotifier.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
