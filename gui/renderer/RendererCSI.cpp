@@ -6,7 +6,7 @@ void ScreenRenderer::handleCSI(const QByteArray &seq,
 {   
     // Private modes
     if (seq.startsWith('?'))
-    {
+    {   
         const QByteArray priv = seq.mid(1);
         const bool on = (final == 'h');
 

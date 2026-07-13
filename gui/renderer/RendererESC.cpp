@@ -32,10 +32,10 @@ bool ScreenRenderer::handleEscape(int &i,const QByteArray &data,QByteArray &plai
                 while (i < data.size())
                 {
                     if ((unsigned char)data[i] == 0x07)
-                        { ++i; return false; }
+                        { ++i; return true; }
                     if ((unsigned char)data[i] == 0x1b &&
                         i + 1 < data.size() && data[i+1] == '\\')
-                        { i += 2; return false; }
+                        { i += 2; return true; }
                     osc.append(data[i++]);
                 }
                 handleOSC(osc);
@@ -61,31 +61,31 @@ bool ScreenRenderer::handleEscape(int &i,const QByteArray &data,QByteArray &plai
                 savedRow_   = buffer.row();
                 savedCol_   = buffer.column();
                 savedStyle_ = currentStyle_;
-                return false;
+                return true;
             case '8': // DECRC restore cursor
                 buffer.setCursorPosition(savedRow_, savedCol_);
                 currentStyle_ = savedStyle_;
-                return false;
-            case 'M': buffer.reverseLineFeed();    return false; // RI
-            case 'D': buffer.lineFeed();           return false; // IND
+                return true;
+            case 'M': buffer.reverseLineFeed();    return true; // RI
+            case 'D': buffer.lineFeed();           return true; // IND
             case 'E': buffer.lineFeed();                  // NEL
-                      buffer.carriageReturn();     return false;
+                      buffer.carriageReturn();     return true;
             case 'c': buffer.reset();                     // RIS
                 currentStyle_.fg   = defaultFg_;
                 currentStyle_.bg   = defaultBg_;
                 currentStyle_.bold = false;
-                return false;
+                return true;
             case '=': // DECPAM
             case '>': // DECPNM
-                return false;
+                return true;
             case '(': case ')': case '*': case '+':
               if(i+2<data.size())
                 i+=3;
               else
                 i = data.size();
               return true;
-            case 'H': return false; // HTS
-            default:  return false;
+            case 'H': return true; // HTS
+            default:  return true;
             }
 
             i += 2;
