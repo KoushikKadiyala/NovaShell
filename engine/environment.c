@@ -4,8 +4,6 @@
 
 #include "../include/environment.h"
 
-extern char **environ;
-
 // Replace argv tokens starting with '$' by their environment values.
 // This only supports whole-token variable expansion, such as `$HOME`.
 void expand_variables(char *argv[]) {
