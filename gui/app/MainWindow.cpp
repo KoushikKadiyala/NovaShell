@@ -47,7 +47,7 @@ MainWindow::MainWindow()
 void MainWindow::addTab(){
     ShellSession *session = manager_ ->createSession();
 
-    int index = tabBar_->addTab(QString("shell %1").arg(manager_->count()));
+    int index = tabBar_->addTab(QString("Shell %1").arg(manager_->count()));
 
     tabBar_->setCurrentTab(index);
     connect(session, &ShellSession::sessionEnded,
