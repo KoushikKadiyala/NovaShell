@@ -11,23 +11,10 @@
 #include "../include/core.h"
 #include "../include/io.h"
 
-/**
- * start_shell - Main shell loop and command dispatcher
- *
- * Implements the core shell event loop:
- * 1. Ignores SIGINT (Ctrl+C) so the shell persists when child processes are interrupted
- * 2. Displays a colored prompt with the current working directory
- * 3. Reads user input using GNU Readline (provides history and editing)
- * 4. Expands environment variables and parses the command
- * 5. Routes the command to builtins or external executors
- * 6. Continues until user exits or EOF is reached
- *
- * Return: void (loop continues until exit command is given)
- */
-void start_shell(void)
+// Main shell loop: read input, parse, expand variables, handle builtins, execute commands.
+void start_shell()
 {
-    /* Ignore SIGINT in the shell process so Ctrl+C does not exit the shell itself.
-       Instead, the signal is delivered to child processes. */
+    // Ignore SIGINT in the shell process so Ctrl+C does not exit the shell itself.
     signal(SIGINT, SIG_IGN);
     rl_bind_key('\t', rl_complete);
 
@@ -36,7 +23,6 @@ void start_shell(void)
         char cwd[1024];
         char prompt[1200];
 
-        /* Build a colored prompt showing the current working directory */
         if (getcwd(cwd, sizeof(cwd)) != NULL)
         {
             snprintf(
@@ -51,29 +37,24 @@ void start_shell(void)
             strcpy(prompt, "$ ");
         }
 
-        /* Read a line from the user with GNU Readline support */
         char *input = readline(prompt);
 
-        /* Check for EOF (Ctrl+D) or input failure */
         if (input == NULL)
         {
             shell_print("\nGoodbye!\n");
             break;
         }
 
-        /* Add non-empty commands to readline history */
         if (strlen(input) > 0)
         {
             add_history(input);
         }
 
-        /* Execute the command; returns 1 if exit command was given */
-        if (shell_execute(input))
+       if (shell_execute(input))
         {
             free(input);
             break;
         }
-
         free(input);
     }
 }
