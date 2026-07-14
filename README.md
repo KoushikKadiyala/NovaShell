@@ -37,7 +37,7 @@ The goal of the project is to understand how modern terminals and shells work in
  - drag to reorder tabs
  - Theme support
  - supports multiple themes
- - #### KeyBoard shortcuts
+ - KeyBoard shortcuts
     - Ctrl + Shift + c -> copy selection
     - Ctrl + Shift + v -> Paste
     - Ctrl + Shift + T -> new tab
