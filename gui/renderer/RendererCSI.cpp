@@ -1,4 +1,5 @@
 #include "ScreenRenderer.h"
+#include <QDebug>
 
 void ScreenRenderer::handleCSI(const QByteArray &seq,
                                 char final,
@@ -6,7 +7,7 @@ void ScreenRenderer::handleCSI(const QByteArray &seq,
 {   
     // Private modes
     if (seq.startsWith('?'))
-    {   
+    {   qDebug()<< "csi:"<<seq<<final;
         const QByteArray priv = seq.mid(1);
         const bool on = (final == 'h');
 

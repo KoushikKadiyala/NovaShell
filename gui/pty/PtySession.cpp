@@ -15,14 +15,14 @@
 
 bool PtySession::start(){
     masterFd = posix_openpt(O_RDWR | O_NOCTTY);
-
+fcntl(masterFd, F_SETFL, O_NONBLOCK);
 if (masterFd == -1)
 {
     perror("posix_openpt");
     return false;
 }
 
-fcntl(masterFd, F_SETFL, O_NONBLOCK);
+
     if (grantpt(masterFd) == -1)
 {
     perror("grantpt");

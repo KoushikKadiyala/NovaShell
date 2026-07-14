@@ -77,15 +77,16 @@ bool ScreenRenderer::handleEscape(int &i,const QByteArray &data,QByteArray &plai
                 return true;
             case '=': // DECPAM
             case '>': // DECPNM
-                return true;
+                i +=2;
+                return false;
             case '(': case ')': case '*': case '+':
               if(i+2<data.size())
                 i+=3;
               else
                 i = data.size();
               return true;
-            case 'H': return true; // HTS
-            default:  return true;
+            case 'H': return false; // HTS
+            default:  return false;
             }
 
             i += 2;
