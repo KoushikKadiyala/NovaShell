@@ -1,0 +1,165 @@
+#include "TabBar.h"
+#include "TabButton.h"
+
+#include <QHBoxLayout>
+#include <QPushButton>
+
+TabBar::TabBar(QWidget *parent)
+    : QWidget(parent)
+{
+    layout_ = new QHBoxLayout(this);
+
+    layout_->setContentsMargins(8, 0, 8, 0);
+    layout_->setSpacing(2);
+
+    addButton_ = new QPushButton("+", this);
+
+    addButton_->setFixedSize(28, 28);
+    addButton_->setFocusPolicy(Qt::NoFocus);
+
+    layout_->addStretch();
+    layout_->addWidget(addButton_);
+
+    connect(addButton_,
+            &QPushButton::clicked,
+            this,
+            &TabBar::newTabRequested);
+}
+
+int TabBar::addTab(const QString &title)
+{
+    auto *tab = new TabButton(title, this);
+
+    layout_->insertWidget(layout_->count() - 2, tab);
+
+    tabs_.push_back(tab);
+
+    const int index = tabs_.size() - 1;
+
+    connect(tab,
+            &TabButton::clicked,
+            this,
+            [this]()
+            {   auto *tab = qobject_cast<TabButton*>(sender());
+
+                if(!tab)
+                    return;
+                int index = tabs_.indexOf(tab);
+
+                if(index == -1)
+                    return;
+                
+                setCurrentTab(index);
+                emit currentChanged(index);
+            });
+    connect(tab,
+            &TabButton::closeRequested,
+            this,
+            [this](){
+                auto *tab = qobject_cast<TabButton*>(sender());
+                if(!tab)
+                    return;
+
+                int index = tabs_.indexOf(tab);
+
+                if(index == -1)
+                    return;
+
+                emit tabCloseRequested(index);
+            });
+            connect(tab, &TabButton::dragStrated,
+        this, [this, tab](const QPoint &globalPos) {
+            dragSourceIndex = tabs_.indexOf(tab);
+            dragTargetIndex = dragSourceIndex;
+            tab->setCursor(Qt::ClosedHandCursor);
+        });
+
+connect(tab,
+        &TabButton::middleClicked,
+        this,
+        [this]()
+        {
+            auto *tab = qobject_cast<TabButton*>(sender());
+
+            if (!tab)
+                return;
+
+            int index = tabs_.indexOf(tab);
+
+            if (index == -1)
+                return;
+
+            emit tabCloseRequested(index);
+        });
+
+connect(tab, &TabButton::dragged,
+        this, [this, tab](const QPoint &globalPos) {
+            if (dragSourceIndex == -1) return;
+
+            QPoint local = mapFromGlobal(globalPos);
+            int targetIndex = -1;
+
+            for (int i = 0; i < tabs_.size(); ++i)
+            {
+                if (tabs_[i]->geometry().contains(local))
+                {
+                    targetIndex = i;
+                    break;
+                }
+            }
+
+            if (targetIndex == -1 || targetIndex == dragTargetIndex)
+                return;
+
+            dragTargetIndex = targetIndex;
+
+            layout_->removeWidget(tabs_[dragSourceIndex]);
+            layout_->insertWidget(dragTargetIndex, tabs_[dragSourceIndex]);
+
+            tabs_.move(dragSourceIndex, dragTargetIndex);
+            dragSourceIndex = dragTargetIndex;
+
+            emit tabMoved(dragSourceIndex, dragTargetIndex);
+
+            setCurrentTab(dragSourceIndex);
+        });
+
+connect(tab, &TabButton::dragFinished,
+        this, [this, tab]() {
+            dragSourceIndex = -1;
+            dragTargetIndex = -1;
+            tab->setCursor(Qt::PointingHandCursor);
+        });
+    if (currentIndex_ == -1)
+        setCurrentTab(0);
+
+    return index;
+}
+
+void TabBar::setCurrentTab(int index)
+{
+    if (index < 0 || index >= tabs_.size())
+        return;
+    currentIndex_ = index;
+
+    for (int i = 0; i < tabs_.size(); ++i)
+        tabs_[i]->setActive(i == currentIndex_);
+}
+
+int TabBar::currentTab() const
+{
+    return currentIndex_;
+}
+void TabBar::removeTab(int index){
+    if(index<0 || index >= tabs_.size())
+        return;
+    TabButton *tab = tabs_[index];
+    layout_->removeWidget(tab);
+    tabs_.remove(index);
+    tab->deleteLater();
+
+    if(currentIndex_>= tabs_.size())
+        currentIndex_ = tabs_.size() -1;
+    if(currentIndex_ >= 0)
+        setCurrentTab(currentIndex_);
+}

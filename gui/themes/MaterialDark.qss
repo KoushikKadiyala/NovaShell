@@ -1,0 +1,36 @@
+/* Material Dark Theme */
+QWidget {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+QPlainTextEdit {
+    background-color: #212121;
+    color: #ffffff;
+    selection-background-color: #00bcd4;
+    selection-color: #212121;
+}
+
+QMainWindow {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+QStatusBar {
+    background-color: #00bcd4;
+    color: #212121;
+    border-top: 1px solid #212121;
+}
+
+QWidget#TitleBar {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+QWidget#windowContainer {
+    background-color: #212121;
+    border: 1px solid #3f3f3f;
+    border-radius: 14px;
+}

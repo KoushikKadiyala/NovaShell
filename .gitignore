@@ -16,5 +16,5 @@ NovaShell
 # Images and assets
 images/
 
-# Binary
-NovaShell
+# build files
+build/

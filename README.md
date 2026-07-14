@@ -1,114 +1,347 @@
 #  NovaShell
 
-A modular Unix-like shell implemented in C to explore Linux process management, inter-process communication, signal handling, and shell architecture.
+NovaShell is a Linux shell and Qt-based terminal emulator built from scratch in c and c++.
 
-![NovaShell Demo](images/Screenshot%20From%202026-06-16%2015-54-01.png)
+The project consists of two major components:
+
+- **NovaShell** - a POSIX shell supporting pipelines,redirection and builtin commands.
+- **NovaShell GUI** - a Qt6 terminal emulator that runs the shell inside a pseudo terminal(PTY).
+
+The goal of the project is to understand how modern terminals and shells work internally instead of relying on existing terminal widgets.
 
 ## Features
 
-- Interactive shell
-- Colored prompt with current working directory
-- Built-in commands (`cd`, `exit`)
-- GNU Readline integration (history & line editing)
-- External command execution for standard utilities
-- Input and output redirection (`<`, `>`, `>>`)
-- Arbitrary-length pipelines
-- Environment variable expansion (`$HOME`, `$PATH`, ...)
-- Signal handling (Ctrl+C)
+### shell
+ 
+ - Command execution
+ - Built-in commands
+ - Arbitary-length pipelines
+ - Input/Output redirection (`<`,`>`,`>>`)
+ - Process Management using `fork`,`execvp` and `waitpid`
+
+ ### Terminal Emulator
+
+ - Linux PTY backend
+ - ANSI escape sequence parser
+ - Scrollback buffer
+ - Alternate screen buffer
+ - cursor Movement
+ - Compatible with SSH sessions(tested with ssh localhost)
+ - supports terminal applications such as nano and vim
+ - Tab to Autofill
+ - Command history
+
+ ### GUI
+
+ - Multiple terminal tabs
+ - drag to reorder tabs
+ - Theme support
+ - supports multiple themes
+ - #### KeyBoard shortcuts
+    - Ctrl + Shift + c -> copy selection
+    - Ctrl + Shift + v -> Paste
+    - Ctrl + Shift + T -> new tab
+    - Ctrl + Tab -> next Tab
+    - Ctrl + Shift + Tab -> previous Tab
+    - Ctrl + W -> close tab
+ 
+
+ ## Screenshots
+
+ ### Main Window
+
+![Main Window](images/MainWindow.png)
+
+### Running nano
+
+![Nano](images/nano.png)
+
+### SSH Session
+
+![SSH](images/ssh.png)
+
 
 ## ARCHITECTURE
-
 ```
-                            NovaShell Architecture
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            NovaShell v2.0                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 
-                                  User Input
-                                     │
-                                     ▼
-                      ┌──────────────────────────┐
-                      │   GNU Readline Library   │
-                      │  (Input & History Mgmt)  │
-                      └────────────┬─────────────┘
-                                   │
-                                   ▼
-                      ┌──────────────────────────┐
-                      │      shell.c             │
-                      │   Main Shell Loop        │
-                      │  Command Dispatcher      │
-                      └────────┬───────┬─────────┘
-                               │       │
-                ┌──────────────┬┴───────┴───────────────┐
-                │              │                        │
-                ▼              ▼                        ▼
-       ┌─────────────────┐ ┌─────────────────┐ ┌──────────────────┐
-       │    parser.c     │ │  builtins.c     │ │ environment.c    │
-       │                 │ │                 │ │                  │
-       │ • Tokenization  │ │ • cd, exit      │ │ • $VAR expansion │
-       │ • Arg parsing   │ │ • env variables │ │ • Path handling  │
-       └────────┬────────┘ └────────┬────────┘ └────────┬─────────┘
-                │                   │                   │
-                └───────────────────┼───────────────────┘
-                                    ▼
-                      ┌──────────────────────────┐
-                      │    executor.c            │
-                      │  Command Execution Logic │
-                      │  Route to builtin/extern │
-                      └────────────┬─────────────┘
-                                   │
-                ┌──────────────────┴──────────────────┐
-                │                                     │
-                ▼                                     ▼
-       ┌─────────────────────────┐      ┌──────────────────────────┐
-       │    process.c            │      │    launcher.c            │
-       │                         │      │                          │
-       │ • fork() process        │      │ • execvp() execution     │
-       │ • Pipe creation         │      │ • I/O redirection (>/<)  │
-       │ • waitpid() handling    │      │ • dup2() file descriptor │
-       │ • Signal management     │      │ • Output append (>>)     │
-       └────────────┬────────────┘      └────────────┬─────────────┘
-                    │                                │
-                    └────────────┬─────────────────┘
-                                 ▼
-                    Linux Kernel System Calls
-        (fork, execvp, waitpid, dup2, pipe, signal, wait)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                         Qt GUI Layer                                       │
+│                                                                            │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                        MainWindow                                   │   │
+│  │   ┌──────────────────────────────────────────────────────────────┐  │   │
+│  │   │                        TitleBar                              │  │   │
+│  │   │  ┌───────────────┐  ┌──────────┐  ┌──────────────────────┐   │  │   │
+│  │   │  │ ThemeSelector │  │  Title   │  │  NavigationButtons   │   │  │   │
+│  │   │  │  (7 themes)   │  │          │  │  (_ □ ✕)             │   │  │   │
+│  │   │  └───────────────┘  └──────────┘  └──────────────────────┘   │  │   │
+│  │   └──────────────────────────────────────────────────────────────┘  │   │
+│  │                                                                     │   │
+│  │   ┌──────────────────────────────────────────────────────────────┐  │   │
+│  │   │                         TabBar                               │  │   │
+│  │   │  ┌───────────┐  ┌───────────┐  ┌───────────┐  ┌─────────┐    │  │   │
+│  │   │  │ TabButton │  │ TabButton │  │ TabButton │  │   [+]   │    │  │   │
+│  │   │  │  Shell 1  │  │  Shell 2  │  │  Shell 3  │  │         │    │  │   │
+│  │   │  └───────────┘  └───────────┘  └───────────┘  └─────────┘    │  │   │
+│  │   └──────────────────────────────────────────────────────────────┘  │   │
+│  │                                                                     │   │
+│  │   ┌──────────────────────────────────────────────────────────────┐  │   │
+│  │   │                    SessionManager                            │  │   │
+│  │   │                   (QStackedWidget)                           │  │   │
+│  │   │                                                              │  │   │
+│  │   │   ┌────────────────────────────────────────────────────────┐ │  │   │
+│  │   │   │                   ShellSession                         │ │  │   │
+│  │   │   │                                                        │ │  │   │
+│  │   │   │  ┌──────────────────────────────────────────────────┐  │ │  │   │
+│  │   │   │  │                 ScreenWidget                     │  │ │  │   │
+│  │   │   │  │           (QPainter cell renderer)               │  │ │  │   │
+│  │   │   │  │   • Mouse selection    • Cursor blink            │  │ │  │   │
+│  │   │   │  │   • Wheel scrollback   • Key forwarding          │  │ │  │   │
+│  │   │   │  │   • Ctrl+Shift+C/V     • Window resize           │  │ │  │   │
+│  │   │   │  └───────────────────┬──────────────────────────────┘  │ │  │   │
+│  │   │   │                      │ reads                           │ │  │   │
+│  │   │   │  ┌───────────────────▼──────────────────────────────┐  │ │  │   │
+│  │   │   │  │                ScreenBuffer                      │  │ │  │   │
+│  │   │   │  │                                                  │  │ │  │   │
+│  │   │   │  │  ┌─────────────────┐  ┌─────────────────────┐    │  │ │  │   │
+│  │   │   │  │  │  Primary Buffer │  │  Alternate Buffer   │    │  │ │  │   │
+│  │   │   │  │  │   (ScreenCell   │  │   (vim/nano/htop)   │    │  │ │  │   │
+│  │   │   │  │  │    grid rows×cols│  │    grid rows×cols) │    │  │ │  │   │
+│  │   │   │  │  └─────────────────┘  └─────────────────────┘    │  │ │  │   │
+│  │   │   │  │  ┌─────────────────────────────────────────────┐ │  │ │  │   │
+│  │   │   │  │  │           Scrollback (2000 lines)           │ │  │ │  │   │
+│  │   │   │  │  └─────────────────────────────────────────────┘ │  │ │  │   │
+│  │   │   │  └───────────────────▲──────────────────────────────┘  │ │  │   │
+│  │   │   │                      │ writes                          │ │  │   │
+│  │   │   │  ┌───────────────────┴──────────────────────────────┐  │ │  │   │
+│  │   │   │  │               ScreenRenderer                     │  │ │  │   │
+│  │   │   │  │                                                  │  │ │  │   │
+│  │   │   │  │  ScreenRenderer.cpp ── main loop, C0 controls    │  │ │  │   │
+│  │   │   │  │  RendererESC.cpp    ── ESC dispatcher            │  │ │  │   │
+│  │   │   │  │  RendererCSI.cpp    ── cursor/erase/insert/scroll│  │ │  │   │
+│  │   │   │  │  RendererSGR.cpp    ── colours, bold, reverse    │  │ │  │   │
+│  │   │   │  │  RendererOSC.cpp    ── window title (consumed)   │  │ │  │   │
+│  │   │   │  │  RendererUtils.cpp  ── param(), flushText()      │  │ │  │   │
+│  │   │   │  └───────────────────▲──────────────────────────────┘  │ │  │   │
+│  │   │   │                      │ raw bytes                       │ │  │   │
+│  │   │   │  ┌───────────────────┴──────────────────────────────┐  │ │  │   │
+│  │   │   │  │                 PtySession                       │  │ │  │   │
+│  │   │   │  │   posix_openpt → grantpt → unlockpt → ptsname    │  │ │  │   │
+│  │   │   │  │   fork → setsid → dup2(slave, stdin/out/err)     │  │ │  │   │
+│  │   │   │  │   QSocketNotifier → read(masterFd)               │  │ │  │   │
+│  │   │   │  │   TIOCSWINSZ on resize                           │  │ │  │   │
+│  │   │   │  └───────────────────┬──────────────────────────────┘  │ │  │   │
+│  │   │   └────────────────────  │  ───────────────────────────────┘ │  │   │
+│  │   └────────────────────────  │  ─────────────────────────────────┘  │   │
+│  └──────────────────────────────│──────────────────────────────────────┘   │
+└─────────────────────────────────│──────────────────────────────────────────┘
+                                  │ PTY master/slave
+                    ┌─────────────▼───────────────┐
+                    │       Linux Kernel          │
+                    │    PTY Line Discipline      │
+                    │  (echo, signal, buffering)  │
+                    └─────────────┬───────────────┘
+                                  │ stdin/stdout/stderr
+┌─────────────────────────────────▼───────────────────────────────────────────┐
+│                         NovaShell CLI                                       │
+│                                                                             │
+│   shell.c ── main loop, readline, dynamic prompt, history, Tab completion   │
+│       │                                                                     │
+│       ▼                                                                     │
+│   ┌───────────────────────────────────────────────────────────────────┐     │
+│   │                      Engine (libNovaShellCore.a)                  │     │
+│   │                                                                   │     │
+│   │  ┌─────────────┐    ┌──────────────┐    ┌────────────────────┐    │     │
+│   │  │  parser.c   │    │ environment.c│    │    memory.c        │    │     │
+│   │  │             │    │              │    │                    │    │     │
+│   │  │ • Heap alloc│    │ • $VAR expand│    │ • free_argv()      │    │     │
+│   │  │ • Quoting   │    │ • getenv()   │    │ • operator guard   │    │     │
+│   │  │ • Escaping  │    │ • strdup()   │    │                    │    │     │
+│   │  │ • Operators │    └──────────────┘    └────────────────────┘    │     │
+│   │  └──────┬──────┘                                                  │     │
+│   │         │                                                         │     │
+│   │         ▼                                                         │     │
+│   │  ┌─────────────┐                                                  │     │
+│   │  │ executor.c  │                                                  │     │
+│   │  │             │                                                  │     │
+│   │  │ • Pipeline  │                                                  │     │ 
+│   │  │   validation│                                                  │     │
+│   │  │ • Route to  │                                                  │     │
+│   │  │   builtin / │                                                  │     │
+│   │  │   extern    │                                                  │     │
+│   │  └──────┬──────┘                                                  │     │
+│   │         │                                                         │     │
+│   │    ┌────┴────────────────────┐                                    │     │
+│   │    │                         │                                    │     │
+│   │    ▼                         ▼                                    │     │
+│   │  ┌─────────────┐    ┌──────────────────┐                          │     │
+│   │  │ builtins.c  │    │   process.c      │                          │     │
+│   │  │             │    │                  │                          │     │
+│   │  │ • cd,cd -   │    │ • fork()         │                          │     │
+│   │  │ • exit      │    │ • pipe()         │                          │     │
+│   │  └─────────────┘    │ • waitpid()      │                          │     │ 
+│   │                     │ • SIGINT restore │                          │     │
+│   │                     └────────┬─────────┘                          │     │
+│   │                              │                                    │     │
+│   │                              ▼                                    │     │
+│   │                     ┌──────────────────┐                          │     │
+│   │                     │   launcher.c     │                          │     │
+│   │                     │                  │                          │     │
+│   │                     │ • execvp()       │                          │     │ 
+│   │                     │ • dup2()         │                          │     │
+│   │                     │ • <, >, >>       │                          │     │
+│   │                     └────────┬─────────┘                          │     │
+│   │                              │                                    │     │
+│   └──────────────────────────────│────────────────────────────────────┘     │
+└─────────────────────────────────┬┘──────────────────────────────────────────┘
+                                  │
+                    ┌─────────────▼───────────────┐
+                    │    Linux Kernel             │
+                    │  fork, execvp, waitpid      │
+                    │  dup2, pipe, signal         │
+                    └─────────────────────────────┘
 ```
-
 
 ## Project Structure
 
 ```
 NovaShell/
-├── Makefile                 # Build configuration
-├── README.md                # Project documentation
-├── include/                 # Header files (public interfaces)
-│   ├── parser.h            # Command tokenization & parsing
-│   ├── executor.h          # Command execution routing
-│   ├── launcher.h          # External program launching
-│   ├── process.h           # Process management (fork, wait)
-│   ├── shell.h             # Main shell loop interface
-│   ├── builtins.h          # Built-in commands (cd, exit)
-│   ├── colours.h           # Terminal color codes
-│   └── environment.h       # Environment variable handling
-├── src/                     # Implementation files
-│   ├── main.c              # Program entry point
-│   ├── shell.c             # Main shell loop & command dispatch
-│   ├── parser.c            # Tokenization & argument parsing
-│   ├── executor.c          # Command routing & execution control
-│   ├── launcher.c          # execvp() wrapper & I/O redirection
-│   ├── process.c           # fork(), waitpid(), pipe management
-│   ├── builtins.c          # Built-in command implementations
-│   └── environment.c       # Environment variable expansion
-└── NovaShell                    # Compiled shell executable
+│
+├── README.md
+├── Makefile                          # Engine build (gcc, ASan, -Wall -Wextra-Werror)
+├── .gitignore
+│
+├── images/
+│   └── screenshot.png
+│
+├── packaging/
+│   ├── novashell.desktop
+│   └── novashell.png
+│
+├── include/                          # Engine public headers
+│   ├── core.h                        # shell_execute() interface + extern "C" guard
+│   ├── parser.h                      # parse_input()
+│   ├── executor.h                    # execute_command(), validate_pipeline()
+│   ├── launcher.h                    # launch_process()
+│   ├── process.h                     # launch_pipeline()
+│   ├── builtins.h                    # handle_builtin()
+│   ├── environment.h                 # expand_variables()
+│   ├── memory.h                      # free_argv()
+│   ├── io.h                          # shell_print(), shell_set_output()
+│   ├── shell.h                       # start_shell()
+│   └── colours.h                     # ANSI colour macros for CLI prompt
+│
+├── engine/                           # Shell engine — pure C, builds as libNovaShellCore.a
+│   ├── core.c                        # shell_execute() — orchestrates parse/expand/execute
+│   ├── parser.c                      # heap-allocated tokeniser, quoting, escaping
+│   ├── executor.c                    # pipeline validation, builtin/extern routing
+│   ├── launcher.c                    # execvp(), dup2() I/O redirection
+│   ├── process.c                     # fork(), pipe(), waitpid(), signal management
+│   ├── builtins.c                    # cd, cd -, exit
+│   ├── environment.c                 # $VAR expansion via getenv/strdup
+│   ├── memory.c                      # free_argv() with operator-aware token cleanup
+│   └── io.c                          # shell_print/shell_printf via function pointer
+│
+├── CLI/                              # CLI frontend — links engine + readline
+│   ├── main.c                        # entry point, sets shell_set_output to stdout
+│   └── shell.c                       # readline loop, dynamic prompt, history, Tab binding
+│
+└── gui/                              # Qt GUI terminal emulator
+    ├── CMakeLists.txt                # builds NovaShell (CLI) + NovaShellGUI, CPack .deb
+    │
+    ├── app/
+    │   ├── main.cpp                  # QApplication, initial theme load, MainWindow launch
+    │   ├── MainWindow.h
+    │   └── MainWindow.cpp            # frameless window, resize edges, tab shortcuts
+    │
+    ├── pty/
+    │   ├── PtySession.h
+    │   └── PtySession.cpp            # posix_openpt, fork, setsid, dup2, TIOCSWINSZ
+    │
+    ├── renderer/
+    │   ├── ScreenRenderer.h          # ScreenRenderer class declaration
+    │   ├── ScreenRenderer.cpp        # main render loop, C0 control characters
+    │   ├── RendererESC.cpp           # ESC sequence dispatcher (CSI/OSC/DCS/Fe)
+    │   ├── RendererCSI.cpp           # all CSI commands — cursor, erase, insert, scroll
+    │   ├── RendererSGR.cpp           # SGR — 8/256/truecolor fg+bg, bold, reverse
+    │   ├── RendererOSC.cpp           # OSC — window title, palette (silently consumed)
+    │   └── RendererUtils.cpp         # param(), flushText()
+    │
+    ├── screen/
+    │   ├── ScreenCell.h              # single terminal cell: ch, fg, bg, bold
+    │   ├── ScreenBuffer.h
+    │   ├── ScreenBuffer.cpp          # primary + alternate grid, scrollback, scroll region
+    │   ├── ScreenWidget.h
+    │   └── ScreenWidget.cpp          # QPainter renderer, mouse selection, key forwarding
+    │
+    ├── session/
+    │   ├── ShellSession.h
+    │   ├── ShellSession.cpp          # one tab: owns PTY + buffer + renderer + widget
+    │   ├── SessionManager.h
+    │   └── SessionManager.cpp        # QStackedWidget container, create/remove/move
+    │
+    ├── widgets/
+    │   ├── TitleBar.h
+    │   ├── TitleBar.cpp              # custom title bar, startSystemMove (Wayland-native)
+    │   ├── NavigationButtons.h
+    │   ├── NavigationButtons.cpp     # traffic light buttons with custom paintEvent
+    │   ├── TabBar.h
+    │   ├── TabBar.cpp                # custom tab bar, drag-to-reorder, new/close signals
+    │   ├── TabButton.h
+    │   ├── TabButton.cpp             # individual tab with close button, active styling
+    │   ├── ThemeSelector.h
+    │   └── ThemeSelector.cpp         # runtime theme switcher, resolves dev/install paths
+    │
+    └── themes/
+        ├── Dracula.qss
+        ├── Nord.qss
+        ├── GruvboxDark.qss
+        ├── Monokai.qss
+        ├── MaterialDark.qss
+        ├── SolarizedDark.qss
+        └── Dark.qss
 ```
-
 ## Dependencies
 
-- **C Compiler**: GCC or Clang (C99 standard or later)
-- **GNU Readline Library**: For input handling and history
-  - Ubuntu/Debian: `sudo apt-get install libreadline-dev`
-  - macOS: `brew install readline`
-- **POSIX-compliant system**: Linux, macOS, or Unix
-- **Make**: Build automation tool
+ ### Operating System
+ - Linux (tested on Ubuntu 24.04)
+ ### Compiler
+ - GCC 13+ (or Clang with C++20 support)
+ ### Build System
+ - CMake 3.16+
+ - GNU Make
+ ### Libraries
+ - Qt 6
+  -Qt6 core
+  -Qt6 Gui
+### POSIX APIs
+NovaShell relies on the following Linux/POSIX interfaces:
+- `fork()`
+- `execvp()`
+- `waitpid()`
+- `pipe()`
+- `dup2()`
+- `open()`
+- `close()`
+- `setsid()`
+- `ioctl()`
+- `select()`
+- `read()`
+- `write()`
+- PTY (`openpty()`)
 
+### Required Packages (Ubuntu)
+
+```bash
+sudo apt install \
+    build-essential \
+    cmake \
+    qt6-base-dev \
+    qt6-base-dev-tools
+```
 ## Installation
 
 ### Build from Source
@@ -116,6 +349,11 @@ NovaShell/
 ```bash
 git clone https://github.com/KoushikKadiyala/NovaShell.git
 cd NovaShell
+
+mkdir build
+cd build
+
+cmake ..
 make
 ```
 
@@ -124,112 +362,35 @@ This will compile the shell and generate the `NovaShell` executable in the proje
 ### Running the Shell
 
 ```bash
-./NovaShell
+./NovaShellGUI
 ```
 
 Once started, you'll see an interactive prompt where you can enter shell commands.
 
+## Technologies
 
-## Examples
-
-### Builtin Commands
-
-```bash
-$ pwd
-/home/user/my_shell
-
-$ cd /tmp
-$ pwd
-/tmp
-
-$ cd -
-/home/user/my_shell
-
-$ exit
-Goodbye!
-```
-
-### External Commands
-
-```bash
-$ echo hello
-hello
-
-$ ls -l
-total 48
-drwxr-xr-x  3 user user  4096 Jun 14 10:30 include/
-drwxr-xr-x  3 user user  4096 Jun 14 10:30 src/
--rw-r--r--  1 user user  1024 Jun 14 10:30 Makefile
--rwxr-xr-x  1 user user 24576 Jun 14 10:30 NovaShell
-```
-
-### I/O Redirection
-
-```bash
-$ echo hello > file.txt
-$ cat < file.txt
-hello
-
-$ echo world >> file.txt
-$ cat file.txt
-hello
-world
-```
-
-No-space redirection is supported too:
-
-```bash
-$ echo hello>out.txt
-$ cat out.txt
-hello
-```
-
-### Piping
-
-```bash
-$ printf 'apple\\nbanana\\ncarrot\\n' | grep a | sort
-apple
-banana
-
-$ ls | grep ".c" | wc -l
-8
-```
-
-Invalid pipeline segments are rejected. Example:
-
-```bash
-$ echo hello|>out.txt
-Syntax error: invalid command start '>'
-```
-
-### Environment Variables
-
-```bash
-$ echo $HOME
-/home/user
-
-$ echo $PATH
-/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
-```
+- C
+- C++
+- Qt6
+- Linux PTY
+- POSIX APIs
+- CMake
 
 ## What I learned
 
-This Project helped me understand:
+Building NovaShell helped me understand:
 
-- Linux process management
-- fork(), execvp(), waitpid()
-- Inter-process communication using pipes
-- File descriptor manipulation using dup2()
+- Linux process creation
+- POSIX APIs
+- Pseudo terminals (PTY)
+- Terminal emulation
+- ANSI escape sequences
+- Shell Parsing
 - Signal handling
-- Shell parsing
-- Modular software architecture in C
-
-## Key Design Decisions
-
-- Modular architecture
-- Arbitrary-length pipeline implementation
-- Separation of parsing and execution
-- Dedicated launcher for child process setup
+- Multi-Process communication
+- Event-driven GUI Programing with Qt
+- Software architecture and modular design
+- Debugging complex asynchronous systems
 
 ## Challenges
 
@@ -237,23 +398,31 @@ This Project helped me understand:
 - Correct file descriptor management
 - Implementing signal handling while keeping the shell process alive.
 - Parsing shell syntax
+- Communicating  with shell through a linux PTY.
+- Implementing an ANSI escape sequence parser from scratch.
+- Synchronizing GUI rendering with asynchronous PTY output.
+- Implementing alternate screen buffer for applications like nano 
 
 ## Known limitations
 
-- Quoting and escaping are basic: backslash-escaped characters and some embedded quoting cases are not fully supported.
-- Variable expansion is performed for whole-token `$VAR` forms; embedded-expansions like `file_$VAR.txt` are partially supported or limited.
-- Multi-line inputs inside quotes (e.g., certain `printf` constructs when provided through a single input stream) may not behave as a full interactive shell would.
-- Background jobs (`&`) are not implemented.
+Current limitations include:
 
-If you need full POSIX-compatible quoting/escaping and job control, the parser will need to be extended.
+- partial ANSI/VT100 compatibility.
+- 256-color and true-color escape sequences are not yet fullt supported.
+- mouse reporting is not implemented
+- Session persistence across application restarts is not implemented
+- Some advanced terminal applications may rely on escape sequences that are currently unsupported.
 
 ## Future Work
-
-- Quote handling (improve escaping and embedded expansions)
+### Shell
 - Background jobs
 - Command history persistence
-- Tab completion
-- Native desktop GUI built on top of the shell engine
+### GUI
+- Splitview for tabs
+- mouse reporting
+- custom Shortcuts
+- Autofill for commands
+- Session persistence across application restarts
 
 ## Debugging / Valgrind
 
@@ -295,4 +464,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

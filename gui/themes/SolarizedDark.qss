@@ -1,0 +1,36 @@
+/* Solarized Dark Theme */
+QWidget {
+    background-color: #002b36;
+    color: #839496;
+}
+
+QPlainTextEdit {
+    background-color: #002b36;
+    color: #839496;
+    selection-background-color: #268bd2;
+    selection-color: #002b36;
+}
+
+QMainWindow {
+    background-color: #002b36;
+    color: #839496;
+}
+
+QStatusBar {
+    background-color: #268bd2;
+    color: #002b36;
+    border-top: 1px solid #073642;
+}
+
+QWidget#TitleBar {
+    background-color: #073642;
+    color: #839496;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+QWidget#windowContainer {
+    background-color: #002b36;
+    border: 1px solid #586e75;
+    border-radius: 14px;
+}

@@ -1,0 +1,43 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "NovaShellGUI_autogen/timestamp" "custom" "NovaShellGUI_autogen/deps"
+  "/home/kk/NovaShell/build/NovaShellGUI_autogen/mocs_compilation.cpp" "CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/NovaShellGUI_autogen/mocs_compilation.cpp.o.d"
+  "/home/kk/NovaShell/gui/app/MainWindow.cpp" "CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/app/MainWindow.cpp.o.d"
+  "/home/kk/NovaShell/gui/app/main.cpp" "CMakeFiles/NovaShellGUI.dir/app/main.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/app/main.cpp.o.d"
+  "/home/kk/NovaShell/gui/pty/PtySession.cpp" "CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/pty/PtySession.cpp.o.d"
+  "/home/kk/NovaShell/gui/renderer/RendererCSI.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/RendererCSI.cpp.o.d"
+  "/home/kk/NovaShell/gui/renderer/RendererESC.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/RendererESC.cpp.o.d"
+  "/home/kk/NovaShell/gui/renderer/RendererOSC.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/RendererOSC.cpp.o.d"
+  "/home/kk/NovaShell/gui/renderer/RendererSGR.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/RendererSGR.cpp.o.d"
+  "/home/kk/NovaShell/gui/renderer/RendererUtils.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/RendererUtils.cpp.o.d"
+  "/home/kk/NovaShell/gui/renderer/ScreenRenderer.cpp" "CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/renderer/ScreenRenderer.cpp.o.d"
+  "/home/kk/NovaShell/gui/screen/ScreenBuffer.cpp" "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/screen/ScreenBuffer.cpp.o.d"
+  "/home/kk/NovaShell/gui/screen/ScreenWidget.cpp" "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/screen/ScreenWidget.cpp.o.d"
+  "/home/kk/NovaShell/gui/session/SessionManager.cpp" "CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/session/SessionManager.cpp.o.d"
+  "/home/kk/NovaShell/gui/session/ShellSession.cpp" "CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/session/ShellSession.cpp.o.d"
+  "/home/kk/NovaShell/gui/widgets/NavigationButtons.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/NavigationButtons.cpp.o.d"
+  "/home/kk/NovaShell/gui/widgets/TabBar.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/TabBar.cpp.o.d"
+  "/home/kk/NovaShell/gui/widgets/TabButton.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/TabButton.cpp.o.d"
+  "/home/kk/NovaShell/gui/widgets/ThemeSelector.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/ThemeSelector.cpp.o.d"
+  "/home/kk/NovaShell/gui/widgets/TitleBar.cpp" "CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o" "gcc" "CMakeFiles/NovaShellGUI.dir/widgets/TitleBar.cpp.o.d"
+  "" "NovaShellGUI" "gcc" "CMakeFiles/NovaShellGUI.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
