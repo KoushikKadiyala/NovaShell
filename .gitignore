@@ -13,8 +13,5 @@ NovaShell
 # OS generated files
 .DS_Store
 
-# Images and assets
-images/
-
 # build files
 build/
